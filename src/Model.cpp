@@ -4,41 +4,32 @@
 
 using namespace std;
 
-Model::Model (const Model& model) {
-  if (this == &model) {
-    return;
-  }
-  
-  time = model.getTime();
-}
-
-Model& Model::operator=(const Model& model) {
-  if (this == &model) {
-    return *this;
-  }
-
-  setTime(model.getTime());
-
-  return *this;
-}
-
 Model::Model(){
-  time = 100;
+  time = 0;
 }
 
 Model::Model(int t) {
   time = t;
 }
 
+Model::Model (const Model& model) {
+  if (this == &model) return;
+  
+  time = model.getTime();
+}
+
+Model& Model::operator=(const Model& model) {
+  if (this == &model) return *this;
+
+  setTime(model.getTime());
+  return *this;
+}
+
 Model::~Model(){
-  for (Flow* flow : flows) {
-    delete (flow);
-  }
+  for (Flow* flow : flows) delete (flow);
   flows.clear();
 
-  for (System* sys : systems) {
-    delete (sys);
-  }
+  for (System* sys : systems) delete (sys);
   systems.clear();
 }
 
@@ -70,15 +61,15 @@ void Model::incrementTime(int inc) {
   time += inc;
 }
 
-void Model::addSystem(System *s){
+void Model::add(System *s){
   systems.insert(lastSystem(), s);
 }
 
-void Model::addFlow(Flow *f){
+void Model::add(Flow *f){
   flows.insert(lastFlow(), f);
 }
 
-void Model::removeSystem(System *s){
+void Model::remove(System *s){
   auto i = firstSystem();
   for (System* sys : systems) {
     if (s == sys) {
@@ -89,7 +80,7 @@ void Model::removeSystem(System *s){
   }
 };
 
-void Model::removeFlow(Flow *f){
+void Model::remove(Flow *f){
   auto i = lastFlow();
   for (Flow* flow : flows) {
     if (f == flow) {
@@ -100,7 +91,15 @@ void Model::removeFlow(Flow *f){
   }
 };
 
-// TO-DO execute
 void Model::execute(int start = 1, int final = 100, int incr = 1) {
-  cout << "executing model";
+  for (int i = start; i <= final; i += incr) {
+    for (Flow* flow : flows) {
+      double flowValue = flow->execute();
+
+      flow->getSource()->setValue(flow->getSource()->getValue() - flowValue);
+      flow->getTarget()->setValue(flow->getTarget()->getValue() + flowValue);
+      
+      incrementTime(incr);
+    }
+  }
 };

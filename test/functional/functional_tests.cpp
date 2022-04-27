@@ -3,31 +3,31 @@
 #include "functional_tests.h"
 #include "../../src/Model.h"
 #include "../../src/System.h"
-#include "../../src/Flow.h"
+#include "ExponentialFlow.h"
 
 using namespace std;
 
 void exponentialFuncTest() {
-  cout << "TEST 1 - Simple model with exponential equation" << endl;
+  cout << "Test 1 - Exponential flow" << endl;
 
   System* pop1 = new System(100);
   System* pop2 = new System(0);
-  Flow* expFlow = new Flow(pop1, pop2);
+  ExponentialFlow* expFlow = new ExponentialFlow(pop1, pop2);
   Model* expModel = new Model(0);
   
-  expModel->addSystem(pop1);
-  expModel->addSystem(pop2);
-  expModel->addFlow(expFlow);
+  expModel->add(pop1);
+  expModel->add(pop2);
+  expModel->add(expFlow);
 
   assert(abs(pop1->getValue() - 100.0) < 0.0001);
   assert(abs(pop2->getValue() - 0.0) < 0.0001);
   assert(abs(expModel->getTime() - 0.0) < 0.0001);
 
-  expModel->execute(0, 100, 1);
+  expModel->execute(1, 100, 1);
 
   assert(abs(pop1->getValue() - 36.6032) < 0.0001);
   assert(abs(pop2->getValue() - 63.3968) < 0.0001);
-  assert(abs(expModel->getTime() - 100.0) < 0.0001);
+  assert(expModel->getTime() - 100 == 0);
 
   delete (expModel);
 

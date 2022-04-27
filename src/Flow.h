@@ -8,22 +8,22 @@ using namespace std;
 
 class Flow {
   protected:
-    System* origin;
+    System* source;
     System* target;
 
   public:
     Flow();
-    Flow(System *from = NULL, System *to = NULL);
+    Flow(System *from, System *to);
     virtual ~Flow();
 
-    System* getOrigin();
+    System* getSource();
     System* getTarget();
-    void setOrigin(System *s);
+    void setSource(System *s);
     void setTarget(System *s);
 
-    void clearOrigin();
+    void clearSource();
     void clearTarget();
-    double execute();
+    virtual double execute() = 0;
 
   private:
     Flow (const Flow& flow);

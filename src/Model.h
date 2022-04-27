@@ -19,7 +19,7 @@ class Model {
 
     Model();
     Model(int t);
-    Model (const Model& model);
+    Model(const Model& model);
     ~Model();
 
     iterSystem firstSystem();
@@ -31,10 +31,10 @@ class Model {
     void setTime(int t);
     void incrementTime(int inc);
     
-    void addSystem(System *s);
-    void addFlow(Flow *f);
-    void removeSystem(System *s);
-    void removeFlow(Flow *f);
+    void add(System *s);
+    void add(Flow *f);
+    void remove(System *s);
+    void remove(Flow *f);
     void execute(int start, int final, int incr);
 
   private:
