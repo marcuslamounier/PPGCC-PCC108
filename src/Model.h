@@ -22,10 +22,10 @@ class Model {
     Model (const Model& model);
     ~Model();
 
-    iterSystem begSystems();
-    iterSystem endSystems();
-    iterFlow begFlows();
-    iterFlow endFlows();
+    iterSystem firstSystem();
+    iterSystem lastSystem();
+    iterFlow firstFlow();
+    iterFlow lastFlow();
 
     int getTime() const;
     void setTime(int t);

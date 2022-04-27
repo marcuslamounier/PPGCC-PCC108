@@ -42,19 +42,19 @@ Model::~Model(){
   systems.clear();
 }
 
-Model::iterSystem Model::begSystems() {
+Model::iterSystem Model::firstSystem() {
   return systems.begin();
 }
 
-Model::iterSystem Model::endSystems() {
+Model::iterSystem Model::lastSystem() {
   return systems.end();
 }
 
-Model::iterFlow Model::begFlows() {
+Model::iterFlow Model::firstFlow() {
   return flows.begin();
 }
 
-Model::iterFlow Model::endFlows() {
+Model::iterFlow Model::lastFlow() {
   return flows.end();
 }
 
@@ -71,15 +71,15 @@ void Model::incrementTime(int inc) {
 }
 
 void Model::addSystem(System *s){
-  systems.insert(endSystems(), s);
+  systems.insert(lastSystem(), s);
 }
 
 void Model::addFlow(Flow *f){
-  flows.insert(endFlows(), f);
+  flows.insert(lastFlow(), f);
 }
 
 void Model::removeSystem(System *s){
-  auto i = begSystems();
+  auto i = firstSystem();
   for (System* sys : systems) {
     if (s == sys) {
       systems.erase(i);
@@ -90,7 +90,7 @@ void Model::removeSystem(System *s){
 };
 
 void Model::removeFlow(Flow *f){
-  auto i = begFlows();
+  auto i = lastFlow();
   for (Flow* flow : flows) {
     if (f == flow) {
       flows.erase(i);
