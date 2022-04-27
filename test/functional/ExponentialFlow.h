@@ -4,8 +4,14 @@
 #include "../../src/Flow.h"
 
 class ExponentialFlow: public Flow {
+  private:
+    double factor;
   public:
-    ExponentialFlow(System* from, System *to);
+    ExponentialFlow(System* from, System *to, double f);
+
+    double getFactor();
+    void setFactor(double f);
+
     double execute();
 };
 

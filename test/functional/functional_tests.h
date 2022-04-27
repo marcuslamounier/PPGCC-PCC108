@@ -6,5 +6,6 @@
 
 void exponentialFuncTest();
 void logisticFuncTest();
+void complexFuncTest();
 
 #endif

@@ -3,11 +3,20 @@
 
 using namespace std;
 
-ExponentialFlow::ExponentialFlow(System *from = NULL, System *to = NULL) {
+ExponentialFlow::ExponentialFlow(System *from = NULL, System *to = NULL, double f = 0.0) {
   source = from;
   target = to;
+  factor = f;
+}
+
+double ExponentialFlow::getFactor() {
+  return factor;
+}
+
+void ExponentialFlow::setFactor(double f) {
+  factor = f;
 }
 
 double ExponentialFlow::execute() {
-  return (0.01 * getSource()->getValue());
+  return (factor * getSource()->getValue());
 }
