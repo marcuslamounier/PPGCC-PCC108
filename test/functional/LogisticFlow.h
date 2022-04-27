@@ -1,11 +1,11 @@
-#ifndef EXPONENTIAL_FLOW_H
-#define EXPONENTIAL_FLOW_H
+#ifndef LOGISTIC_FLOW_H
+#define LOGISTIC_FLOW_H
 
 #include "../../src/Flow.h"
 
-class ExponentialFlow: public Flow {
+class LogisticFlow: public Flow {
   public:
-    ExponentialFlow(System* from, System *to);
+    LogisticFlow(System* from, System *to);
     double execute();
 };
 

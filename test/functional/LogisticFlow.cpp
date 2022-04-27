@@ -1,13 +1,13 @@
 #include <iostream>
-#include "ExponentialFlow.h"
+#include "LogisticFlow.h"
 
 using namespace std;
 
-ExponentialFlow::ExponentialFlow(System *from = NULL, System *to = NULL) {
+LogisticFlow::LogisticFlow(System *from = NULL, System *to = NULL) {
   source = from;
   target = to;
 }
 
-double ExponentialFlow::execute() {
-  return (0.01 * getSource()->getValue());
+double LogisticFlow::execute() {
+  return (0.01 * getTarget()->getValue() * (1 - (getTarget()->getValue() / 70)));
 }

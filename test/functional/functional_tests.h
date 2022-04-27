@@ -5,5 +5,6 @@
 #define GREEN "\033[32m" /* Escape sequence to a green color output. */
 
 void exponentialFuncTest();
+void logisticFuncTest();
 
 #endif
