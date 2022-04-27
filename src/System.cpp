@@ -10,8 +10,6 @@ System::System (const System& sys) {
   value = sys.getValue();
 }
 
-// // TO-DO
-
 System& System::operator=(const System& sys) {
   if (this == &sys) {
     return *this;

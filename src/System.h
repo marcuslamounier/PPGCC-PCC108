@@ -1,13 +1,7 @@
 #ifndef SYSTEM_H
 #define SYSTEM_H
 
-class InterfaceSystem {
-  public:
-    virtual double getValue() const = 0;
-    virtual void setValue(double v) = 0;
-};
-
-class System: public InterfaceSystem {
+class System {
   protected:
     double value;
 
