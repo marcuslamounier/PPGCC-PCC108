@@ -10,6 +10,7 @@ class Flow {
   protected:
     System* source;
     System* target;
+    double lastValue;
 
   public:
     Flow();
@@ -18,8 +19,10 @@ class Flow {
 
     System* getSource();
     System* getTarget();
+    double getLastValue();
     void setSource(System *s);
     void setTarget(System *s);
+    void setLastValue(double v);
 
     void clearSource();
     void clearTarget();

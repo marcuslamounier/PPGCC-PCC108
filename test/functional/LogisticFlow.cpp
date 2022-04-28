@@ -27,5 +27,5 @@ void LogisticFlow::setMaxValue(double v) {
 }
 
 double LogisticFlow::execute() {
-  return (0.01 * getTarget()->getValue() * (1 - (getTarget()->getValue() / 70)));
+  return (factor * getTarget()->getValue() * (1 - (getTarget()->getValue() / maxValue)));
 }

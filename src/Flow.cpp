@@ -7,8 +7,8 @@ Flow::Flow (const Flow &flow) {
   if (this == &flow) {
     return;
   }
-  source = NULL;
-  target = NULL;
+  source = flow.source;
+  target = flow.target;
 }
 
 Flow& Flow::operator=(const Flow &flow) {
@@ -16,8 +16,9 @@ Flow& Flow::operator=(const Flow &flow) {
     return *this;
   }
 
-  setSource(NULL);
-  setTarget(NULL);
+  setSource(flow.source);
+  setTarget(flow.target);
+  setLastValue(flow.lastValue);
 
   return *this;
 }
@@ -42,12 +43,20 @@ System* Flow::getTarget() {
   return target;
 }
 
+double Flow::getLastValue() {
+  return lastValue;
+}
+
 void Flow::setSource(System *s) {
   source = s;
 }
 
 void Flow::setTarget(System *s) {
   target = s;
+}
+
+void Flow::setLastValue(double v) {
+  lastValue = v;
 }
 
 void Flow::clearSource() {

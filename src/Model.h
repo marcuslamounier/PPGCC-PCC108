@@ -19,7 +19,6 @@ class Model {
 
     Model();
     Model(int t);
-    Model(const Model& model);
     ~Model();
 
     iterSystem firstSystem();
@@ -38,6 +37,7 @@ class Model {
     void execute(int start, int final, int incr);
 
   private:
+    Model(const Model& model);
     Model& operator=(const Model& model);
 };
 

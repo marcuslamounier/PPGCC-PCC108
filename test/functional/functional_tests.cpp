@@ -46,7 +46,7 @@ void logisticFuncTest() {
 
   assert(abs(p1->getValue() - 100.0) < 0.0001);
   assert(abs(p2->getValue() - 10.0) < 0.0001);
-  assert(abs(logModel->getTime() - 0.0) < 0.0001);
+  assert(logModel->getTime() == 0);
 
   logModel->execute(1, 100, 1);
 
@@ -93,7 +93,7 @@ void complexFuncTest() {
   assert(abs(Q3->getValue() - 100.0) < 0.0001);
   assert(abs(Q4->getValue() - 0.0) < 0.0001);
   assert(abs(Q5->getValue() - 0.0) < 0.0001);
-  assert(abs(complexModel->getTime() - 0.0) < 0.0001);
+  assert(complexModel->getTime() == 0);
 
   complexModel->execute(1, 100, 1);
 

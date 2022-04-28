@@ -18,12 +18,7 @@ Model::Model (const Model& model) {
   time = model.getTime();
 }
 
-Model& Model::operator=(const Model& model) {
-  if (this == &model) return *this;
-
-  setTime(model.getTime());
-  return *this;
-}
+Model& Model::operator=(const Model& model) {}
 
 Model::~Model(){
   for (Flow* flow : flows) delete (flow);
@@ -94,12 +89,12 @@ void Model::remove(Flow *f){
 void Model::execute(int start = 1, int final = 100, int incr = 1) {
   for (int i = start; i <= final; i += incr) {
     for (Flow* flow : flows) {
-      double flowValue = flow->execute();
-
-      flow->getSource()->setValue(flow->getSource()->getValue() - flowValue);
-      flow->getTarget()->setValue(flow->getTarget()->getValue() + flowValue);
-      
-      incrementTime(incr);
+      flow->setLastValue(flow->execute());
     }
+    for (Flow* flow : flows) {
+      flow->getSource()->setValue(flow->getSource()->getValue() - flow->getLastValue());
+      flow->getTarget()->setValue(flow->getTarget()->getValue() + flow->getLastValue());
+    }
+    incrementTime(incr);
   }
 };

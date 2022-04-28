@@ -26,8 +26,6 @@ System::System(double v) {
   value = v;
 }
 
-// TO-DO
-
 System::~System(){}
 
 double System::getValue() const {
