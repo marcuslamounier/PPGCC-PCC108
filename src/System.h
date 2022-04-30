@@ -1,20 +1,59 @@
+/**
+ * @file System.h
+ *
+ * @brief Declaration of class System
+ *
+ * @author Marcus V. Lamounier Quadros
+ * Contact: marcus.quadros@ufop.edu.br
+ *
+ */
+
 #ifndef SYSTEM_H
 #define SYSTEM_H
 
-class System {
-  protected:
-    double value;
+/**
+ * @class System
+ *
+ * @brief This is the class System.
+ *
+ * The class System will hold the energy.
+ */
 
-  public:
-    System();
-    System(double v = 0);
-    System (const System& sys);
-    virtual ~System();
+class System
+{
+protected:
+  /// Value stored in the System.
+  double value;
 
-    System& operator=(const System& sys);
+public:
+  /// Default constructor for System.
+  System();
+  /// Parameter's constructor for System.
+  /**
+   * @param v: value stored in the System.
+   */
+  System(double v = 0);
+  /// Copy constructor for System.
+  /**
+   * @param sys: reference for the System which will be copied.
+   */
+  System(const System &sys);
+  /// Virtual destructor for System
+  virtual ~System();
 
-    double getValue() const;
-    void setValue(double v);
+  /// Override for operator "=".
+  /**
+   * @param sys: reference for the System which will be copied.
+   */
+  System &operator=(const System &sys);
+
+  /// Returns the value stored in the System.
+  double getValue() const;
+  /// Updates the value stored in the System.
+  /**
+   * @param v current value stored in the System.
+   */
+  void setValue(double v);
 };
 
 #endif

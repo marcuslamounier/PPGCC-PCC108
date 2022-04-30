@@ -1,3 +1,13 @@
+/**
+ * @file Flow.cpp
+ *
+ * @brief Implementation of class Flow
+ *
+ * @author Marcus V. Lamounier Quadros
+ * Contact: marcus.quadros@ufop.edu.br
+ *
+ */
+
 #include <iostream>
 #include "Flow.h"
 
@@ -9,6 +19,7 @@ Flow::Flow (const Flow &flow) {
   }
   source = flow.source;
   target = flow.target;
+  lastValue = flow.lastValue;
 }
 
 Flow& Flow::operator=(const Flow &flow) {
@@ -28,9 +39,10 @@ Flow::Flow(){
   target = NULL;
 }
 
-Flow::Flow(System *from = NULL, System *to = NULL) {
+Flow::Flow(System *from = NULL, System *to = NULL, double lv = 0.0) {
   source = from;
   target = to;
+  lastValue = lv;
 }
 
 Flow::~Flow(){}

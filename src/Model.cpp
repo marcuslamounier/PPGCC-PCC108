@@ -1,3 +1,13 @@
+/**
+ * @file Model.cpp
+ *
+ * @brief Implementation of class Model
+ *
+ * @author Marcus V. Lamounier Quadros
+ * Contact: marcus.quadros@ufop.edu.br
+ *
+ */
+
 #include <iostream>
 #include <vector>
 #include "Model.h"
@@ -52,8 +62,8 @@ void Model::setTime(int t) {
   time = t;
 }
 
-void Model::incrementTime(int inc) {
-  time += inc;
+void Model::incrementTime(int incr = 1) {
+  time += incr;
 }
 
 void Model::add(System *s){

@@ -1,3 +1,14 @@
+/**
+ * @file System.cpp
+ *
+ * @brief Implementation of class Model
+ *
+ * @author Marcus V. Lamounier Quadros
+ * Contact: marcus.quadros@ufop.edu.br
+ *
+ */
+
+
 #include <iostream>
 #include "System.h"
 
