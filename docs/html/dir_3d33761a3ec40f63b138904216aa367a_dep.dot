@@ -1,0 +1,15 @@
+digraph "G:/Meu Drive/PPGCC/PCC108"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_b451aca5bbe0bfa4e1bb62bbef646b7f {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="PPGCC", fontname="Helvetica", fontsize="10", URL="dir_b451aca5bbe0bfa4e1bb62bbef646b7f.html"]
+  subgraph clusterdir_3d33761a3ec40f63b138904216aa367a {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_3d33761a3ec40f63b138904216aa367a.html"]
+    dir_3d33761a3ec40f63b138904216aa367a [shape=plaintext, label="PCC108"];
+  dir_54a90a433ab061b32474f89285ba563a [shape=box, label="TrabalhoIndividual", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_54a90a433ab061b32474f89285ba563a.html"];
+  }
+  }
+}
