@@ -7,7 +7,7 @@ class ExponentialFlow: public Flow {
   private:
     double factor;
   public:
-    ExponentialFlow(System* from, System *to, double f);
+    ExponentialFlow(System* from = NULL, System *to = NULL, double f = 0.01);
 
     double getFactor();
     void setFactor(double f);

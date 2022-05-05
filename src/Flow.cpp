@@ -13,8 +13,10 @@
 
 using namespace std;
 
-Flow::Flow (const Flow &flow) {
-  if (this == &flow) {
+Flow::Flow(const Flow &flow)
+{
+  if (this == &flow)
+  {
     return;
   }
   source = flow.source;
@@ -22,8 +24,10 @@ Flow::Flow (const Flow &flow) {
   lastValue = flow.lastValue;
 }
 
-Flow& Flow::operator=(const Flow &flow) {
-  if (this == &flow) {
+Flow &Flow::operator=(const Flow &flow)
+{
+  if (this == &flow)
+  {
     return *this;
   }
 
@@ -34,47 +38,58 @@ Flow& Flow::operator=(const Flow &flow) {
   return *this;
 }
 
-Flow::Flow(){
+Flow::Flow()
+{
   source = NULL;
   target = NULL;
+  lastValue = 0.0;
 }
 
-Flow::Flow(System *from = NULL, System *to = NULL, double lv = 0.0) {
+Flow::Flow(System *from, System *to, double lv)
+{
   source = from;
   target = to;
   lastValue = lv;
 }
 
-Flow::~Flow(){}
+Flow::~Flow() {}
 
-System* Flow::getSource() {
+System *Flow::getSource()
+{
   return source;
 }
 
-System* Flow::getTarget() {
+System *Flow::getTarget()
+{
   return target;
 }
 
-double Flow::getLastValue() {
+double Flow::getLastValue()
+{
   return lastValue;
 }
 
-void Flow::setSource(System *s) {
+void Flow::setSource(System *s)
+{
   source = s;
 }
 
-void Flow::setTarget(System *s) {
+void Flow::setTarget(System *s)
+{
   target = s;
 }
 
-void Flow::setLastValue(double v) {
+void Flow::setLastValue(double v)
+{
   lastValue = v;
 }
 
-void Flow::clearSource() {
+void Flow::clearSource()
+{
   source = NULL;
 }
 
-void Flow::clearTarget() {
+void Flow::clearTarget()
+{
   target = NULL;
 }

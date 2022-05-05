@@ -3,7 +3,7 @@
 
 using namespace std;
 
-ExponentialFlow::ExponentialFlow(System *from = NULL, System *to = NULL, double f = 0.0) {
+ExponentialFlow::ExponentialFlow(System *from, System *to, double f) {
   source = from;
   target = to;
   factor = f;

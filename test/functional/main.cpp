@@ -4,13 +4,6 @@
 using namespace std;
 
 int main (){
-  // cout << "Test 1 - Exponential flow" << endl;
-  // exponentialFuncTest();
-  // cout << "Test 2 - Logistic flow" << endl;
-  // logisticFuncTest();
-  cout << "Test 3 - Complex model flow" << endl;
-  complexFuncTest();
-
-
+  run_functional_tests_globals();
   return 0;
 }

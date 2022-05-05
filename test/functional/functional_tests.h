@@ -7,5 +7,6 @@
 void exponentialFuncTest();
 void logisticFuncTest();
 void complexFuncTest();
+void run_functional_tests_globals();
 
 #endif

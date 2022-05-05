@@ -32,7 +32,7 @@ public:
   /**
    * @param v: value stored in the System.
    */
-  System(double v = 0);
+  System(double v = 0.0);
   /// Copy constructor for System.
   /**
    * @param sys: reference for the System which will be copied.

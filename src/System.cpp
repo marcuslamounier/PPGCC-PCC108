@@ -30,7 +30,7 @@ System& System::operator=(const System& sys) {
 }
 
 System::System(){
-  value = 0;
+  value = 0.0;
 }
 
 System::System(double v) {

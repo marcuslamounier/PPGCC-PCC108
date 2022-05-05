@@ -1,0 +1,4 @@
+<map id="Model::add" name="Model::add">
+<area shape="rect" id="node1" title="Adds Flow to the Model graph." alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node2" href="$class_model.html#ad2893072e930d451bf435f55e6080686" title="Returns pointer for the last Flow in the array." alt="" coords="140,5,253,32"/>
+</map>
