@@ -4,6 +4,9 @@
 void unit_Model_constructor();
 void unit_Model_destructor();
 
+void unit_Model_getSystem();
+void unit_Model_getFlow();
+
 void unit_Model_getTime();
 void unit_Model_setTime();
 void unit_Model_incrementTime();

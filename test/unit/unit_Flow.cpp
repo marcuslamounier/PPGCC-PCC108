@@ -141,7 +141,7 @@ void unit_Flow_execute()
 void run_unit_tests_Flow()
 {
   unit_Flow_constructor();
-  unit_Flow_destructor();
+  // unit_Flow_destructor();
   unit_Flow_getSource();
   unit_Flow_getTarget();
   unit_Flow_getLastValue();

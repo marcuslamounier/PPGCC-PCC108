@@ -39,10 +39,10 @@ void unit_System_setValue()
   delete s;
 }
 
-void run_unit_tests_Flow()
+void run_unit_tests_System()
 {
   unit_System_constructor();
-  unit_System_destructor();
+  // unit_System_destructor();
   unit_System_getValue();
   unit_System_setValue();
 }

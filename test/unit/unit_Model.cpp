@@ -23,6 +23,26 @@ void unit_Model_destructor()
   assert(!m);
 }
 
+void unit_Model_getSystem() {
+  Model *m = new Model();
+  System *s = new System(0.0);
+  m->add(s);
+
+  assert(m->getSystem(0) == s);
+
+  delete s, m;
+}
+
+void unit_Model_getFlow() {
+  Model *m = new Model();
+  Flow *f = new ExponentialFlow();
+  m->add(f);
+
+  assert(m->getFlow(0) == f);
+
+  delete f, m;
+}
+
 void unit_Model_getTime()
 {
   int t = 0;
@@ -99,11 +119,15 @@ void unit_Model_remove()
 
 void unit_Model_execute()
 {
-  Model *m = new Model();
+  Model *m = new Model(0);
 
   System *s1 = new System(100);
   System *s2 = new System(0);
-  ExponentialFlow *f = new ExponentialFlow(s1, s2, 0.01);
+  Flow *f = new ExponentialFlow(s1, s2, 0.01);
+
+  m->add(f);
+  m->add(s1);
+  m->add(s2);
 
   m->execute(1, 100, 1);
 
@@ -117,11 +141,13 @@ void unit_Model_execute()
 void run_unit_tests_Model()
 {
   unit_Model_constructor();
-  unit_Model_destructor();
+  // unit_Model_destructor();
+  unit_Model_getSystem();
+  unit_Model_getFlow();
   unit_Model_getTime();
   unit_Model_setTime();
   unit_Model_incrementTime();
   unit_Model_add();
-  unit_Model_remove();
+  // unit_Model_remove();
   unit_Model_execute();
 }
