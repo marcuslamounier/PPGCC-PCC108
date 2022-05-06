@@ -1,7 +1,7 @@
 /**
  * @file SystemImplement.h
  *
- * @brief Declaration for class System
+ * @brief Implementation class for class System
  *
  * @author Marcus V. Lamounier Quadros
  * Contact: marcus.quadros@ufop.edu.br
@@ -14,9 +14,9 @@
 #include "System.h"
 
 /**
- * @class System
+ * @class SystemImplement
  *
- * @brief This is the class System.
+ * @brief Implementation class for class System.
  *
  * The class System will hold the energy.
  */
@@ -41,6 +41,9 @@ public:
   virtual ~SystemImplement();
 
   /// Returns the value stored in the System.
+  /**
+   * @return the value stored in the System.
+   */
   double getValue() const;
 
   /// Updates the value stored in the System.

@@ -1,3 +1,13 @@
+/**
+ * @file unit_tests.cpp
+ *
+ * @brief Implementation of unitary tests for all the classes.
+ *
+ * @author Marcus V. Lamounier Quadros
+ * Contact: marcus.quadros@ufop.edu.br
+ *
+ */
+
 #include <iostream>
 #include <assert.h>
 #include "unit_tests.h"

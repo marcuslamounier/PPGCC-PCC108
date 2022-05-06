@@ -13,16 +13,11 @@
 
 using namespace std;
 
-/// Default constructor for System.
 SystemImplement::SystemImplement()
 {
   value = 0.0;
 }
 
-/// Copy constructor for System.
-/**
- * @param sys: reference for the System which will be copied.
- */
 SystemImplement::SystemImplement(const System &sys)
 {
   if (this == &sys)
@@ -32,10 +27,6 @@ SystemImplement::SystemImplement(const System &sys)
   value = sys.getValue();
 }
 
-/// Override for operator "=".
-/**
- * @param sys: reference for the System which will be copied.
- */
 SystemImplement &SystemImplement::operator=(const System &sys)
 {
   if (this == &sys)
@@ -46,28 +37,18 @@ SystemImplement &SystemImplement::operator=(const System &sys)
   return *this;
 }
 
-/// Parameter's constructor for System.
-/**
- * @param v: value stored in the System.
- */
 SystemImplement::SystemImplement(double v)
 {
   value = v;
 }
 
-/// Destructor for System
 SystemImplement::~SystemImplement() = default;
 
-/// Returns the value stored in the System.
 double SystemImplement::getValue() const
 {
   return value;
 }
 
-/// Updates the value stored in the System.
-/**
- * @param v current value stored in the System.
- */
 void SystemImplement::setValue(double v)
 {
   value = v;

@@ -1,7 +1,7 @@
 /**
  * @file FlowImplement.h
  *
- * @brief Declaration for class Flow
+ * @brief Implementation class for class Flow
  *
  * @author Marcus V. Lamounier Quadros
  * Contact: marcus.quadros@ufop.edu.br
@@ -14,9 +14,9 @@
 #include "Flow.h"
 
 /**
- * @class Flow
+ * @class FlowImplement
  *
- * @brief This is the class Flow.
+ * @brief Implementation class for class Flow.
  *
  * The class Flow is used for carrying energy from one system to another.
  */
@@ -49,12 +49,21 @@ public:
   virtual ~FlowImplement();
 
   /// Returns pointer for the source System.
+  /**
+   * @return pointer for the source System.
+   */
   System *getSource() const;
 
   /// Returns pointer for the target System.
+  /**
+   * @return pointer for the target System.
+   */
   System *getTarget() const;
 
   /// Returns the last value carried by Flow.
+  /**
+   * @return the last value carried by Flow.
+   */
   double getLastValue() const;
 
   /// Updates the source System.
@@ -85,6 +94,7 @@ public:
   /**
    * This is a @e required method for all the subclasses derived from Flow.
    * It needs to be implemented.
+   * @return the momentary flow value.
    */
   virtual double execute() = 0;
 

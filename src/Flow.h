@@ -14,7 +14,7 @@
 /**
  * @interface Flow
  *
- * @brief This is the interface for class Flow.
+ * @brief Interface for class Flow.
  *
  * The class Flow is used for carrying energy from one system to another.
  */
@@ -28,12 +28,21 @@ public:
   virtual ~Flow() {}
 
   /// Returns pointer for the source System.
+  /**
+   * @return pointer for the source System.
+   */
   virtual System *getSource() const = 0;
 
   /// Returns pointer for the target System.
+  /**
+   * @return pointer for the target System.
+   */
   virtual System *getTarget() const = 0;
 
   /// Returns the last value carried by Flow.
+  /**
+   * @return the last value carried by Flow.
+   */
   virtual double getLastValue() const = 0;
 
   /// Updates the source System.
@@ -64,6 +73,7 @@ public:
   /**
    * This is a @e required method for all the subclasses derived from Flow.
    * It needs to be implemented.
+   * @return the momentary flow value.
    */
   virtual double execute() = 0;
 };

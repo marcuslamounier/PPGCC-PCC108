@@ -1,8 +1,8 @@
 <map id="src/SystemImplement.h" name="src/SystemImplement.h">
-<area shape="rect" id="node1" title="Declaration for class System." alt="" coords="389,5,549,32"/>
+<area shape="rect" id="node1" title="Implementation class for class System." alt="" coords="389,5,549,32"/>
 <area shape="rect" id="node2" href="$_system_implement_8cpp.html" title="Implementation of class Model." alt="" coords="5,87,180,114"/>
-<area shape="rect" id="node3" href="$functional__tests_8cpp_source.html" title=" " alt="" coords="205,80,367,121"/>
-<area shape="rect" id="node4" href="$unit___flow_8cpp_source.html" title=" " alt="" coords="392,87,545,114"/>
-<area shape="rect" id="node5" href="$unit___model_8cpp_source.html" title=" " alt="" coords="569,87,731,114"/>
-<area shape="rect" id="node6" href="$unit___system_8cpp_source.html" title=" " alt="" coords="755,87,926,114"/>
+<area shape="rect" id="node3" href="$functional__tests_8cpp.html" title="Implementation of functional tests for the test scenarios identified together with the customer." alt="" coords="205,80,367,121"/>
+<area shape="rect" id="node4" href="$unit___flow_8cpp.html" title="Implementation of unitary tests for the functions of class Flow." alt="" coords="392,87,545,114"/>
+<area shape="rect" id="node5" href="$unit___model_8cpp.html" title="Implementation of unitary tests for the functions of class Model." alt="" coords="569,87,731,114"/>
+<area shape="rect" id="node6" href="$unit___system_8cpp.html" title="Implementation of unitary tests for the functions of class System." alt="" coords="755,87,926,114"/>
 </map>

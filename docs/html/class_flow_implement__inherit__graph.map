@@ -1,6 +1,6 @@
 <map id="FlowImplement" name="FlowImplement">
-<area shape="rect" id="node1" title=" " alt="" coords="75,80,184,107"/>
-<area shape="rect" id="node3" href="$class_exponential_flow.html" title=" " alt="" coords="5,155,123,181"/>
-<area shape="rect" id="node4" href="$class_logistic_flow.html" title=" " alt="" coords="147,155,242,181"/>
-<area shape="rect" id="node2" href="$class_flow.html" title="This is the interface for class Flow." alt="" coords="105,5,154,32"/>
+<area shape="rect" id="node1" title="Implementation class for class Flow." alt="" coords="75,80,184,107"/>
+<area shape="rect" id="node3" href="$class_exponential_flow.html" title="class ExponentialFlow" alt="" coords="5,155,123,181"/>
+<area shape="rect" id="node4" href="$class_logistic_flow.html" title="class LogisticFlow." alt="" coords="147,155,242,181"/>
+<area shape="rect" id="node2" href="$class_flow.html" title="Interface for class Flow." alt="" coords="105,5,154,32"/>
 </map>

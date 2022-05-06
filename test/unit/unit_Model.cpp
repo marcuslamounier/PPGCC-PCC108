@@ -1,3 +1,13 @@
+/**
+ * @file unit_Model.cpp
+ *
+ * @brief Implementation of unitary tests for the functions of class Model.
+ *
+ * @author Marcus V. Lamounier Quadros
+ * Contact: marcus.quadros@ufop.edu.br
+ *
+ */
+
 #include <iostream>
 #include <assert.h>
 #include "unit_Model.h"

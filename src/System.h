@@ -14,7 +14,7 @@
 /**
  * @interface System
  *
- * @brief This is the interface for class System.
+ * @brief Interface for class System.
  *
  * The class System will hold the energy.
  */
@@ -26,6 +26,9 @@ public:
   virtual ~System() {}
 
   /// Returns the value stored in the System.
+  /**
+   * @return the value stored in the System.
+   */
   virtual double getValue() const = 0;
 
   /// Updates the value stored in the System.

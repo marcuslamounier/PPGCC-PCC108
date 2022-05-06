@@ -1,8 +1,8 @@
 <map id="src/Model.h" name="src/Model.h">
 <area shape="rect" id="node1" title="Interface for class Model." alt="" coords="321,5,411,32"/>
-<area shape="rect" id="node2" href="$_model_implement_8h.html" title="Declaration for class Model." alt="" coords="291,80,441,107"/>
+<area shape="rect" id="node2" href="$_model_implement_8h.html" title="Implementation class for class Model." alt="" coords="291,80,441,107"/>
 <area shape="rect" id="node3" href="$_model_implement_8cpp.html" title="Implementation of class Model." alt="" coords="5,162,169,189"/>
-<area shape="rect" id="node4" href="$functional__tests_8cpp_source.html" title=" " alt="" coords="194,155,357,196"/>
-<area shape="rect" id="node5" href="$unit___flow_8cpp_source.html" title=" " alt="" coords="381,162,535,189"/>
-<area shape="rect" id="node6" href="$unit___model_8cpp_source.html" title=" " alt="" coords="559,162,720,189"/>
+<area shape="rect" id="node4" href="$functional__tests_8cpp.html" title="Implementation of functional tests for the test scenarios identified together with the customer." alt="" coords="194,155,357,196"/>
+<area shape="rect" id="node5" href="$unit___flow_8cpp.html" title="Implementation of unitary tests for the functions of class Flow." alt="" coords="381,162,535,189"/>
+<area shape="rect" id="node6" href="$unit___model_8cpp.html" title="Implementation of unitary tests for the functions of class Model." alt="" coords="559,162,720,189"/>
 </map>

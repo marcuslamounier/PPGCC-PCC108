@@ -1,3 +1,13 @@
+/**
+ * @file main.cpp
+ *
+ * @brief Main program for executing unitary tests.
+ *
+ * @author Marcus V. Lamounier Quadros
+ * Contact: marcus.quadros@ufop.edu.br
+ *
+ */
+
 #include <iostream>
 #include "unit_tests.h"
 

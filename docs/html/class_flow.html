@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MyVensim: Flow Class Reference</title>
+<title>MyVensim: Flow Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MyVensim<span id="projectnumber">&#160;0.4.0</span>
+   <div id="projectname">MyVensim<span id="projectnumber">&#160;0.4.1</span>
    </div>
   </td>
  </tr>
@@ -65,11 +65,11 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_flow-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Flow Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+  <div class="headertitle"><div class="title">Flow Interface Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the interface for class <a class="el" href="class_flow.html" title="This is the interface for class Flow.">Flow</a>.  
+<p>Interface for class <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a>.  
  <a href="class_flow.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_flow_8h_source.html">Flow.h</a>&gt;</code></p>
@@ -78,50 +78,49 @@ Inheritance diagram for Flow:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_flow__inherit__graph.png" border="0" usemap="#a_flow_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_flow_inherit__map" id="a_flow_inherit__map">
-<area shape="rect" title="This is the interface for class Flow." alt="" coords="105,5,154,32"/>
-<area shape="rect" href="class_flow_implement.html" title=" " alt="" coords="75,80,184,107"/>
-<area shape="rect" href="class_exponential_flow.html" title=" " alt="" coords="5,155,123,181"/>
-<area shape="rect" href="class_logistic_flow.html" title=" " alt="" coords="147,155,242,181"/>
+<area shape="rect" title="Interface for class Flow." alt="" coords="105,5,154,32"/>
+<area shape="rect" href="class_flow_implement.html" title="Implementation class for class Flow." alt="" coords="75,80,184,107"/>
+<area shape="rect" href="class_exponential_flow.html" title="class ExponentialFlow" alt="" coords="5,155,123,181"/>
+<area shape="rect" href="class_logistic_flow.html" title="class LogisticFlow." alt="" coords="147,155,242,181"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a325d284a50ca3274b126b21f5c39b9af"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a325d284a50ca3274b126b21f5c39b9af">~Flow</a> ()</td></tr>
-<tr class="memdesc:a325d284a50ca3274b126b21f5c39b9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for <a class="el" href="class_flow.html" title="This is the interface for class Flow.">Flow</a>.  <a href="class_flow.html#a325d284a50ca3274b126b21f5c39b9af">More...</a><br /></td></tr>
+<tr class="memdesc:a325d284a50ca3274b126b21f5c39b9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a>.  <a href="class_flow.html#a325d284a50ca3274b126b21f5c39b9af">More...</a><br /></td></tr>
 <tr class="separator:a325d284a50ca3274b126b21f5c39b9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf0f3dbb285fe82e5ba6449de06b97c8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#abf0f3dbb285fe82e5ba6449de06b97c8">getSource</a> () const =0</td></tr>
-<tr class="memdesc:abf0f3dbb285fe82e5ba6449de06b97c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pointer for the source <a class="el" href="class_system.html" title="This is the interface for class System.">System</a>.  <a href="class_flow.html#abf0f3dbb285fe82e5ba6449de06b97c8">More...</a><br /></td></tr>
+<tr class="memdesc:abf0f3dbb285fe82e5ba6449de06b97c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pointer for the source <a class="el" href="class_system.html" title="Interface for class System.">System</a>.  <a href="class_flow.html#abf0f3dbb285fe82e5ba6449de06b97c8">More...</a><br /></td></tr>
 <tr class="separator:abf0f3dbb285fe82e5ba6449de06b97c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb9b8d93ea0fc81868b8e02dd382a787"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#afb9b8d93ea0fc81868b8e02dd382a787">getTarget</a> () const =0</td></tr>
-<tr class="memdesc:afb9b8d93ea0fc81868b8e02dd382a787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pointer for the target <a class="el" href="class_system.html" title="This is the interface for class System.">System</a>.  <a href="class_flow.html#afb9b8d93ea0fc81868b8e02dd382a787">More...</a><br /></td></tr>
+<tr class="memdesc:afb9b8d93ea0fc81868b8e02dd382a787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pointer for the target <a class="el" href="class_system.html" title="Interface for class System.">System</a>.  <a href="class_flow.html#afb9b8d93ea0fc81868b8e02dd382a787">More...</a><br /></td></tr>
 <tr class="separator:afb9b8d93ea0fc81868b8e02dd382a787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3671632b52cdf4b3e30ce5921f4dc74"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#aa3671632b52cdf4b3e30ce5921f4dc74">getLastValue</a> () const =0</td></tr>
-<tr class="memdesc:aa3671632b52cdf4b3e30ce5921f4dc74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last value carried by <a class="el" href="class_flow.html" title="This is the interface for class Flow.">Flow</a>.  <a href="class_flow.html#aa3671632b52cdf4b3e30ce5921f4dc74">More...</a><br /></td></tr>
+<tr class="memdesc:aa3671632b52cdf4b3e30ce5921f4dc74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last value carried by <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a>.  <a href="class_flow.html#aa3671632b52cdf4b3e30ce5921f4dc74">More...</a><br /></td></tr>
 <tr class="separator:aa3671632b52cdf4b3e30ce5921f4dc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d756236982858350e7bf80a465926a7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a4d756236982858350e7bf80a465926a7">setSource</a> (<a class="el" href="class_system.html">System</a> *s)=0</td></tr>
-<tr class="memdesc:a4d756236982858350e7bf80a465926a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the source <a class="el" href="class_system.html" title="This is the interface for class System.">System</a>.  <a href="class_flow.html#a4d756236982858350e7bf80a465926a7">More...</a><br /></td></tr>
+<tr class="memdesc:a4d756236982858350e7bf80a465926a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the source <a class="el" href="class_system.html" title="Interface for class System.">System</a>.  <a href="class_flow.html#a4d756236982858350e7bf80a465926a7">More...</a><br /></td></tr>
 <tr class="separator:a4d756236982858350e7bf80a465926a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1361d85c69c6c897d0409c8b8ae72fe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#ab1361d85c69c6c897d0409c8b8ae72fe">setTarget</a> (<a class="el" href="class_system.html">System</a> *s)=0</td></tr>
-<tr class="memdesc:ab1361d85c69c6c897d0409c8b8ae72fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the target <a class="el" href="class_system.html" title="This is the interface for class System.">System</a>.  <a href="class_flow.html#ab1361d85c69c6c897d0409c8b8ae72fe">More...</a><br /></td></tr>
+<tr class="memdesc:ab1361d85c69c6c897d0409c8b8ae72fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the target <a class="el" href="class_system.html" title="Interface for class System.">System</a>.  <a href="class_flow.html#ab1361d85c69c6c897d0409c8b8ae72fe">More...</a><br /></td></tr>
 <tr class="separator:ab1361d85c69c6c897d0409c8b8ae72fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7977747c4f1847f84f16849ba058af9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#ac7977747c4f1847f84f16849ba058af9">setLastValue</a> (double v)=0</td></tr>
-<tr class="memdesc:ac7977747c4f1847f84f16849ba058af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the last value carried by the <a class="el" href="class_flow.html" title="This is the interface for class Flow.">Flow</a>.  <a href="class_flow.html#ac7977747c4f1847f84f16849ba058af9">More...</a><br /></td></tr>
+<tr class="memdesc:ac7977747c4f1847f84f16849ba058af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the last value carried by the <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a>.  <a href="class_flow.html#ac7977747c4f1847f84f16849ba058af9">More...</a><br /></td></tr>
 <tr class="separator:ac7977747c4f1847f84f16849ba058af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98e7aafb65699a9645a22f215b49c8b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a98e7aafb65699a9645a22f215b49c8b0">clearSource</a> ()=0</td></tr>
-<tr class="memdesc:a98e7aafb65699a9645a22f215b49c8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets NULL for the source <a class="el" href="class_system.html" title="This is the interface for class System.">System</a>.  <a href="class_flow.html#a98e7aafb65699a9645a22f215b49c8b0">More...</a><br /></td></tr>
+<tr class="memdesc:a98e7aafb65699a9645a22f215b49c8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets NULL for the source <a class="el" href="class_system.html" title="Interface for class System.">System</a>.  <a href="class_flow.html#a98e7aafb65699a9645a22f215b49c8b0">More...</a><br /></td></tr>
 <tr class="separator:a98e7aafb65699a9645a22f215b49c8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52f8ab7ff430f5d2e87aa0fdb12ad64b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a52f8ab7ff430f5d2e87aa0fdb12ad64b">clearTarget</a> ()=0</td></tr>
-<tr class="memdesc:a52f8ab7ff430f5d2e87aa0fdb12ad64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets NULL for the target <a class="el" href="class_system.html" title="This is the interface for class System.">System</a>.  <a href="class_flow.html#a52f8ab7ff430f5d2e87aa0fdb12ad64b">More...</a><br /></td></tr>
+<tr class="memdesc:a52f8ab7ff430f5d2e87aa0fdb12ad64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets NULL for the target <a class="el" href="class_system.html" title="Interface for class System.">System</a>.  <a href="class_flow.html#a52f8ab7ff430f5d2e87aa0fdb12ad64b">More...</a><br /></td></tr>
 <tr class="separator:a52f8ab7ff430f5d2e87aa0fdb12ad64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a619be0b590c78202127bc6ac7fb04029"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a619be0b590c78202127bc6ac7fb04029">execute</a> ()=0</td></tr>
-<tr class="memdesc:a619be0b590c78202127bc6ac7fb04029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method unimplemented for executing the <a class="el" href="class_flow.html" title="This is the interface for class Flow.">Flow</a>.  <a href="class_flow.html#a619be0b590c78202127bc6ac7fb04029">More...</a><br /></td></tr>
+<tr class="memdesc:a619be0b590c78202127bc6ac7fb04029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method unimplemented for executing the <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a>.  <a href="class_flow.html#a619be0b590c78202127bc6ac7fb04029">More...</a><br /></td></tr>
 <tr class="separator:a619be0b590c78202127bc6ac7fb04029"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >This is the interface for class <a class="el" href="class_flow.html" title="This is the interface for class Flow.">Flow</a>. </p>
-<p >This is the class <a class="el" href="class_flow.html" title="This is the interface for class Flow.">Flow</a>.</p>
-<p >The class <a class="el" href="class_flow.html" title="This is the interface for class Flow.">Flow</a> is used for carrying energy from one system to another. </p>
+<div class="textblock"><p >Interface for class <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a>. </p>
+<p >The class <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> is used for carrying energy from one system to another. </p>
 
 <p class="definition">Definition at line <a class="el" href="_flow_8h_source.html#l00024">24</a> of file <a class="el" href="_flow_8h_source.html">Flow.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -148,7 +147,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Virtual destructor for <a class="el" href="class_flow.html" title="This is the interface for class Flow.">Flow</a>. </p>
+<p>Virtual destructor for <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="_flow_8h_source.html#l00028">28</a> of file <a class="el" href="_flow_8h_source.html">Flow.h</a>.</p>
 
@@ -178,9 +177,19 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets NULL for the source <a class="el" href="class_system.html" title="This is the interface for class System.">System</a>. </p>
+<p>Sets NULL for the source <a class="el" href="class_system.html" title="Interface for class System.">System</a>. </p>
 
 <p>Implemented in <a class="el" href="class_flow_implement.html#a0d43907566aba63a0b45cd9bd1f0ee55">FlowImplement</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_flow_a98e7aafb65699a9645a22f215b49c8b0_icgraph.png" border="0" usemap="#aclass_flow_a98e7aafb65699a9645a22f215b49c8b0_icgraph" alt=""/></div>
+<map name="aclass_flow_a98e7aafb65699a9645a22f215b49c8b0_icgraph" id="aclass_flow_a98e7aafb65699a9645a22f215b49c8b0_icgraph">
+<area shape="rect" title="Sets NULL for the source System." alt="" coords="393,5,520,32"/>
+<area shape="rect" href="unit___flow_8cpp.html#a91e2ffdd821e194708355a4802d9a838" title="Tests the source System* cleaner." alt="" coords="192,5,345,32"/>
+<area shape="rect" href="unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="5,5,144,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -207,9 +216,19 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets NULL for the target <a class="el" href="class_system.html" title="This is the interface for class System.">System</a>. </p>
+<p>Sets NULL for the target <a class="el" href="class_system.html" title="Interface for class System.">System</a>. </p>
 
 <p>Implemented in <a class="el" href="class_flow_implement.html#a5ea8e1aea211f6b56ff257111b5d8aee">FlowImplement</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_flow_a52f8ab7ff430f5d2e87aa0fdb12ad64b_icgraph.png" border="0" usemap="#aclass_flow_a52f8ab7ff430f5d2e87aa0fdb12ad64b_icgraph" alt=""/></div>
+<map name="aclass_flow_a52f8ab7ff430f5d2e87aa0fdb12ad64b_icgraph" id="aclass_flow_a52f8ab7ff430f5d2e87aa0fdb12ad64b_icgraph">
+<area shape="rect" title="Sets NULL for the target System." alt="" coords="388,5,509,32"/>
+<area shape="rect" href="unit___flow_8cpp.html#adcd6d85344284a146ff77dd6140e94b6" title="Tests the target System* cleaner." alt="" coords="192,5,340,32"/>
+<area shape="rect" href="unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="5,5,144,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -236,10 +255,20 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Virtual method unimplemented for executing the <a class="el" href="class_flow.html" title="This is the interface for class Flow.">Flow</a>. </p>
-<p >This is a <em>required</em> method for all the subclasses derived from <a class="el" href="class_flow.html" title="This is the interface for class Flow.">Flow</a>. It needs to be implemented. </p>
+<p>Virtual method unimplemented for executing the <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a>. </p>
+<p >This is a <em>required</em> method for all the subclasses derived from <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a>. It needs to be implemented. </p><dl class="section return"><dt>Returns</dt><dd>the momentary flow value. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_exponential_flow.html#a8ebb0c298d3bea1d30c48cd79f10ddb1">ExponentialFlow</a>, <a class="el" href="class_logistic_flow.html#afdc1e2ec0eb61b71b367f8fc2677e371">LogisticFlow</a>, and <a class="el" href="class_flow_implement.html#af0ba3f5d8092f3ff4673423a49b9b243">FlowImplement</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_flow_a619be0b590c78202127bc6ac7fb04029_icgraph.png" border="0" usemap="#aclass_flow_a619be0b590c78202127bc6ac7fb04029_icgraph" alt=""/></div>
+<map name="aclass_flow_a619be0b590c78202127bc6ac7fb04029_icgraph" id="aclass_flow_a619be0b590c78202127bc6ac7fb04029_icgraph">
+<area shape="rect" title="Virtual method unimplemented for executing the Flow." alt="" coords="371,5,473,32"/>
+<area shape="rect" href="unit___flow_8cpp.html#a2192b5fd3c44d606126dbba6a21f8fc9" title="Tests the equation execution." alt="" coords="192,5,323,32"/>
+<area shape="rect" href="unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="5,5,144,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -266,9 +295,21 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the last value carried by <a class="el" href="class_flow.html" title="This is the interface for class Flow.">Flow</a>. </p>
+<p>Returns the last value carried by <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>the last value carried by <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a>. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_flow_implement.html#a39c6612c66a74a40050de5237de15347">FlowImplement</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_flow_aa3671632b52cdf4b3e30ce5921f4dc74_icgraph.png" border="0" usemap="#aclass_flow_aa3671632b52cdf4b3e30ce5921f4dc74_icgraph" alt=""/></div>
+<map name="aclass_flow_aa3671632b52cdf4b3e30ce5921f4dc74_icgraph" id="aclass_flow_aa3671632b52cdf4b3e30ce5921f4dc74_icgraph">
+<area shape="rect" title="Returns the last value carried by Flow." alt="" coords="400,31,533,57"/>
+<area shape="rect" href="unit___flow_8cpp.html#ad528dbdb3c62bfc55188e045359aba43" title="Tests lastValue getter." alt="" coords="192,5,352,32"/>
+<area shape="rect" href="unit___flow_8cpp.html#afa8310c407b5a22a33a2329682af613a" title="Tests the lastValue setter." alt="" coords="192,56,352,83"/>
+<area shape="rect" href="unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="5,31,144,57"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -295,9 +336,22 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns pointer for the source <a class="el" href="class_system.html" title="This is the interface for class System.">System</a>. </p>
+<p>Returns pointer for the source <a class="el" href="class_system.html" title="Interface for class System.">System</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>pointer for the source <a class="el" href="class_system.html" title="Interface for class System.">System</a>. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_flow_implement.html#a8acfce655a65a242a1edba2a5bf22ac6">FlowImplement</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph.png" border="0" usemap="#aclass_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph" alt=""/></div>
+<map name="aclass_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph" id="aclass_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph">
+<area shape="rect" title="Returns pointer for the source System." alt="" coords="393,56,509,83"/>
+<area shape="rect" href="unit___flow_8cpp.html#a91e2ffdd821e194708355a4802d9a838" title="Tests the source System* cleaner." alt="" coords="192,5,345,32"/>
+<area shape="rect" href="unit___flow_8cpp.html#a0dc76658e06597697628386d69327367" title="Tests the source System* getter." alt="" coords="197,56,340,83"/>
+<area shape="rect" href="unit___flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="Tests the source System* setter." alt="" coords="197,107,340,133"/>
+<area shape="rect" href="unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="5,56,144,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -324,9 +378,22 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns pointer for the target <a class="el" href="class_system.html" title="This is the interface for class System.">System</a>. </p>
+<p>Returns pointer for the target <a class="el" href="class_system.html" title="Interface for class System.">System</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>pointer for the target <a class="el" href="class_system.html" title="Interface for class System.">System</a>. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_flow_implement.html#a8f943644b5e5b09e2b1b0cd89a01b8e0">FlowImplement</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph.png" border="0" usemap="#aclass_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph" alt=""/></div>
+<map name="aclass_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph" id="aclass_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph">
+<area shape="rect" title="Returns pointer for the target System." alt="" coords="388,56,499,83"/>
+<area shape="rect" href="unit___flow_8cpp.html#adcd6d85344284a146ff77dd6140e94b6" title="Tests the target System* cleaner." alt="" coords="192,5,340,32"/>
+<area shape="rect" href="unit___flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title="Tests the target System* getter." alt="" coords="197,56,335,83"/>
+<area shape="rect" href="unit___flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Tests the target System* setter." alt="" coords="197,107,335,133"/>
+<area shape="rect" href="unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="5,56,144,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -354,15 +421,25 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Updates the last value carried by the <a class="el" href="class_flow.html" title="This is the interface for class Flow.">Flow</a>. </p>
+<p>Updates the last value carried by the <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">v</td><td>last value carried by the <a class="el" href="class_flow.html" title="This is the interface for class Flow.">Flow</a>. </td></tr>
+    <tr><td class="paramname">v</td><td>last value carried by the <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
 <p>Implemented in <a class="el" href="class_flow_implement.html#a91dc25f36bcbc68406a2f59a57e04c8c">FlowImplement</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_flow_ac7977747c4f1847f84f16849ba058af9_icgraph.png" border="0" usemap="#aclass_flow_ac7977747c4f1847f84f16849ba058af9_icgraph" alt=""/></div>
+<map name="aclass_flow_ac7977747c4f1847f84f16849ba058af9_icgraph" id="aclass_flow_ac7977747c4f1847f84f16849ba058af9_icgraph">
+<area shape="rect" title="Updates the last value carried by the Flow." alt="" coords="400,5,533,32"/>
+<area shape="rect" href="unit___flow_8cpp.html#afa8310c407b5a22a33a2329682af613a" title="Tests the lastValue setter." alt="" coords="192,5,352,32"/>
+<area shape="rect" href="unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="5,5,144,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -390,15 +467,26 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Updates the source <a class="el" href="class_system.html" title="This is the interface for class System.">System</a>. </p>
+<p>Updates the source <a class="el" href="class_system.html" title="Interface for class System.">System</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>pointer for the <a class="el" href="class_system.html" title="This is the interface for class System.">System</a> which will be the <a class="el" href="class_flow.html" title="This is the interface for class Flow.">Flow</a> source. </td></tr>
+    <tr><td class="paramname">s</td><td>pointer for the <a class="el" href="class_system.html" title="Interface for class System.">System</a> which will be the <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> source. </td></tr>
   </table>
   </dd>
 </dl>
 
 <p>Implemented in <a class="el" href="class_flow_implement.html#a94ee1b0b5f7e7679e5f14a5043eada3a">FlowImplement</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_flow_a4d756236982858350e7bf80a465926a7_icgraph.png" border="0" usemap="#aclass_flow_a4d756236982858350e7bf80a465926a7_icgraph" alt=""/></div>
+<map name="aclass_flow_a4d756236982858350e7bf80a465926a7_icgraph" id="aclass_flow_a4d756236982858350e7bf80a465926a7_icgraph">
+<area shape="rect" title="Updates the source System." alt="" coords="393,31,509,57"/>
+<area shape="rect" href="unit___flow_8cpp.html#a91e2ffdd821e194708355a4802d9a838" title="Tests the source System* cleaner." alt="" coords="192,5,345,32"/>
+<area shape="rect" href="unit___flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="Tests the source System* setter." alt="" coords="197,56,340,83"/>
+<area shape="rect" href="unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="5,31,144,57"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -426,19 +514,30 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Updates the target <a class="el" href="class_system.html" title="This is the interface for class System.">System</a>. </p>
+<p>Updates the target <a class="el" href="class_system.html" title="Interface for class System.">System</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>pointer for the <a class="el" href="class_system.html" title="This is the interface for class System.">System</a> which will be the <a class="el" href="class_flow.html" title="This is the interface for class Flow.">Flow</a> target. </td></tr>
+    <tr><td class="paramname">s</td><td>pointer for the <a class="el" href="class_system.html" title="Interface for class System.">System</a> which will be the <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> target. </td></tr>
   </table>
   </dd>
 </dl>
 
 <p>Implemented in <a class="el" href="class_flow_implement.html#a42f3fe6cbab788a381fd417714e834e3">FlowImplement</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_flow_ab1361d85c69c6c897d0409c8b8ae72fe_icgraph.png" border="0" usemap="#aclass_flow_ab1361d85c69c6c897d0409c8b8ae72fe_icgraph" alt=""/></div>
+<map name="aclass_flow_ab1361d85c69c6c897d0409c8b8ae72fe_icgraph" id="aclass_flow_ab1361d85c69c6c897d0409c8b8ae72fe_icgraph">
+<area shape="rect" title="Updates the target System." alt="" coords="388,31,499,57"/>
+<area shape="rect" href="unit___flow_8cpp.html#adcd6d85344284a146ff77dd6140e94b6" title="Tests the target System* cleaner." alt="" coords="192,5,340,32"/>
+<area shape="rect" href="unit___flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Tests the target System* setter." alt="" coords="197,56,335,83"/>
+<area shape="rect" href="unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="5,31,144,57"/>
+</map>
+</div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this interface was generated from the following file:<ul>
 <li>src/<a class="el" href="_flow_8h_source.html">Flow.h</a></li>
 </ul>
 </div><!-- contents -->

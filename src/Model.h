@@ -14,7 +14,7 @@
 /**
  * @interface Model
  *
- * @brief This is the interface for class Model.
+ * @brief Interface for class Model.
  *
  * The class Model is the program's main class.
  */
@@ -39,47 +39,47 @@ public:
 
   /// Returns pointer for the first System in the array.
   /**
-   * @return iteratorSystem
+   * @return pointer for the first System in the array.
    */
   virtual iteratorSystem firstSystem() = 0;
 
   /// Returns pointer for the last System in the array.
   /**
-   * @return iteratorSystem
+   * @return pointer for the last System in the array.
    */
   virtual iteratorSystem lastSystem() = 0;
 
   /// Returns pointer for the first Flow in the array.
   /**
-   * @return iteratorFlow
+   * @return pointer for the first Flow in the array.
    */
   virtual iteratorFlow firstFlow() = 0;
 
   /// Returns pointer for the last Flow in the array.
   /**
-   * @return iteratorFlow
+   * @return pointer for the last Flow in the array.
    */
   virtual iteratorFlow lastFlow() = 0;
 
   /// Returns System pointer for System in index-th position.
   /**
-   * @return System*
+   * @return System pointer for System in index-th position.
    */
   virtual System *getSystem(int index) = 0;
 
   /// Returns Flow pointer for Flow in index-th position.
   /**
-   * @return Flow*
+   * @return Flow pointer for Flow in index-th position.
    */
   virtual Flow *getFlow(int index) = 0;
 
-  /// Returns the current time in Model execution.
+  /// Returns current time in Model execution.
   /**
-   * @return int
+   * @return current time in Model execution.
    */
   virtual int getTime() const = 0;
 
-  /// Updates the current time in Model execution.
+  /// Updates current time in Model execution.
   /**
    * @param t current time.
    */

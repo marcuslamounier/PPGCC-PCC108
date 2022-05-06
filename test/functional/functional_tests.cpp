@@ -1,3 +1,14 @@
+/**
+ * @file functional_tests.cpp
+ *
+ * @brief Implementation of functional tests for the test
+ * scenarios identified together with the customer.
+ *
+ * @author Marcus V. Lamounier Quadros
+ * Contact: marcus.quadros@ufop.edu.br
+ *
+ */
+
 #include <iostream>
 #include <assert.h>
 #include "functional_tests.h"

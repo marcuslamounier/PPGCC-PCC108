@@ -1,3 +1,13 @@
+/**
+ * @file unit_Flow.cpp
+ *
+ * @brief Implementation of unitary tests for the functions of class Flow.
+ *
+ * @author Marcus V. Lamounier Quadros
+ * Contact: marcus.quadros@ufop.edu.br
+ *
+ */
+
 #include <iostream>
 #include <assert.h>
 #include "unit_Flow.h"

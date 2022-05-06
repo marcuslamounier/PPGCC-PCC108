@@ -1,7 +1,7 @@
 /**
  * @file ModelImplement.h
  *
- * @brief Declaration for class Model
+ * @brief Implementation class for class Model
  *
  * @author Marcus V. Lamounier Quadros
  * Contact: marcus.quadros@ufop.edu.br
@@ -14,9 +14,9 @@
 #include "Model.h"
 
 /**
- * @class Model
+ * @class ModelImplement
  *
- * @brief This is the class Model.
+ * @brief Implementation class for class Model.
  *
  * The class Model is the program's main class.
  */
@@ -48,47 +48,47 @@ public:
 
   /// Returns pointer for the first System in the array.
   /**
-   * @return iteratorSystem
+   * @return pointer for the first System in the array.
    */
   iteratorSystem firstSystem();
 
   /// Returns pointer for the last System in the array.
   /**
-   * @return iteratorSystem
+   * @return pointer for the last System in the array.
    */
   iteratorSystem lastSystem();
 
   /// Returns pointer for the first Flow in the array.
   /**
-   * @return iteratorFlow
+   * @return pointer for the first Flow in the array.
    */
   iteratorFlow firstFlow();
 
   /// Returns pointer for the last Flow in the array.
   /**
-   * @return iteratorFlow
+   * @return pointer for the last Flow in the array.
    */
   iteratorFlow lastFlow();
 
   /// Returns System pointer for System in index-th position.
   /**
-   * @return System*
+   * @return System pointer for System in index-th position.
    */
   System *getSystem(int index);
 
   /// Returns Flow pointer for Flow in index-th position.
   /**
-   * @return Flow*
+   * @return Flow pointer for Flow in index-th position.
    */
   Flow *getFlow(int index);
 
-  /// Returns the current time in Model execution.
+  /// Returns current time in Model execution.
   /**
-   * @return int
+   * @return current time in Model execution.
    */
   int getTime() const;
 
-  /// Updates the current time in Model execution.
+  /// Updates current time in Model execution.
   /**
    * @param t current time.
    */

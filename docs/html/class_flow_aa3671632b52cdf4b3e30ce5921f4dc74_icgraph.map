@@ -1,0 +1,6 @@
+<map id="Flow::getLastValue" name="Flow::getLastValue">
+<area shape="rect" id="node1" title="Returns the last value carried by Flow." alt="" coords="400,31,533,57"/>
+<area shape="rect" id="node2" href="$unit___flow_8cpp.html#ad528dbdb3c62bfc55188e045359aba43" title="Tests lastValue getter." alt="" coords="192,5,352,32"/>
+<area shape="rect" id="node4" href="$unit___flow_8cpp.html#afa8310c407b5a22a33a2329682af613a" title="Tests the lastValue setter." alt="" coords="192,56,352,83"/>
+<area shape="rect" id="node3" href="$unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="5,31,144,57"/>
+</map>

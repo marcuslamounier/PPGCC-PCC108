@@ -1,0 +1,11 @@
+<map id="Model::getTime" name="Model::getTime">
+<area shape="rect" id="node1" title="Returns current time in Model execution." alt="" coords="417,157,528,184"/>
+<area shape="rect" id="node2" href="$functional__tests_8cpp.html#a746e76c514f8a88e9c55e35aacf9ebb3" title="Tests the complex model provided by the customer." alt="" coords="218,5,343,32"/>
+<area shape="rect" id="node4" href="$functional__tests_8cpp.html#a818a6ca1a8f10c80d1c9fd75d2ec0a25" title="Tests the exponential model provided by the customer." alt="" coords="209,56,352,83"/>
+<area shape="rect" id="node5" href="$functional__tests_8cpp.html#ad526582e2690a4c6e0225ca0563ab4f2" title="Tests the logistic model provided by the customer." alt="" coords="222,107,339,133"/>
+<area shape="rect" id="node6" href="$unit___model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59" title="Tests the Model execution." alt="" coords="211,157,350,184"/>
+<area shape="rect" id="node7" href="$unit___model_8cpp.html#a3cccf91ec949426c8c8f839d4ef8b43d" title="Tests the current time getter." alt="" coords="211,208,350,235"/>
+<area shape="rect" id="node8" href="$unit___model_8cpp.html#aca4b3243c61a709985d47617c965b511" title="Tests the current time incrementer." alt="" coords="192,259,369,285"/>
+<area shape="rect" id="node9" href="$unit___model_8cpp.html#a08ad72f756534b6b0f87eb638731d0ef" title="Tests the current time setter." alt="" coords="211,309,350,336"/>
+<area shape="rect" id="node3" href="$functional__tests_8cpp.html#a48e9960f5c9d263fd115528f9a3fc039" title="Global call for all functional tests." alt="" coords="5,49,144,90"/>
+</map>

@@ -1,3 +1,13 @@
+/**
+ * @file ExponentialFlow.cpp
+ *
+ * @brief Implementation of class ExponentialFlow.
+ *
+ * @author Marcus V. Lamounier Quadros
+ * Contact: marcus.quadros@ufop.edu.br
+ *
+ */
+
 #include <iostream>
 #include "ExponentialFlow.h"
 

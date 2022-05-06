@@ -1,3 +1,13 @@
+/**
+ * @file unit_System.cpp
+ *
+ * @brief Implementation of unitary tests for the functions of class System.
+ *
+ * @author Marcus V. Lamounier Quadros
+ * Contact: marcus.quadros@ufop.edu.br
+ *
+ */
+
 #include <iostream>
 #include <assert.h>
 #include "unit_System.h"
