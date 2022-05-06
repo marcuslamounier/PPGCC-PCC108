@@ -1,14 +1,15 @@
 #include <iostream>
 #include <assert.h>
 #include "unit_Model.h"
-#include "../../src/Model.h"
+#include "../../src/ModelImplement.h"
+#include "../../src/SystemImplement.h"
 #include "../functional/ExponentialFlow.h"
 
 using namespace std;
 
 void unit_Model_constructor()
 {
-  Model *m = new Model();
+  Model *m = new ModelImplement();
   assert(m != NULL);
 
   delete m;
@@ -16,16 +17,14 @@ void unit_Model_constructor()
 
 void unit_Model_destructor()
 {
-  Model *m = new Model();
-  assert(m);
-
+  Model *m = new ModelImplement();
+  m->~Model();
   delete m;
-  assert(!m);
 }
 
-void unit_Model_getSystem() {
-  Model *m = new Model();
-  System *s = new System(0.0);
+void unit_Model_getSystemImplement() {
+  Model *m = new ModelImplement();
+  System *s = new SystemImplement(0.0);
   m->add(s);
 
   assert(m->getSystem(0) == s);
@@ -34,7 +33,7 @@ void unit_Model_getSystem() {
 }
 
 void unit_Model_getFlow() {
-  Model *m = new Model();
+  Model *m = new ModelImplement();
   Flow *f = new ExponentialFlow();
   m->add(f);
 
@@ -47,7 +46,7 @@ void unit_Model_getTime()
 {
   int t = 0;
 
-  Model *m = new Model(t);
+  Model *m = new ModelImplement(t);
   assert(m->getTime() == t);
 
   delete m;
@@ -57,7 +56,7 @@ void unit_Model_setTime()
 {
   int t = 1;
 
-  Model *m = new Model();
+  Model *m = new ModelImplement();
   m->setTime(t);
   assert(m->getTime() == t);
 
@@ -69,7 +68,7 @@ void unit_Model_incrementTime()
   int incr = 2;
   int t = 0;
 
-  Model *m = new Model(t);
+  Model *m = new ModelImplement(t);
   m->incrementTime();
   // 1 is the default increment
   assert(m->getTime() == t + 1);
@@ -84,9 +83,9 @@ void unit_Model_incrementTime()
 
 void unit_Model_add()
 {
-  Model *m = new Model();
+  Model *m = new ModelImplement();
 
-  System *s = new System(100.0);
+  System *s = new SystemImplement(100.0);
   ExponentialFlow *f = new ExponentialFlow();
 
   m->add(s);
@@ -100,9 +99,9 @@ void unit_Model_add()
 
 void unit_Model_remove()
 {
-  Model *m = new Model();
+  Model *m = new ModelImplement();
 
-  System *s = new System(100);
+  System *s = new SystemImplement(100);
   ExponentialFlow *f = new ExponentialFlow();
 
   m->add(s);
@@ -119,10 +118,10 @@ void unit_Model_remove()
 
 void unit_Model_execute()
 {
-  Model *m = new Model(0);
+  Model *m = new ModelImplement(0);
 
-  System *s1 = new System(100);
-  System *s2 = new System(0);
+  System *s1 = new SystemImplement(100);
+  System *s2 = new SystemImplement(0);
   Flow *f = new ExponentialFlow(s1, s2, 0.01);
 
   m->add(f);
@@ -142,7 +141,7 @@ void run_unit_tests_Model()
 {
   unit_Model_constructor();
   // unit_Model_destructor();
-  unit_Model_getSystem();
+  unit_Model_getSystemImplement();
   unit_Model_getFlow();
   unit_Model_getTime();
   unit_Model_setTime();

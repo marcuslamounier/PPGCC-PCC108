@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main() {
+int main () {
   run_unit_tests_globals();
   return 0;
 }

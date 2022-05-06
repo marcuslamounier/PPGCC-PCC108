@@ -1,13 +1,14 @@
 #ifndef EXPONENTIAL_FLOW_H
 #define EXPONENTIAL_FLOW_H
 
-#include "../../src/Flow.h"
+#include "../../src/FlowImplement.h"
 
-class ExponentialFlow: public Flow {
+class ExponentialFlow: public FlowImplement {
   private:
     double factor;
   public:
-    ExponentialFlow(System* from = NULL, System *to = NULL, double f = 0.01);
+    ExponentialFlow();
+    ExponentialFlow(System* from, System *to, double f);
 
     double getFactor();
     void setFactor(double f);

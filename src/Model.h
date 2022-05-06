@@ -1,7 +1,7 @@
 /**
  * @file Model.h
  *
- * @brief Declaration of class Model
+ * @brief Interface for class Model
  *
  * @author Marcus V. Lamounier Quadros
  * Contact: marcus.quadros@ufop.edu.br
@@ -12,9 +12,9 @@
 #define MODEL_H
 
 /**
- * @class Model
+ * @interface Model
  *
- * @brief This is the class Model.
+ * @brief This is the interface for class Model.
  *
  * The class Model is the program's main class.
  */
@@ -27,110 +27,93 @@ using namespace std;
 
 class Model
 {
-protected:
-  /// Actual time which the model execution is positioned.
-  int time;
-  /// Array of System pointers for systems.
-  vector<System *> systems;
-  /// Array of Flow pointers for flows.
-  vector<Flow *> flows;
-
 public:
   /// Iterator for array of System pointers.
-  typedef vector<System *>::iterator iterSystem;
+  typedef vector<System *>::iterator iteratorSystem;
 
   /// Iterator for array of Flow pointers.
-  typedef vector<Flow *>::iterator iterFlow;
-
-  /// Default constructor for Model.
-  Model();
-
-  /// Parameter's constructor for System.
-  /**
-   * @param t: start time for Model execution.
-   */
-  Model(int t);
+  typedef vector<Flow *>::iterator iteratorFlow;
 
   /// Virtual destructor for Model
-  ~Model();
+  virtual ~Model() {}
 
   /// Returns pointer for the first System in the array.
   /**
-    * @return iterSystem
-  */
-  iterSystem firstSystem();
+   * @return iteratorSystem
+   */
+  virtual iteratorSystem firstSystem() = 0;
 
   /// Returns pointer for the last System in the array.
   /**
-    * @return iterSystem
-  */
-  iterSystem lastSystem();
+   * @return iteratorSystem
+   */
+  virtual iteratorSystem lastSystem() = 0;
 
   /// Returns pointer for the first Flow in the array.
   /**
-    * @return iterFlow
-  */
-  iterFlow firstFlow();
+   * @return iteratorFlow
+   */
+  virtual iteratorFlow firstFlow() = 0;
 
   /// Returns pointer for the last Flow in the array.
   /**
-    * @return iterFlow
-  */
-  iterFlow lastFlow();
+   * @return iteratorFlow
+   */
+  virtual iteratorFlow lastFlow() = 0;
 
   /// Returns System pointer for System in index-th position.
   /**
-    * @return System*
-  */
-  System* getSystem(int index);
+   * @return System*
+   */
+  virtual System *getSystem(int index) = 0;
 
   /// Returns Flow pointer for Flow in index-th position.
   /**
-    * @return Flow*
-  */
-  Flow* getFlow(int index);
+   * @return Flow*
+   */
+  virtual Flow *getFlow(int index) = 0;
 
   /// Returns the current time in Model execution.
   /**
-    * @return int
-  */
-  int getTime() const;
+   * @return int
+   */
+  virtual int getTime() const = 0;
 
   /// Updates the current time in Model execution.
   /**
    * @param t current time.
    */
-  void setTime(int t);
+  virtual void setTime(int t) = 0;
 
   /// Increments the time in Model execution.
   /**
    * @param incr increment step for the Model execution.
    */
-  void incrementTime(int incr = 1);
+  virtual void incrementTime(int incr = 1) = 0;
 
   /// Adds System to the Model graph.
   /**
    * @param s pointer to the System which will be added to the Model.
    */
-  void add(System *s);
+  virtual void add(System *s) = 0;
 
   /// Adds Flow to the Model graph.
   /**
    * @param f pointer to the Flow which will be added to the Model.
    */
-  void add(Flow *f);
+  virtual void add(Flow *f) = 0;
 
   /// Removes System to the Model graph.
   /**
    * @param f pointer to the System which will be removed to the Model.
    */
-  void remove(System *s);
+  virtual void remove(System *s) = 0;
 
   /// Removes Flow to the Model graph.
   /**
    * @param f pointer to the Flow which will be removed to the Model.
    */
-  void remove(Flow *f);
+  virtual void remove(Flow *f) = 0;
 
   /// Executes the Model.
   /**
@@ -138,22 +121,7 @@ public:
    * @param final final time for the Model execution.
    * @param incr increment step for the Model execution.
    */
-  void execute(int start = 1, int final = 100, int incr = 1);
-
-private:
-  /// Copy constructor for Model.
-  /**
-   * This is a @b private method. So it is not included in the docs.
-   * @param model: reference for the Model which will be copied.
-   */
-  Model(const Model &model);
-
-  /// Override for operator "=".
-  /**
-   * This is a @b private method. So it is not included in the docs.
-   * @param model: reference for the Model which will be copied.
-   */
-  Model &operator=(const Model &model);
+  virtual void execute(int start, int final, int incr) = 0;
 };
 
 #endif

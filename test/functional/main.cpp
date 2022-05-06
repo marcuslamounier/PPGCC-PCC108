@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int func_tests_main (){
+int main_2 (){
   run_functional_tests_globals();
   return 0;
 }

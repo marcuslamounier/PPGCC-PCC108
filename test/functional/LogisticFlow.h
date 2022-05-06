@@ -1,9 +1,9 @@
 #ifndef LOGISTIC_FLOW_H
 #define LOGISTIC_FLOW_H
 
-#include "../../src/Flow.h"
+#include "../../src/FlowImplement.h"
 
-class LogisticFlow: public Flow {
+class LogisticFlow: public FlowImplement {
   private:
     double factor;
     double maxValue;

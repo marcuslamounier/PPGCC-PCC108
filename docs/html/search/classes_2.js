@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['system_0',['System',['../class_system.html',1,'']]]
+  ['logisticflow_0',['LogisticFlow',['../class_logistic_flow.html',1,'']]]
 ];

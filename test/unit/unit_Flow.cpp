@@ -1,7 +1,9 @@
 #include <iostream>
 #include <assert.h>
 #include "unit_Flow.h"
-#include "../../src/Model.h"
+#include "../../src/ModelImplement.h"
+#include "../../src/FlowImplement.h"
+#include "../../src/SystemImplement.h"
 #include "../functional/ExponentialFlow.h"
 
 using namespace std;
@@ -25,8 +27,8 @@ void unit_Flow_destructor()
 void unit_Flow_getSource()
 {
   double v = 100.0;
-  System *s1 = new System(v);
-  System *s2 = new System(0.0);
+  System *s1 = new SystemImplement(v);
+  System *s2 = new SystemImplement(0.0);
 
   Flow *f = new ExponentialFlow(s1, s2, 0.01);
 
@@ -38,8 +40,8 @@ void unit_Flow_getSource()
 void unit_Flow_getTarget()
 {
   double v = 100.0;
-  System *s1 = new System(0.0);
-  System *s2 = new System(v);
+  System *s1 = new SystemImplement(0.0);
+  System *s2 = new SystemImplement(v);
 
   Flow *f = new ExponentialFlow(s1, s2, 0.01);
 
@@ -50,9 +52,9 @@ void unit_Flow_getTarget()
 
 void unit_Flow_getLastValue()
 {
-  Model *m = new Model(0);
-  System *s1 = new System(100.0);
-  System *s2 = new System(0.0);
+  Model *m = new ModelImplement(0);
+  System *s1 = new SystemImplement(100.0);
+  System *s2 = new SystemImplement(0.0);
   Flow *f = new ExponentialFlow(s1, s2, 0.01);
 
   m->add(f);
@@ -68,7 +70,7 @@ void unit_Flow_getLastValue()
 void unit_Flow_setSource()
 {
   double v = 100.0;
-  System *s = new System(v);
+  System *s = new SystemImplement(v);
   Flow *f = new ExponentialFlow();
 
   f->setSource(s);
@@ -80,7 +82,7 @@ void unit_Flow_setSource()
 void unit_Flow_setTarget()
 {
   double v = 100.0;
-  System *s = new System(v);
+  System *s = new SystemImplement(v);
   Flow *f = new ExponentialFlow();
 
   f->setTarget(s);
@@ -101,8 +103,9 @@ void unit_Flow_setLastValue()
 
 void unit_Flow_clearSource()
 {
-  System *s = new System(0.0);
-  Flow *f = new ExponentialFlow(s);
+  System *s = new SystemImplement(0.0);
+  Flow *f = new ExponentialFlow();
+  f->setSource(s);
   assert(f->getSource() == s);
 
   f->clearSource();
@@ -113,7 +116,7 @@ void unit_Flow_clearSource()
 
 void unit_Flow_clearTarget()
 {
-  System *s = new System(0.0);
+  System *s = new SystemImplement(0.0);
   Flow *f = new ExponentialFlow();
   f->setTarget(s);
   assert(f->getTarget() == s);
@@ -129,8 +132,8 @@ void unit_Flow_execute()
   double v = 100.0;
   double factor = 0.01;
 
-  System *s1 = new System(v);
-  System *s2 = new System(0.0);
+  System *s1 = new SystemImplement(v);
+  System *s2 = new SystemImplement(0.0);
   Flow *f = new ExponentialFlow(s1, s2, factor);
 
   assert(abs(f->execute() - (factor * v)) < 0.001);
