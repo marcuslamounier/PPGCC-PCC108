@@ -118,16 +118,15 @@ void unit_Model_add()
 
 void unit_Model_remove()
 {
-
   Model *m = new ModelImplement();
 
   System *s = new SystemImplement(100);
+  m->add(s);
+
   ExponentialFlow *f = new ExponentialFlow();
+  m->add(f);
 
   bool foundSystem, foundFlow;
-
-  m->add(s);
-  m->add(f);
 
   m->remove(s);
   if (m->firstSystem() == m->lastSystem()) foundSystem = false;
@@ -149,22 +148,12 @@ void unit_Model_remove()
 void unit_Model_execute()
 {
   Model *m = new ModelImplement(0);
-
-  System *s1 = new SystemImplement(100);
-  System *s2 = new SystemImplement(0);
-  Flow *f = new ExponentialFlow(s1, s2, 0.01);
-
-  m->add(f);
-  m->add(s1);
-  m->add(s2);
-
-  m->execute(1, 100, 1);
-
-  assert(abs(s1->getValue() - 36.6032) < 0.0001);
-  assert(abs(s2->getValue() - 63.3968) < 0.0001);
-  assert(m->getTime() - 100 == 0);
-
-  delete f, s1, s2, m;
+  int duration = 100;
+  
+  m->execute(1, duration, 1);
+  assert(m->getTime() == duration);
+  
+  delete m;
 }
 
 void run_unit_tests_Model()
