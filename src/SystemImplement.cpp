@@ -42,7 +42,7 @@ SystemImplement::SystemImplement(double v)
   value = v;
 }
 
-SystemImplement::~SystemImplement() = default;
+SystemImplement::~SystemImplement(){}
 
 double SystemImplement::getValue() const
 {

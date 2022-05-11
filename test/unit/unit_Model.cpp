@@ -96,32 +96,52 @@ void unit_Model_add()
   Model *m = new ModelImplement();
 
   System *s = new SystemImplement(100.0);
-  ExponentialFlow *f = new ExponentialFlow();
+  Flow *f = new ExponentialFlow();
 
   m->add(s);
   m->add(f);
 
-  assert(m->getSystem(0) == s);
-  assert(m->getFlow(0) == f);
+  bool foundSystem = false;
+  for (Model::iteratorSystem it = m->firstSystem(); it != m->lastSystem(); it++) {
+    foundSystem = (*it == s);
+  }
+  assert(foundSystem);
+  
+  bool foundFlow = false;
+  for (Model::iteratorFlow it = m->firstFlow(); it != m->lastFlow(); it++) {
+    foundFlow = (*it == f);
+  }
+  assert(foundFlow);
 
   delete f, s, m;
 }
 
 void unit_Model_remove()
 {
+
   Model *m = new ModelImplement();
 
   System *s = new SystemImplement(100);
   ExponentialFlow *f = new ExponentialFlow();
 
+  bool foundSystem, foundFlow;
+
   m->add(s);
   m->add(f);
 
   m->remove(s);
-  assert(m->getSystem(0) != s);
+  if (m->firstSystem() == m->lastSystem()) foundSystem = false;
+  else for (Model::iteratorSystem it = m->firstSystem(); it != m->lastSystem(); it++)  {
+    foundSystem = (*it == s);
+  }
+  assert(!foundSystem);
 
   m->remove(f);
-  assert(m->getFlow(0) != f);
+  if (m->firstFlow() == m->lastFlow()) foundFlow = false;
+  else for (Model::iteratorFlow it = m->firstFlow(); it != m->lastFlow(); it++)  {
+    foundFlow = (*it == f);
+  }
+  assert(!foundFlow);
 
   delete f, s, m;
 }
@@ -157,6 +177,6 @@ void run_unit_tests_Model()
   unit_Model_setTime();
   unit_Model_incrementTime();
   unit_Model_add();
-  // unit_Model_remove();
+  unit_Model_remove();
   unit_Model_execute();
 }

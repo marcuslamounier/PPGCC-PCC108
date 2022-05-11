@@ -120,7 +120,7 @@ void ModelImplement::remove(System *s)
 
 void ModelImplement::remove(Flow *f)
 {
-  auto i = lastFlow();
+  auto i = firstFlow();
   for (Flow *flow : flows)
   {
     if (f == flow)

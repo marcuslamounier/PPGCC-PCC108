@@ -54,7 +54,7 @@ void logisticFuncTest()
 
   System *p1 = new SystemImplement(100);
   System *p2 = new SystemImplement(10);
-  LogisticFlow *logistica = new LogisticFlow(p1, p2, 0.01, 70.0);
+  Flow *logistica = new LogisticFlow(p1, p2, 0.01, 70.0);
   Model *logModel = new ModelImplement(0);
 
   logModel->add(p1);
@@ -86,12 +86,12 @@ void complexFuncTest()
   System *Q4 = new SystemImplement(0);
   System *Q5 = new SystemImplement(0);
 
-  ExponentialFlow *f = new ExponentialFlow(Q1, Q2, 0.01);
-  ExponentialFlow *g = new ExponentialFlow(Q1, Q3, 0.01);
-  ExponentialFlow *r = new ExponentialFlow(Q2, Q5, 0.01);
-  ExponentialFlow *t = new ExponentialFlow(Q2, Q3, 0.01);
-  ExponentialFlow *u = new ExponentialFlow(Q3, Q4, 0.01);
-  ExponentialFlow *v = new ExponentialFlow(Q4, Q1, 0.01);
+  Flow *f = new ExponentialFlow(Q1, Q2, 0.01);
+  Flow *g = new ExponentialFlow(Q1, Q3, 0.01);
+  Flow *r = new ExponentialFlow(Q2, Q5, 0.01);
+  Flow *t = new ExponentialFlow(Q2, Q3, 0.01);
+  Flow *u = new ExponentialFlow(Q3, Q4, 0.01);
+  Flow *v = new ExponentialFlow(Q4, Q1, 0.01);
 
   Model *complexModel = new ModelImplement(0);
 
