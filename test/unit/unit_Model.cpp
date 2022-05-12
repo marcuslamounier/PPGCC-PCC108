@@ -32,7 +32,8 @@ void unit_Model_destructor()
   delete m;
 }
 
-void unit_Model_getSystemImplement() {
+void unit_Model_getSystemImplement()
+{
   Model *m = new ModelImplement();
   System *s = new SystemImplement(0.0);
   m->add(s);
@@ -42,7 +43,8 @@ void unit_Model_getSystemImplement() {
   delete s, m;
 }
 
-void unit_Model_getFlow() {
+void unit_Model_getFlow()
+{
   Model *m = new ModelImplement();
   Flow *f = new ExponentialFlow();
   m->add(f);
@@ -80,11 +82,9 @@ void unit_Model_incrementTime()
 
   Model *m = new ModelImplement(t);
   m->incrementTime();
-  // 1 is the default increment
   assert(m->getTime() == t + 1);
-  // if passed first test, increment value default incr
-  t = t + 1;
 
+  t = t + 1;
   m->incrementTime(incr);
   assert(m->getTime() == t + incr);
 
@@ -102,13 +102,15 @@ void unit_Model_add()
   m->add(f);
 
   bool foundSystem = false;
-  for (Model::iteratorSystem it = m->firstSystem(); it != m->lastSystem(); it++) {
+  for (Model::iteratorSystem it = m->firstSystem(); it != m->lastSystem(); it++)
+  {
     foundSystem = (*it == s);
   }
   assert(foundSystem);
-  
+
   bool foundFlow = false;
-  for (Model::iteratorFlow it = m->firstFlow(); it != m->lastFlow(); it++) {
+  for (Model::iteratorFlow it = m->firstFlow(); it != m->lastFlow(); it++)
+  {
     foundFlow = (*it == f);
   }
   assert(foundFlow);
@@ -129,16 +131,26 @@ void unit_Model_remove()
   bool foundSystem, foundFlow;
 
   m->remove(s);
-  if (m->firstSystem() == m->lastSystem()) foundSystem = false;
-  else for (Model::iteratorSystem it = m->firstSystem(); it != m->lastSystem(); it++)  {
-    foundSystem = (*it == s);
+  if (m->firstSystem() == m->lastSystem())
+    foundSystem = false;
+  else
+  {
+    for (Model::iteratorSystem it = m->firstSystem(); it != m->lastSystem(); it++)
+    {
+      foundSystem = (*it == s);
+    }
   }
   assert(!foundSystem);
 
   m->remove(f);
-  if (m->firstFlow() == m->lastFlow()) foundFlow = false;
-  else for (Model::iteratorFlow it = m->firstFlow(); it != m->lastFlow(); it++)  {
-    foundFlow = (*it == f);
+  if (m->firstFlow() == m->lastFlow())
+    foundFlow = false;
+  else
+  {
+    for (Model::iteratorFlow it = m->firstFlow(); it != m->lastFlow(); it++)
+    {
+      foundFlow = (*it == f);
+    }
   }
   assert(!foundFlow);
 
@@ -149,10 +161,10 @@ void unit_Model_execute()
 {
   Model *m = new ModelImplement(0);
   int duration = 100;
-  
+
   m->execute(1, duration, 1);
   assert(m->getTime() == duration);
-  
+
   delete m;
 }
 

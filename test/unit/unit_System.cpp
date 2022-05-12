@@ -25,11 +25,16 @@ void unit_System_constructor()
 
 void unit_System_destructor()
 {
-  System *s = new SystemImplement(0.0);
-  assert(s);
-
-  delete s;
-  assert(s == NULL);
+  static int x = 0;
+  class MySystem: public SystemImplement {
+    public:
+      MySystem() { x = 0; };
+      virtual ~MySystem() { x = 1; };
+  };
+  {
+    MySystem mySystem;
+  }
+  assert(x == 1);
 }
 
 void unit_System_getValue()
@@ -52,7 +57,7 @@ void unit_System_setValue()
 void run_unit_tests_System()
 {
   unit_System_constructor();
-  // unit_System_destructor();
+  unit_System_destructor();
   unit_System_getValue();
   unit_System_setValue();
 }
