@@ -27,9 +27,16 @@ void unit_Model_constructor()
 
 void unit_Model_destructor()
 {
-  Model *m = new ModelImplement();
-  m->~Model();
-  delete m;
+  static int x = 0;
+  class MyModel: public ModelImplement {
+    public:
+      MyModel() { x = 0; };
+      virtual ~MyModel() { x = 1; };
+  };
+  {
+    MyModel myModel;
+  }
+  assert(x == 1);
 }
 
 void unit_Model_getSystemImplement()
@@ -171,7 +178,7 @@ void unit_Model_execute()
 void run_unit_tests_Model()
 {
   unit_Model_constructor();
-  // unit_Model_destructor();
+  unit_Model_destructor();
   unit_Model_getSystemImplement();
   unit_Model_getFlow();
   unit_Model_getTime();
