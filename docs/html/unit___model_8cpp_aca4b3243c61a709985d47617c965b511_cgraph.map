@@ -1,0 +1,5 @@
+<map id="unit_Model_incrementTime" name="unit_Model_incrementTime">
+<area shape="rect" id="node1" title="Tests the current time incrementer." alt="" coords="5,31,183,57"/>
+<area shape="rect" id="node2" href="$class_model.html#a83e718218da786d585ec50800696de02" title="Returns current time in Model execution." alt="" coords="251,5,361,32"/>
+<area shape="rect" id="node3" href="$class_model.html#a69fed3f544934d687904bc3d40a28ce6" title="Increments the time in Model execution." alt="" coords="231,56,381,83"/>
+</map>

@@ -1,18 +1,62 @@
+/**
+ * @file ExponentialFlow.h
+ *
+ * @brief Declaration for class ExponentialFlow
+ *
+ * @author Marcus V. Lamounier Quadros
+ * Contact: marcus.quadros@ufop.edu.br
+ *
+ */
+
 #ifndef EXPONENTIAL_FLOW_H
 #define EXPONENTIAL_FLOW_H
 
-#include "../../src/Flow.h"
+#include "../../src/FlowImplement.h"
 
-class ExponentialFlow: public Flow {
-  private:
-    double factor;
-  public:
-    ExponentialFlow(System* from, System *to, double f);
+/**
+ * @class ExponentialFlow
+ *
+ * @brief class ExponentialFlow
+ *
+ * The class ExponentialFlow is used for carrying energy from one system to
+ * another by a rate provided by an exponential equation.
+ */
 
-    double getFactor();
-    void setFactor(double f);
+class ExponentialFlow : public FlowImplement
+{
+private:
+  /// Factor of exponential flow transfer rate.
+  double factor;
 
-    double execute();
+public:
+  /// Default constructor for ExponentialFlow.
+  ExponentialFlow();
+
+  /// Parameter's constructor for ExponentialFlow.
+  /**
+   * @param from: pointer for the source System.
+   * @param to: pointer for the target System.
+   * @param f: factor of exponential flow transfer rate.
+   */
+  ExponentialFlow(System *from, System *to, double f);
+
+  /// Returns the factor of exponential flow transfer rate.
+  /**
+   * @return the factor of exponential flow transfer rate.
+   */
+  double getFactor();
+
+  /// Updates the factor of exponential flow transfer rate.
+  /**
+   * @param f factor which will be the exponential flow transfer rate.
+   */
+  void setFactor(double f);
+
+  /// Returns the momentary flow value.
+  /**
+   * @return the momentary flow value.
+   */
+  double execute();
 };
 
 #endif

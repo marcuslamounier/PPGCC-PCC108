@@ -1,0 +1,5 @@
+<map id="Model::lastFlow" name="Model::lastFlow">
+<area shape="rect" id="node1" title="Returns pointer for the last Flow in the array." alt="" coords="160,31,273,57"/>
+<area shape="rect" id="node2" href="$class_model.html#a237ff1636694a6e26ff280c8d122540e" title="Adds Flow to the Model graph." alt="" coords="15,5,102,32"/>
+<area shape="rect" id="node3" href="$class_model.html#aeb5c428f1227269165547bc6955d70ce" title="Removes Flow to the Model graph." alt="" coords="5,56,112,83"/>
+</map>

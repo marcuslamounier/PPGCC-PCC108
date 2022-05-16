@@ -1,2 +1,5 @@
-**.exe
+*.exe
 .vscode
+*.lock
+*.rar
+*log.txt

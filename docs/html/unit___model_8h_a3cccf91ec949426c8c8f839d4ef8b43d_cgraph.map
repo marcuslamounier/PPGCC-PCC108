@@ -1,0 +1,4 @@
+<map id="unit_Model_getTime" name="unit_Model_getTime">
+<area shape="rect" id="node1" title="Tests the current time getter." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node2" href="$class_model.html#a83e718218da786d585ec50800696de02" title="Returns current time in Model execution." alt="" coords="192,5,303,32"/>
+</map>

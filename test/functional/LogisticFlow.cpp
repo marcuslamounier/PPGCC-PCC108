@@ -1,13 +1,23 @@
+/**
+ * @file LogisticFlow.cpp
+ *
+ * @brief Implementation of class LogisticFlow
+ *
+ * @author Marcus V. Lamounier Quadros
+ * Contact: marcus.quadros@ufop.edu.br
+ *
+ */
+
 #include <iostream>
 #include "LogisticFlow.h"
 
 using namespace std;
 
-LogisticFlow::LogisticFlow(System *from = NULL, System *to = NULL, double f = 0.0, double v = 0.0) {
+LogisticFlow::LogisticFlow(System *from = NULL, System *to = NULL, double f = 0.0, double maxV = 0.0) {
   source = from;
   target = to;
   factor = f;
-  maxValue = v;
+  maxValue = maxV;
 }
 
 double LogisticFlow::getFactor() {
@@ -22,8 +32,8 @@ void LogisticFlow::setFactor(double f) {
   factor = f;
 }
 
-void LogisticFlow::setMaxValue(double v) {
-  maxValue = v;
+void LogisticFlow::setMaxValue(double maxV) {
+  maxValue = maxV;
 }
 
 double LogisticFlow::execute() {

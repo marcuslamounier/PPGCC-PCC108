@@ -1,0 +1,4 @@
+<map id="Model::remove" name="Model::remove">
+<area shape="rect" id="node1" title="Removes System to the Model graph." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$class_model.html#a14fe7100e37e113d3c2f719626dc80e8" title="Returns pointer for the first System in the array." alt="" coords="160,5,291,32"/>
+</map>

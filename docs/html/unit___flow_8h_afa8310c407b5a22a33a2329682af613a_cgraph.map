@@ -1,0 +1,5 @@
+<map id="unit_Flow_setLastValue" name="unit_Flow_setLastValue">
+<area shape="rect" id="node1" title="Tests the lastValue setter." alt="" coords="5,31,165,57"/>
+<area shape="rect" id="node2" href="$class_flow.html#aa3671632b52cdf4b3e30ce5921f4dc74" title="Returns the last value carried by Flow." alt="" coords="213,5,347,32"/>
+<area shape="rect" id="node3" href="$class_flow.html#ac7977747c4f1847f84f16849ba058af9" title="Updates the last value carried by the Flow." alt="" coords="213,56,347,83"/>
+</map>

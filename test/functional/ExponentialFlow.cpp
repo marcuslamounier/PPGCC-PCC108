@@ -1,9 +1,25 @@
+/**
+ * @file ExponentialFlow.cpp
+ *
+ * @brief Implementation of class ExponentialFlow.
+ *
+ * @author Marcus V. Lamounier Quadros
+ * Contact: marcus.quadros@ufop.edu.br
+ *
+ */
+
 #include <iostream>
 #include "ExponentialFlow.h"
 
 using namespace std;
 
-ExponentialFlow::ExponentialFlow(System *from = NULL, System *to = NULL, double f = 0.0) {
+ExponentialFlow::ExponentialFlow() {
+  source = NULL;
+  target = NULL;
+  factor = 0.01;
+}
+
+ExponentialFlow::ExponentialFlow(System *from, System *to, double f) {
   source = from;
   target = to;
   factor = f;
