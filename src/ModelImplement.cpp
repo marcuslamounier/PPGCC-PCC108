@@ -11,6 +11,8 @@
 #include <iostream>
 #include <vector>
 #include "ModelImplement.h"
+#include "SystemImplement.h"
+#include "FlowImplement.h"
 
 using namespace std;
 
@@ -69,6 +71,18 @@ ModelImplement::iteratorFlow ModelImplement::lastFlow()
   return flows.end();
 }
 
+Model &ModelImplement::createModel() {
+  Model *m = new ModelImplement();
+  models.push_back(m);
+  return *m;
+}
+
+System &ModelImplement::createSystem(double v) {
+  System *s = new SystemImplement(v);
+  add(s);
+  return *s;
+}
+
 System *ModelImplement::getSystem(int index)
 {
   return systems[index];
@@ -77,6 +91,10 @@ System *ModelImplement::getSystem(int index)
 Flow *ModelImplement::getFlow(int index)
 {
   return flows[index];
+}
+
+Flow &createFlow(FlowImplement *f) {
+
 }
 
 int ModelImplement::getTime() const

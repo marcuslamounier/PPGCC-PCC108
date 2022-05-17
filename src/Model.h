@@ -61,6 +61,30 @@ public:
    */
   virtual iteratorFlow lastFlow() = 0;
 
+  /// Creates whole model.
+  /**
+   * @return Reference for created Model.
+   */
+  static Model &createModel();
+
+  /// Creates System for the model.
+  /**
+   * @return Reference for created System.
+   */
+  virtual System &createSystem(double v) = 0;
+
+  /// Creates Flow for the model.
+  /**
+   * @return Reference for created Flow.
+   */
+  template <typename T_FLOW_IMPLEMENT>
+  Flow &createFlow(System *from = NULL, System* to = NULL)
+  {
+    Flow *f = new T_FLOW_IMPLEMENT(from, to);
+    add(f);
+    return *f;
+  }
+
   /// Returns System pointer for System in index-th position.
   /**
    * @return System pointer for System in index-th position.

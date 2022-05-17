@@ -32,6 +32,9 @@ protected:
 
   /// Array of Flow pointers for flows.
   vector<Flow *> flows;
+
+  /// Array of Flow pointers for flows.
+  static vector<Model *> models;
   
 public:
   /// Default constructor for Model.
@@ -69,6 +72,24 @@ public:
    * @return pointer for the last Flow in the array.
    */
   iteratorFlow lastFlow();
+
+  /// Creates whole model.
+  /**
+   * @return Reference for created Model.
+   */
+  static Model &createModel();
+
+  /// Creates System for the model.
+  /**
+   * @return Reference for created System.
+   */
+  System &createSystem(double v);
+
+  /// Creates Flow for the model.
+  /**
+   * @return Reference for created Flow.
+   */
+  Flow &createFlow(FlowImplement *f);
 
   /// Returns System pointer for System in index-th position.
   /**
