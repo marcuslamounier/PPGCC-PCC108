@@ -28,7 +28,7 @@ using namespace std;
 class Model
 {
 public:
-  /// Iterator for array of System pointers.
+  /** @brief Iterator for array of System pointers. */
   typedef vector<System *>::iterator iteratorSystem;
 
   /// Iterator for array of Flow pointers.
@@ -37,8 +37,8 @@ public:
   /// Virtual destructor for Model
   virtual ~Model() {}
 
-  /// Returns pointer for the first System in the array.
   /**
+   * @brief Returns pointer for the first System in the array.
    * @return pointer for the first System in the array.
    */
   virtual iteratorSystem firstSystem() = 0;
@@ -65,7 +65,7 @@ public:
   /**
    * @return Reference for created Model.
    */
-  static Model &createModel();
+  static Model *createModel();
 
   /// Creates System for the model.
   /**
@@ -73,16 +73,32 @@ public:
    */
   virtual System &createSystem(double v) = 0;
 
-  /// Creates Flow for the model.
   /**
-   * @return Reference for created Flow.
+   * @brief Creates Flow for the model.
+   * @return Pointer for created Flow.
    */
   template <typename T_FLOW_IMPLEMENT>
-  Flow &createFlow(System *from = NULL, System* to = NULL)
+  Flow *createFlow()
   {
-    Flow *f = new T_FLOW_IMPLEMENT(from, to);
+    Flow *f = new T_FLOW_IMPLEMENT();
     add(f);
-    return *f;
+    return f;
+  }
+
+  /**
+   * @brief Creates Flow for the model.
+   * @param from pointer for the source System.
+   * @param to pointer for the target System.
+   * @return Pointer for created Flow.
+   */
+  template <typename T_FLOW_IMPLEMENT>
+  Flow *createFlow(System *from, System *to)
+  {
+    Flow *f = new T_FLOW_IMPLEMENT();
+    f->setSource(from);
+    f->setTarget(to);
+    add(f);
+    return f;
   }
 
   /// Returns System pointer for System in index-th position.

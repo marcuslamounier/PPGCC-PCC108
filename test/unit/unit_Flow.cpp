@@ -12,7 +12,6 @@
 #include <assert.h>
 #include "unit_Flow.h"
 #include "../../src/ModelImplement.h"
-#include "../../src/FlowImplement.h"
 #include "../../src/SystemImplement.h"
 #include "../functional/ExponentialFlow.h"
 
@@ -45,7 +44,7 @@ void unit_Flow_getSource()
   System *s1 = new SystemImplement(v);
   System *s2 = new SystemImplement(0.0);
 
-  Flow *f = new ExponentialFlow(s1, s2, 0.01);
+  Flow *f = new ExponentialFlow(s1, s2);
 
   assert(abs(f->getSource()->getValue() - v) < 0.1);
 
@@ -58,7 +57,7 @@ void unit_Flow_getTarget()
   System *s1 = new SystemImplement(0.0);
   System *s2 = new SystemImplement(v);
 
-  Flow *f = new ExponentialFlow(s1, s2, 0.01);
+  Flow *f = new ExponentialFlow(s1, s2);
 
   assert(abs(f->getTarget()->getValue() - v) < 0.1);
 
@@ -70,7 +69,7 @@ void unit_Flow_getLastValue()
   Model *m = new ModelImplement(0);
   System *s1 = new SystemImplement(100.0);
   System *s2 = new SystemImplement(0.0);
-  Flow *f = new ExponentialFlow(s1, s2, 0.01);
+  Flow *f = new ExponentialFlow(s1, s2);
 
   m->add(f);
   m->add(s1);

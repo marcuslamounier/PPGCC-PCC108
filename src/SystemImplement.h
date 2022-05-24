@@ -59,7 +59,7 @@ private:
    */
   SystemImplement(const System &sys);
 
-  /// Override for operator "=".
+  /// Overloads for operator "=".
   /**
    * @param sys: reference for the System which will be copied.
    */

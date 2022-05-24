@@ -27,6 +27,30 @@ void unit_Model_constructor();
  */
 void unit_Model_destructor();
 
+/**
+ * @brief Tests the model creators.
+ * @test Model creators.
+ * 
+ * The purpose of the test is to verify if the Models are correctly created.
+ */
+void unit_Model_createModel();
+
+/**
+ * @brief Tests the system creators.
+ * @test System creators.
+ * 
+ * The purpose of the test is to verify if the Systems are correctly created.
+ */
+void unit_Model_createSystem();
+
+/**
+ * @brief Tests the flow creators.
+ * @test Flow creators.
+ * 
+ * The purpose of the test is to verify if the Flows are correctly created.
+ */
+void unit_Model_createFlow();
+
 /// Tests the System* getter.
 /**
  * @test System* getter.

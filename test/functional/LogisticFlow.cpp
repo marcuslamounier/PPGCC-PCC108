@@ -13,6 +13,20 @@
 
 using namespace std;
 
+LogisticFlow::LogisticFlow() {
+  source = NULL;
+  target = NULL;
+  factor = 0.01;
+  maxValue = 70.0;
+}
+
+LogisticFlow::LogisticFlow(System *from = NULL, System *to = NULL) {
+  source = from;
+  target = to;
+  factor = 0.01;
+  maxValue = 70.0;
+}
+
 LogisticFlow::LogisticFlow(System *from = NULL, System *to = NULL, double f = 0.0, double maxV = 0.0) {
   source = from;
   target = to;

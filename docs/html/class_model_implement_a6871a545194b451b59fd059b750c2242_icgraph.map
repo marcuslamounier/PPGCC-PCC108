@@ -1,5 +1,4 @@
 <map id="ModelImplement::lastFlow" name="ModelImplement::lastFlow">
-<area shape="rect" id="node1" title="Returns pointer for the last Flow in the array." alt="" coords="220,31,393,57"/>
-<area shape="rect" id="node2" href="$class_model_implement.html#aa1ad32ecfbbec5796c9e1bc00418f45a" title="Adds Flow to the Model graph." alt="" coords="15,5,162,32"/>
-<area shape="rect" id="node3" href="$class_model_implement.html#af24502158f4835e7b371e7a68260e808" title="Removes Flow to the Model graph." alt="" coords="5,56,172,83"/>
+<area shape="rect" id="node1" title="Returns pointer for the last Flow in the array." alt="" coords="200,5,373,32"/>
+<area shape="rect" id="node2" href="$class_model_implement.html#aa1ad32ecfbbec5796c9e1bc00418f45a" title="Adds Flow to the Model graph." alt="" coords="5,5,152,32"/>
 </map>

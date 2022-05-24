@@ -19,6 +19,12 @@ ExponentialFlow::ExponentialFlow() {
   factor = 0.01;
 }
 
+ExponentialFlow::ExponentialFlow(System *from, System *to) {
+  source = from;
+  target = to;
+  factor = 0.01;
+}
+
 ExponentialFlow::ExponentialFlow(System *from, System *to, double f) {
   source = from;
   target = to;

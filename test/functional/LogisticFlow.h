@@ -32,6 +32,16 @@ private:
   double maxValue;
 
 public:
+  /// Default constructor for ExponentialFlow.
+  LogisticFlow();
+
+  /// Parameter's constructor for LogisticFlow.
+  /**
+   * @param from: pointer for the source System.
+   * @param to: pointer for the target System.
+   */
+  LogisticFlow(System *from, System *to);
+
   /// Parameter's constructor for LogisticFlow.
   /**
    * @param from: pointer for the source System.

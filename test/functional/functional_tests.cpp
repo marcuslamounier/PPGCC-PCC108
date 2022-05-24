@@ -23,15 +23,11 @@ void exponentialFuncTest()
 {
   cout << "Test 1 - Exponential flow" << endl;
 
-  System *pop1 = new SystemImplement(100);
-  System *pop2 = new SystemImplement(0);
-  Flow *exponencial = new ExponentialFlow(pop1, pop2, 0.01);
-  Model *expModel = new ModelImplement(0);
-
-
-  expModel->add(pop1);
-  expModel->add(pop2);
-  expModel->add(exponencial);
+  Model *expModel = Model::createModel();
+  System *pop1 = &expModel->createSystem(100.0);
+  System *pop2 = &expModel->createSystem(0.0);
+  expModel->createSystem(0.0);
+  expModel->createFlow<ExponentialFlow>(pop1, pop2);
 
   assert(abs(pop1->getValue() - 100.0) < 0.0001);
   assert(abs(pop2->getValue() - 0.0) < 0.0001);
@@ -41,9 +37,9 @@ void exponentialFuncTest()
 
   assert(abs(pop1->getValue() - 36.6032) < 0.0001);
   assert(abs(pop2->getValue() - 63.3968) < 0.0001);
-  assert(expModel->getTime() - 100 == 0);
+  assert(expModel->getTime() == 100);
 
-  delete (expModel);
+  delete (ModelImplement *)expModel;
 
   cout << GREEN << "OK!" << RESET << endl;
 }
@@ -52,14 +48,12 @@ void logisticFuncTest()
 {
   cout << "Test 2 - Logistic flow" << endl;
 
-  System *p1 = new SystemImplement(100);
-  System *p2 = new SystemImplement(10);
-  Flow *logistica = new LogisticFlow(p1, p2, 0.01, 70.0);
-  Model *logModel = new ModelImplement(0);
-
-  logModel->add(p1);
-  logModel->add(p2);
-  logModel->add(logistica);
+  Model *logModel = Model::createModel();
+  System *p1 = &logModel->createSystem(100.0);
+  System *p2 = &logModel->createSystem(10.0);
+  logModel->createFlow<LogisticFlow>(p1, p2);
+  // Flow *f = new LogisticFlow(p1, p2, 0.01, 70.0);
+  // logModel->add(f);
 
   assert(abs(p1->getValue() - 100.0) < 0.0001);
   assert(abs(p2->getValue() - 10.0) < 0.0001);
@@ -69,9 +63,9 @@ void logisticFuncTest()
 
   assert(abs(p1->getValue() - 88.2167) < 0.0001);
   assert(abs(p2->getValue() - 21.7833) < 0.0001);
-  assert(logModel->getTime() - 100 == 0);
+  assert(logModel->getTime() == 100);
 
-  delete (logModel);
+  delete (ModelImplement *)logModel;
 
   cout << GREEN << "OK!" << RESET << endl;
 }
@@ -80,34 +74,21 @@ void complexFuncTest()
 {
   cout << "Test 3 - Complex model flow" << endl;
 
-  System *Q1 = new SystemImplement(100);
-  System *Q2 = new SystemImplement(0);
-  System *Q3 = new SystemImplement(100);
-  System *Q4 = new SystemImplement(0);
-  System *Q5 = new SystemImplement(0);
+  Model *complexModel = Model::createModel();
 
-  Flow *f = new ExponentialFlow(Q1, Q2, 0.01);
-  Flow *g = new ExponentialFlow(Q1, Q3, 0.01);
-  Flow *r = new ExponentialFlow(Q2, Q5, 0.01);
-  Flow *t = new ExponentialFlow(Q2, Q3, 0.01);
-  Flow *u = new ExponentialFlow(Q3, Q4, 0.01);
-  Flow *v = new ExponentialFlow(Q4, Q1, 0.01);
-
-  Model *complexModel = new ModelImplement(0);
-
-  complexModel->add(Q1);
-  complexModel->add(Q2);
-  complexModel->add(Q3);
-  complexModel->add(Q4);
-  complexModel->add(Q5);
-
-  complexModel->add(f);
-  complexModel->add(g);
-  complexModel->add(r);
-  complexModel->add(t);
-  complexModel->add(u);
-  complexModel->add(v);
-
+  System *Q1 = &complexModel->createSystem(100);
+  System *Q2 = &complexModel->createSystem(0);
+  System *Q3 = &complexModel->createSystem(100);
+  System *Q4 = &complexModel->createSystem(0);
+  System *Q5 = &complexModel->createSystem(0);
+  
+  complexModel->createFlow<ExponentialFlow>(Q1, Q2);
+  complexModel->createFlow<ExponentialFlow>(Q1, Q3);
+  complexModel->createFlow<ExponentialFlow>(Q2, Q5);
+  complexModel->createFlow<ExponentialFlow>(Q2, Q3);
+  complexModel->createFlow<ExponentialFlow>(Q3, Q4);
+  complexModel->createFlow<ExponentialFlow>(Q4, Q1);
+  
   assert(abs(Q1->getValue() - 100.0) < 0.0001);
   assert(abs(Q2->getValue() - 0.0) < 0.0001);
   assert(abs(Q3->getValue() - 100.0) < 0.0001);
@@ -122,9 +103,9 @@ void complexFuncTest()
   assert(abs(Q3->getValue() - 77.1143) < 0.0001);
   assert(abs(Q4->getValue() - 56.1728) < 0.0001);
   assert(abs(Q5->getValue() - 16.4612) < 0.0001);
-  assert(complexModel->getTime() - 100 == 0);
+  assert(complexModel->getTime() == 100);
 
-  delete (complexModel);
+  delete (ModelImplement *)complexModel;
 
   cout << GREEN << "OK!" << RESET << endl;
 }

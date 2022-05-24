@@ -10,10 +10,11 @@
 
 #include <iostream>
 #include "functional_tests.h"
+#include "../../src/Model.h"
 
 using namespace std;
 
-int main_2 (){
+int main (){
   run_functional_tests_globals();
   return 0;
 }

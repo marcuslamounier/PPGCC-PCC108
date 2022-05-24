@@ -36,6 +36,13 @@ public:
   /**
    * @param from: pointer for the source System.
    * @param to: pointer for the target System.
+   */
+  ExponentialFlow(System *from, System *to);
+
+  /// Parameter's constructor for ExponentialFlow.
+  /**
+   * @param from: pointer for the source System.
+   * @param to: pointer for the target System.
    * @param f: factor of exponential flow transfer rate.
    */
   ExponentialFlow(System *from, System *to, double f);

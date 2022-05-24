@@ -13,6 +13,7 @@
 #include "unit_Model.h"
 #include "../../src/ModelImplement.h"
 #include "../../src/SystemImplement.h"
+#include "../../src/FlowImplement.h"
 #include "../functional/ExponentialFlow.h"
 
 using namespace std;
@@ -37,6 +38,41 @@ void unit_Model_destructor()
     MyModel myModel;
   }
   assert(x == 1);
+}
+
+void unit_Model_createModel() {
+  Model *m = Model::createModel();
+  int t0 = 0;
+  assert(m->getTime() == t0);
+
+  int incr = 2;
+  m->incrementTime(incr);
+  assert(m->getTime() == t0 + incr);
+
+  delete (Model *) m;
+}
+
+void unit_Model_createSystem() {
+  Model *m = Model::createModel();
+
+  double v0 = 100.0;
+  m->createSystem(v0);
+  assert(abs(m->getSystem(0)->getValue() - v0) < 0.0001);
+
+  delete (Model *) m;
+}
+
+void unit_Model_createFlow() {
+  Model *m = Model::createModel();
+  double v0 = 100.0;
+  m->createSystem(v0);
+  m->createSystem(10.0);
+  m->createFlow<ExponentialFlow>(
+      m->getSystem(0),
+      m->getSystem(1));
+  assert(abs(m->getFlow(0)->getSource()->getValue() - v0) < 0.0001);
+
+  delete (Model *) m;
 }
 
 void unit_Model_getSystemImplement()
