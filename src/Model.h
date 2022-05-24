@@ -27,6 +27,19 @@ using namespace std;
 
 class Model
 {
+protected:
+  /// Adds System to the Model graph.
+  /**
+   * @param s pointer to the System which will be added to the Model.
+   */
+  virtual void add(System *s) = 0;
+
+  /// Adds Flow to the Model graph.
+  /**
+   * @param f pointer to the Flow which will be added to the Model.
+   */
+  virtual void add(Flow *f) = 0;
+
 public:
   /** @brief Iterator for array of System pointers. */
   typedef vector<System *>::iterator iteratorSystem;
@@ -130,18 +143,6 @@ public:
    * @param incr increment step for the Model execution.
    */
   virtual void incrementTime(int incr = 1) = 0;
-
-  /// Adds System to the Model graph.
-  /**
-   * @param s pointer to the System which will be added to the Model.
-   */
-  virtual void add(System *s) = 0;
-
-  /// Adds Flow to the Model graph.
-  /**
-   * @param f pointer to the Flow which will be added to the Model.
-   */
-  virtual void add(Flow *f) = 0;
 
   /// Removes System to the Model graph.
   /**

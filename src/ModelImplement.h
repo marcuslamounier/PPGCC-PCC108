@@ -36,6 +36,18 @@ protected:
   /// Array of Model pointers for models.
   static vector<Model *> models;
 
+  /// Adds System to the Model graph.
+  /**
+   * @param s pointer to the System which will be added to the Model.
+   */
+  void add(System *s);
+
+  /// Adds Flow to the Model graph.
+  /**
+   * @param f pointer to the Flow which will be added to the Model.
+   */
+  void add(Flow *f);
+
 public:
   /// Default constructor for Model.
   ModelImplement();
@@ -128,18 +140,6 @@ public:
    * @param incr increment step for the Model execution.
    */
   void incrementTime(int incr = 1);
-
-  /// Adds System to the Model graph.
-  /**
-   * @param s pointer to the System which will be added to the Model.
-   */
-  void add(System *s);
-
-  /// Adds Flow to the Model graph.
-  /**
-   * @param f pointer to the Flow which will be added to the Model.
-   */
-  void add(Flow *f);
 
   /// Removes System to the Model graph.
   /**

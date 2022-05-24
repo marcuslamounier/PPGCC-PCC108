@@ -16,6 +16,8 @@
 
 using namespace std;
 
+vector<Model *> ModelImplement::models;
+
 ModelImplement::ModelImplement()
 {
   time = 0;
@@ -47,8 +49,9 @@ ModelImplement &ModelImplement::operator=(const Model &model)
 
 ModelImplement::~ModelImplement()
 {
-  flows.clear();
-  systems.clear();
+  for (System* sys : systems) delete (SystemImplement*) sys;
+  for (Flow* flow : flows) delete (FlowImplement*) flow;
+  for (Model* model : models) delete (ModelImplement*) model;
 }
 
 ModelImplement::iteratorSystem ModelImplement::firstSystem()
@@ -73,7 +76,7 @@ ModelImplement::iteratorFlow ModelImplement::lastFlow()
 
 Model *ModelImplement::createModel() {
   Model *m = new ModelImplement;
-  // models.push_back(m);
+  models.push_back(m);
   return m;
 }
 
