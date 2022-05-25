@@ -1,7 +1,12 @@
 <map id="unit_Flow_getLastValue" name="unit_Flow_getLastValue">
-<area shape="rect" id="node1" title="Tests lastValue getter." alt="" coords="5,81,165,108"/>
-<area shape="rect" id="node2" href="$class_model.html#a1c57f13b17e1fd598fa7ebe1fa55a7df" title="Adds System to the Model graph." alt="" coords="237,5,323,32"/>
-<area shape="rect" id="node3" href="$class_model.html#a05054627f93a1f8ef40de6bd6fa3a2ca" title="Executes the Model." alt="" coords="225,56,335,83"/>
-<area shape="rect" id="node4" href="$class_flow.html#aa3671632b52cdf4b3e30ce5921f4dc74" title="Returns the last value carried by Flow." alt="" coords="213,107,347,133"/>
-<area shape="rect" id="node5" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Returns the value stored in the System." alt="" coords="217,157,343,184"/>
+<area shape="rect" id="node1" title="Tests lastValue getter." alt="" coords="5,132,165,159"/>
+<area shape="rect" id="node2" href="$class_model.html#a5db68691ba69610ffda576ad3985a774" title="Creates Flow for the model." alt="" coords="223,5,351,32"/>
+<area shape="rect" id="node4" href="$class_model.html#accd28300871325fce68d551cebf27220" title="Creates whole model." alt="" coords="219,56,355,83"/>
+<area shape="rect" id="node7" href="$class_model.html#a570a50196f9fcbe5904f90e55695af81" title="Creates System for the model." alt="" coords="213,107,360,133"/>
+<area shape="rect" id="node8" href="$class_model.html#a05054627f93a1f8ef40de6bd6fa3a2ca" title="Executes the Model." alt="" coords="231,157,342,184"/>
+<area shape="rect" id="node9" href="$class_flow.html#aa3671632b52cdf4b3e30ce5921f4dc74" title="Returns the last value carried by Flow." alt="" coords="220,208,353,235"/>
+<area shape="rect" id="node10" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Returns the value stored in the System." alt="" coords="223,259,350,285"/>
+<area shape="rect" id="node3" href="$class_model.html#a94c8319fa87ab9f33a4ac2b362837e5d" title="Adds System to the Model graph." alt="" coords="463,5,549,32"/>
+<area shape="rect" id="node5" href="$class_model_implement.html#a2850037f8e3f37b9a0148014bfd0e30d" title="Creates the model." alt="" coords="408,56,604,83"/>
+<area shape="rect" id="node6" href="$class_model_implement.html#af8f9c855aff38c43ef8ad1374ac2e687" title="Default constructor for Model." alt="" coords="652,56,872,83"/>
 </map>

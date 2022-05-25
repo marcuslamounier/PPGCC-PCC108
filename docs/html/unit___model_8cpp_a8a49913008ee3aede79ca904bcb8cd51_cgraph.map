@@ -1,5 +1,8 @@
 <map id="run_unit_tests_Model" name="run_unit_tests_Model">
 <area shape="rect" id="node1" title="Global call for unitary tests for the methods of class Model." alt="" coords="5,31,152,57"/>
 <area shape="rect" id="node2" href="$unit___model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Tests the Model constructors." alt="" coords="200,5,357,32"/>
-<area shape="rect" id="node3" href="$unit___model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Tests the Model destructors." alt="" coords="203,56,354,83"/>
+<area shape="rect" id="node6" href="$unit___model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Tests the Model destructors." alt="" coords="203,56,354,83"/>
+<area shape="rect" id="node3" href="$class_model.html#accd28300871325fce68d551cebf27220" title="Creates whole model." alt="" coords="405,5,541,32"/>
+<area shape="rect" id="node4" href="$class_model_implement.html#a2850037f8e3f37b9a0148014bfd0e30d" title="Creates the model." alt="" coords="589,5,785,32"/>
+<area shape="rect" id="node5" href="$class_model_implement.html#af8f9c855aff38c43ef8ad1374ac2e687" title="Default constructor for Model." alt="" coords="833,5,1053,32"/>
 </map>

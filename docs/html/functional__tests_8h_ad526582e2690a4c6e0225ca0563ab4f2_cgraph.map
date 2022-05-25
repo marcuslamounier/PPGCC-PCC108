@@ -2,11 +2,11 @@
 <area shape="rect" id="node1" title="Tests the logistic model provided by the customer." alt="" coords="5,132,123,159"/>
 <area shape="rect" id="node2" href="$class_model.html#a5db68691ba69610ffda576ad3985a774" title="Creates Flow for the model." alt="" coords="180,5,308,32"/>
 <area shape="rect" id="node4" href="$class_model.html#accd28300871325fce68d551cebf27220" title="Creates whole model." alt="" coords="176,56,312,83"/>
-<area shape="rect" id="node7" href="$class_model.html#adf54e0cbff9f14421447cb8a6bc05b54" title="Creates System for the model." alt="" coords="171,107,317,133"/>
+<area shape="rect" id="node7" href="$class_model.html#a570a50196f9fcbe5904f90e55695af81" title="Creates System for the model." alt="" coords="171,107,317,133"/>
 <area shape="rect" id="node8" href="$class_model.html#a05054627f93a1f8ef40de6bd6fa3a2ca" title="Executes the Model." alt="" coords="189,157,299,184"/>
 <area shape="rect" id="node9" href="$class_model.html#a83e718218da786d585ec50800696de02" title="Returns current time in Model execution." alt="" coords="189,208,299,235"/>
 <area shape="rect" id="node10" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Returns the value stored in the System." alt="" coords="181,259,307,285"/>
-<area shape="rect" id="node3" href="$class_model.html#a1c57f13b17e1fd598fa7ebe1fa55a7df" title="Adds System to the Model graph." alt="" coords="420,5,507,32"/>
-<area shape="rect" id="node5" href="$class_model_implement.html#a2850037f8e3f37b9a0148014bfd0e30d" title="Creates whole model." alt="" coords="365,56,561,83"/>
+<area shape="rect" id="node3" href="$class_model.html#a94c8319fa87ab9f33a4ac2b362837e5d" title="Adds System to the Model graph." alt="" coords="420,5,507,32"/>
+<area shape="rect" id="node5" href="$class_model_implement.html#a2850037f8e3f37b9a0148014bfd0e30d" title="Creates the model." alt="" coords="365,56,561,83"/>
 <area shape="rect" id="node6" href="$class_model_implement.html#af8f9c855aff38c43ef8ad1374ac2e687" title="Default constructor for Model." alt="" coords="609,56,829,83"/>
 </map>

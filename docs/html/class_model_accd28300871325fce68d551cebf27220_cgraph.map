@@ -1,5 +1,5 @@
 <map id="Model::createModel" name="Model::createModel">
 <area shape="rect" id="node1" title="Creates whole model." alt="" coords="5,5,141,32"/>
-<area shape="rect" id="node2" href="$class_model_implement.html#a2850037f8e3f37b9a0148014bfd0e30d" title="Creates whole model." alt="" coords="189,5,385,32"/>
+<area shape="rect" id="node2" href="$class_model_implement.html#a2850037f8e3f37b9a0148014bfd0e30d" title="Creates the model." alt="" coords="189,5,385,32"/>
 <area shape="rect" id="node3" href="$class_model_implement.html#af8f9c855aff38c43ef8ad1374ac2e687" title="Default constructor for Model." alt="" coords="433,5,653,32"/>
 </map>

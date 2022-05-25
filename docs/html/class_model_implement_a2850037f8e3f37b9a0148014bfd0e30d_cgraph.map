@@ -1,4 +1,4 @@
 <map id="ModelImplement::createModel" name="ModelImplement::createModel">
-<area shape="rect" id="node1" title="Creates whole model." alt="" coords="5,5,201,32"/>
+<area shape="rect" id="node1" title="Creates the model." alt="" coords="5,5,201,32"/>
 <area shape="rect" id="node2" href="$class_model_implement.html#af8f9c855aff38c43ef8ad1374ac2e687" title="Default constructor for Model." alt="" coords="249,5,469,32"/>
 </map>

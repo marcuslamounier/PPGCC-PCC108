@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MyVensim<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">MyVensim<span id="projectnumber">&#160;0.5.1</span>
    </div>
   </td>
  </tr>
@@ -65,8 +65,8 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="class_model_implement-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ModelImplement Class Reference</div></div>
 </div><!--header-->
@@ -97,13 +97,6 @@ Collaboration diagram for ModelImplement:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af8f9c855aff38c43ef8ad1374ac2e687"><td class="memItemLeft" align="right" valign="top"><a id="af8f9c855aff38c43ef8ad1374ac2e687" name="af8f9c855aff38c43ef8ad1374ac2e687"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ModelImplement</b> ()</td></tr>
-<tr class="memdesc:af8f9c855aff38c43ef8ad1374ac2e687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>. <br /></td></tr>
-<tr class="separator:af8f9c855aff38c43ef8ad1374ac2e687"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc91b20dcbad69feabc9a754d15f578"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#accc91b20dcbad69feabc9a754d15f578">ModelImplement</a> (int t)</td></tr>
-<tr class="memdesc:accc91b20dcbad69feabc9a754d15f578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter's constructor for <a class="el" href="class_system.html" title="Interface for class System.">System</a>.  <a href="class_model_implement.html#accc91b20dcbad69feabc9a754d15f578">More...</a><br /></td></tr>
-<tr class="separator:accc91b20dcbad69feabc9a754d15f578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a579b3a019db8d898b3340b3034b53057"><td class="memItemLeft" align="right" valign="top"><a id="a579b3a019db8d898b3340b3034b53057" name="a579b3a019db8d898b3340b3034b53057"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~ModelImplement</b> ()</td></tr>
 <tr class="memdesc:a579b3a019db8d898b3340b3034b53057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>. <br /></td></tr>
@@ -120,9 +113,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~ModelImplement</b
 <tr class="memitem:a6871a545194b451b59fd059b750c2242"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_model.html#ab0a2db66de77f13718e31911d06b72e0">iteratorFlow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#a6871a545194b451b59fd059b750c2242">lastFlow</a> ()</td></tr>
 <tr class="memdesc:a6871a545194b451b59fd059b750c2242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pointer for the last <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> in the array.  <a href="class_model_implement.html#a6871a545194b451b59fd059b750c2242">More...</a><br /></td></tr>
 <tr class="separator:a6871a545194b451b59fd059b750c2242"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3ffb2520bd165ae7788a673cfeb4ff5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#aa3ffb2520bd165ae7788a673cfeb4ff5">createSystem</a> (double v)</td></tr>
-<tr class="memdesc:aa3ffb2520bd165ae7788a673cfeb4ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates <a class="el" href="class_system.html" title="Interface for class System.">System</a> for the model.  <a href="class_model_implement.html#aa3ffb2520bd165ae7788a673cfeb4ff5">More...</a><br /></td></tr>
-<tr class="separator:aa3ffb2520bd165ae7788a673cfeb4ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a571710bd7d28ccfdfee2c49eaa9ab9da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#a571710bd7d28ccfdfee2c49eaa9ab9da">createSystem</a> (double v)</td></tr>
+<tr class="memdesc:a571710bd7d28ccfdfee2c49eaa9ab9da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates <a class="el" href="class_system.html" title="Interface for class System.">System</a> for the model.  <a href="class_model_implement.html#a571710bd7d28ccfdfee2c49eaa9ab9da">More...</a><br /></td></tr>
+<tr class="separator:a571710bd7d28ccfdfee2c49eaa9ab9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e29f74575adb07a9748e34d7abae18e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#a0e29f74575adb07a9748e34d7abae18e">createFlow</a> ()</td></tr>
 <tr class="memdesc:a0e29f74575adb07a9748e34d7abae18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> for the model.  <a href="class_model_implement.html#a0e29f74575adb07a9748e34d7abae18e">More...</a><br /></td></tr>
 <tr class="separator:a0e29f74575adb07a9748e34d7abae18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,18 +137,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~ModelImplement</b
 <tr class="memitem:afb7ebe6ffcd394743242b18ffe38aa88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#afb7ebe6ffcd394743242b18ffe38aa88">incrementTime</a> (int incr=1)</td></tr>
 <tr class="memdesc:afb7ebe6ffcd394743242b18ffe38aa88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the time in <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> execution.  <a href="class_model_implement.html#afb7ebe6ffcd394743242b18ffe38aa88">More...</a><br /></td></tr>
 <tr class="separator:afb7ebe6ffcd394743242b18ffe38aa88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a474eb13b12ffe232b0529aa773e8a235"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#a474eb13b12ffe232b0529aa773e8a235">add</a> (<a class="el" href="class_system.html">System</a> *s)</td></tr>
-<tr class="memdesc:a474eb13b12ffe232b0529aa773e8a235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <a class="el" href="class_system.html" title="Interface for class System.">System</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph.  <a href="class_model_implement.html#a474eb13b12ffe232b0529aa773e8a235">More...</a><br /></td></tr>
-<tr class="separator:a474eb13b12ffe232b0529aa773e8a235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1ad32ecfbbec5796c9e1bc00418f45a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#aa1ad32ecfbbec5796c9e1bc00418f45a">add</a> (<a class="el" href="class_flow.html">Flow</a> *f)</td></tr>
-<tr class="memdesc:aa1ad32ecfbbec5796c9e1bc00418f45a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph.  <a href="class_model_implement.html#aa1ad32ecfbbec5796c9e1bc00418f45a">More...</a><br /></td></tr>
-<tr class="separator:aa1ad32ecfbbec5796c9e1bc00418f45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0d844f978c934f4a9140fafb38e5e80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#ae0d844f978c934f4a9140fafb38e5e80">remove</a> (<a class="el" href="class_system.html">System</a> *s)</td></tr>
-<tr class="memdesc:ae0d844f978c934f4a9140fafb38e5e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes <a class="el" href="class_system.html" title="Interface for class System.">System</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph.  <a href="class_model_implement.html#ae0d844f978c934f4a9140fafb38e5e80">More...</a><br /></td></tr>
-<tr class="separator:ae0d844f978c934f4a9140fafb38e5e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af24502158f4835e7b371e7a68260e808"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#af24502158f4835e7b371e7a68260e808">remove</a> (<a class="el" href="class_flow.html">Flow</a> *f)</td></tr>
-<tr class="memdesc:af24502158f4835e7b371e7a68260e808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph.  <a href="class_model_implement.html#af24502158f4835e7b371e7a68260e808">More...</a><br /></td></tr>
-<tr class="separator:af24502158f4835e7b371e7a68260e808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32dfdc3ee0606f1e27b66b5611850037"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#a32dfdc3ee0606f1e27b66b5611850037">remove</a> (<a class="el" href="class_system.html">System</a> *sys)</td></tr>
+<tr class="memdesc:a32dfdc3ee0606f1e27b66b5611850037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes <a class="el" href="class_system.html" title="Interface for class System.">System</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph.  <a href="class_model_implement.html#a32dfdc3ee0606f1e27b66b5611850037">More...</a><br /></td></tr>
+<tr class="separator:a32dfdc3ee0606f1e27b66b5611850037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad15fdc74e0ce8d4f3dd5a96cb92ba245"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#ad15fdc74e0ce8d4f3dd5a96cb92ba245">remove</a> (<a class="el" href="class_flow.html">Flow</a> *flow)</td></tr>
+<tr class="memdesc:ad15fdc74e0ce8d4f3dd5a96cb92ba245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph.  <a href="class_model_implement.html#ad15fdc74e0ce8d4f3dd5a96cb92ba245">More...</a><br /></td></tr>
+<tr class="separator:ad15fdc74e0ce8d4f3dd5a96cb92ba245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c2a49cdaa6c15bfa280113d7cf621b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#a2c2a49cdaa6c15bfa280113d7cf621b7">execute</a> (int start=1, int final=100, int incr=1)</td></tr>
 <tr class="memdesc:a2c2a49cdaa6c15bfa280113d7cf621b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>.  <a href="class_model_implement.html#a2c2a49cdaa6c15bfa280113d7cf621b7">More...</a><br /></td></tr>
 <tr class="separator:a2c2a49cdaa6c15bfa280113d7cf621b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,9 +163,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Model</b> ()</td>
 <tr class="memitem:ac0eb3b341ad74c330b389b3c8ab02ec9 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_model.html#ab0a2db66de77f13718e31911d06b72e0">iteratorFlow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ac0eb3b341ad74c330b389b3c8ab02ec9">lastFlow</a> ()=0</td></tr>
 <tr class="memdesc:ac0eb3b341ad74c330b389b3c8ab02ec9 inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pointer for the last <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> in the array.  <a href="class_model.html#ac0eb3b341ad74c330b389b3c8ab02ec9">More...</a><br /></td></tr>
 <tr class="separator:ac0eb3b341ad74c330b389b3c8ab02ec9 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf54e0cbff9f14421447cb8a6bc05b54 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_system.html">System</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#adf54e0cbff9f14421447cb8a6bc05b54">createSystem</a> (double v)=0</td></tr>
-<tr class="memdesc:adf54e0cbff9f14421447cb8a6bc05b54 inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates <a class="el" href="class_system.html" title="Interface for class System.">System</a> for the model.  <a href="class_model.html#adf54e0cbff9f14421447cb8a6bc05b54">More...</a><br /></td></tr>
-<tr class="separator:adf54e0cbff9f14421447cb8a6bc05b54 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a570a50196f9fcbe5904f90e55695af81 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a570a50196f9fcbe5904f90e55695af81">createSystem</a> (double v)=0</td></tr>
+<tr class="memdesc:a570a50196f9fcbe5904f90e55695af81 inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates <a class="el" href="class_system.html" title="Interface for class System.">System</a> for the model.  <a href="class_model.html#a570a50196f9fcbe5904f90e55695af81">More...</a><br /></td></tr>
+<tr class="separator:a570a50196f9fcbe5904f90e55695af81 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5db68691ba69610ffda576ad3985a774 inherit pub_methods_class_model"><td class="memTemplParams" colspan="2">template&lt;typename T_FLOW_IMPLEMENT &gt; </td></tr>
 <tr class="memitem:a5db68691ba69610ffda576ad3985a774 inherit pub_methods_class_model"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_model.html#a5db68691ba69610ffda576ad3985a774">createFlow</a> ()</td></tr>
 <tr class="memdesc:a5db68691ba69610ffda576ad3985a774 inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> for the model.  <a href="class_model.html#a5db68691ba69610ffda576ad3985a774">More...</a><br /></td></tr>
@@ -202,18 +189,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Model</b> ()</td>
 <tr class="memitem:a69fed3f544934d687904bc3d40a28ce6 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a69fed3f544934d687904bc3d40a28ce6">incrementTime</a> (int incr=1)=0</td></tr>
 <tr class="memdesc:a69fed3f544934d687904bc3d40a28ce6 inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the time in <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> execution.  <a href="class_model.html#a69fed3f544934d687904bc3d40a28ce6">More...</a><br /></td></tr>
 <tr class="separator:a69fed3f544934d687904bc3d40a28ce6 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c57f13b17e1fd598fa7ebe1fa55a7df inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a1c57f13b17e1fd598fa7ebe1fa55a7df">add</a> (<a class="el" href="class_system.html">System</a> *s)=0</td></tr>
-<tr class="memdesc:a1c57f13b17e1fd598fa7ebe1fa55a7df inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <a class="el" href="class_system.html" title="Interface for class System.">System</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph.  <a href="class_model.html#a1c57f13b17e1fd598fa7ebe1fa55a7df">More...</a><br /></td></tr>
-<tr class="separator:a1c57f13b17e1fd598fa7ebe1fa55a7df inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad248b54040ab38124af621cbc4c7c2e6 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ad248b54040ab38124af621cbc4c7c2e6">add</a> (<a class="el" href="class_flow.html">Flow</a> *f)=0</td></tr>
-<tr class="memdesc:ad248b54040ab38124af621cbc4c7c2e6 inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph.  <a href="class_model.html#ad248b54040ab38124af621cbc4c7c2e6">More...</a><br /></td></tr>
-<tr class="separator:ad248b54040ab38124af621cbc4c7c2e6 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade7525abe2c2081098fd5377f50e77f4 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ade7525abe2c2081098fd5377f50e77f4">remove</a> (<a class="el" href="class_system.html">System</a> *s)=0</td></tr>
-<tr class="memdesc:ade7525abe2c2081098fd5377f50e77f4 inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes <a class="el" href="class_system.html" title="Interface for class System.">System</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph.  <a href="class_model.html#ade7525abe2c2081098fd5377f50e77f4">More...</a><br /></td></tr>
-<tr class="separator:ade7525abe2c2081098fd5377f50e77f4 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e199aa629d10014ca28d48aef8d4134 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a7e199aa629d10014ca28d48aef8d4134">remove</a> (<a class="el" href="class_flow.html">Flow</a> *f)=0</td></tr>
-<tr class="memdesc:a7e199aa629d10014ca28d48aef8d4134 inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph.  <a href="class_model.html#a7e199aa629d10014ca28d48aef8d4134">More...</a><br /></td></tr>
-<tr class="separator:a7e199aa629d10014ca28d48aef8d4134 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd9179086a62368503bc04baae0b5ae inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#adbd9179086a62368503bc04baae0b5ae">remove</a> (<a class="el" href="class_system.html">System</a> *sys)=0</td></tr>
+<tr class="memdesc:adbd9179086a62368503bc04baae0b5ae inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes <a class="el" href="class_system.html" title="Interface for class System.">System</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph.  <a href="class_model.html#adbd9179086a62368503bc04baae0b5ae">More...</a><br /></td></tr>
+<tr class="separator:adbd9179086a62368503bc04baae0b5ae inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8af2e0747cdca00538d4ddf339621582 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a8af2e0747cdca00538d4ddf339621582">remove</a> (<a class="el" href="class_flow.html">Flow</a> *flow)=0</td></tr>
+<tr class="memdesc:a8af2e0747cdca00538d4ddf339621582 inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph.  <a href="class_model.html#a8af2e0747cdca00538d4ddf339621582">More...</a><br /></td></tr>
+<tr class="separator:a8af2e0747cdca00538d4ddf339621582 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05054627f93a1f8ef40de6bd6fa3a2ca inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a05054627f93a1f8ef40de6bd6fa3a2ca">execute</a> (int start, int final, int incr)=0</td></tr>
 <tr class="memdesc:a05054627f93a1f8ef40de6bd6fa3a2ca inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>.  <a href="class_model.html#a05054627f93a1f8ef40de6bd6fa3a2ca">More...</a><br /></td></tr>
 <tr class="separator:a05054627f93a1f8ef40de6bd6fa3a2ca inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,11 +202,36 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Model</b> ()</td>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2850037f8e3f37b9a0148014bfd0e30d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_model.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#a2850037f8e3f37b9a0148014bfd0e30d">createModel</a> ()</td></tr>
-<tr class="memdesc:a2850037f8e3f37b9a0148014bfd0e30d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates whole model.  <a href="class_model_implement.html#a2850037f8e3f37b9a0148014bfd0e30d">More...</a><br /></td></tr>
+<tr class="memdesc:a2850037f8e3f37b9a0148014bfd0e30d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the model.  <a href="class_model_implement.html#a2850037f8e3f37b9a0148014bfd0e30d">More...</a><br /></td></tr>
 <tr class="separator:a2850037f8e3f37b9a0148014bfd0e30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accd28300871325fce68d551cebf27220"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_model.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#accd28300871325fce68d551cebf27220">createModel</a> ()</td></tr>
 <tr class="memdesc:accd28300871325fce68d551cebf27220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates whole model.  <a href="class_model.html#accd28300871325fce68d551cebf27220">More...</a><br /></td></tr>
 <tr class="separator:accd28300871325fce68d551cebf27220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:af8f9c855aff38c43ef8ad1374ac2e687"><td class="memItemLeft" align="right" valign="top"><a id="af8f9c855aff38c43ef8ad1374ac2e687" name="af8f9c855aff38c43ef8ad1374ac2e687"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ModelImplement</b> ()</td></tr>
+<tr class="memdesc:af8f9c855aff38c43ef8ad1374ac2e687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>. <br /></td></tr>
+<tr class="separator:af8f9c855aff38c43ef8ad1374ac2e687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accc91b20dcbad69feabc9a754d15f578"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#accc91b20dcbad69feabc9a754d15f578">ModelImplement</a> (int t)</td></tr>
+<tr class="memdesc:accc91b20dcbad69feabc9a754d15f578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter's constructor for <a class="el" href="class_system.html" title="Interface for class System.">System</a>.  <a href="class_model_implement.html#accc91b20dcbad69feabc9a754d15f578">More...</a><br /></td></tr>
+<tr class="separator:accc91b20dcbad69feabc9a754d15f578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d739dbaac63e673c6f60f7dc54b4f91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#a4d739dbaac63e673c6f60f7dc54b4f91">ModelImplement</a> (const <a class="el" href="class_model.html">Model</a> *model)</td></tr>
+<tr class="memdesc:a4d739dbaac63e673c6f60f7dc54b4f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>.  <a href="class_model_implement.html#a4d739dbaac63e673c6f60f7dc54b4f91">More...</a><br /></td></tr>
+<tr class="separator:a4d739dbaac63e673c6f60f7dc54b4f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a260e2afd64de9b213e845a51d8b194d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#a260e2afd64de9b213e845a51d8b194d6">add</a> (<a class="el" href="class_system.html">System</a> *sys)</td></tr>
+<tr class="memdesc:a260e2afd64de9b213e845a51d8b194d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <a class="el" href="class_system.html" title="Interface for class System.">System</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph.  <a href="class_model_implement.html#a260e2afd64de9b213e845a51d8b194d6">More...</a><br /></td></tr>
+<tr class="separator:a260e2afd64de9b213e845a51d8b194d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f614363ac61eaad28401ecff82c7263"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implement.html#a2f614363ac61eaad28401ecff82c7263">add</a> (<a class="el" href="class_flow.html">Flow</a> *flow)</td></tr>
+<tr class="memdesc:a2f614363ac61eaad28401ecff82c7263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph.  <a href="class_model_implement.html#a2f614363ac61eaad28401ecff82c7263">More...</a><br /></td></tr>
+<tr class="separator:a2f614363ac61eaad28401ecff82c7263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c8319fa87ab9f33a4ac2b362837e5d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a94c8319fa87ab9f33a4ac2b362837e5d">add</a> (<a class="el" href="class_system.html">System</a> *sys)=0</td></tr>
+<tr class="memdesc:a94c8319fa87ab9f33a4ac2b362837e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <a class="el" href="class_system.html" title="Interface for class System.">System</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph.  <a href="class_model.html#a94c8319fa87ab9f33a4ac2b362837e5d">More...</a><br /></td></tr>
+<tr class="separator:a94c8319fa87ab9f33a4ac2b362837e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7df81041f62f049cfc6e4d50dcaf721"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ab7df81041f62f049cfc6e4d50dcaf721">add</a> (<a class="el" href="class_flow.html">Flow</a> *flow)=0</td></tr>
+<tr class="memdesc:ab7df81041f62f049cfc6e4d50dcaf721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph.  <a href="class_model.html#ab7df81041f62f049cfc6e4d50dcaf721">More...</a><br /></td></tr>
+<tr class="separator:ab7df81041f62f049cfc6e4d50dcaf721"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -241,13 +247,6 @@ vector&lt; <a class="el" href="class_system.html">System</a> * &gt;&#160;</td><t
 vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>flows</b></td></tr>
 <tr class="memdesc:a6ccf5e0e382180c0eeb5b09d5cfc58e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> pointers for flows. <br /></td></tr>
 <tr class="separator:a6ccf5e0e382180c0eeb5b09d5cfc58e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:adeea89db31f429b6def4917ad1b8c7e2"><td class="memItemLeft" align="right" valign="top"><a id="adeea89db31f429b6def4917ad1b8c7e2" name="adeea89db31f429b6def4917ad1b8c7e2"></a>
-static vector&lt; <a class="el" href="class_model.html">Model</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>models</b></td></tr>
-<tr class="memdesc:adeea89db31f429b6def4917ad1b8c7e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> pointers for models. <br /></td></tr>
-<tr class="separator:adeea89db31f429b6def4917ad1b8c7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -266,10 +265,13 @@ typedef vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;::iterato
 <p >The class <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> is the program's main class. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="accc91b20dcbad69feabc9a754d15f578" name="accc91b20dcbad69feabc9a754d15f578"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accc91b20dcbad69feabc9a754d15f578">&#9670;&nbsp;</a></span>ModelImplement()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#accc91b20dcbad69feabc9a754d15f578">&#9670;&nbsp;</a></span>ModelImplement() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ModelImplement::ModelImplement </td>
@@ -279,6 +281,11 @@ typedef vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;::iterato
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Parameter's constructor for <a class="el" href="class_system.html" title="Interface for class System.">System</a>. </p>
@@ -291,9 +298,52 @@ typedef vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;::iterato
 
 </div>
 </div>
+<a id="a4d739dbaac63e673c6f60f7dc54b4f91" name="a4d739dbaac63e673c6f60f7dc54b4f91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d739dbaac63e673c6f60f7dc54b4f91">&#9670;&nbsp;</a></span>ModelImplement() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelImplement::ModelImplement </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_model.html">Model</a> *&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy constructor for <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>pointer for the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> which will be copied. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_implement_a4d739dbaac63e673c6f60f7dc54b4f91_cgraph.png" border="0" usemap="#aclass_model_implement_a4d739dbaac63e673c6f60f7dc54b4f91_cgraph" alt=""/></div>
+<map name="aclass_model_implement_a4d739dbaac63e673c6f60f7dc54b4f91_cgraph" id="aclass_model_implement_a4d739dbaac63e673c6f60f7dc54b4f91_cgraph">
+<area shape="rect" title="Copy constructor for Model." alt="" coords="5,5,225,32"/>
+<area shape="rect" href="class_model.html#a83e718218da786d585ec50800696de02" title="Returns current time in Model execution." alt="" coords="273,5,384,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa1ad32ecfbbec5796c9e1bc00418f45a" name="aa1ad32ecfbbec5796c9e1bc00418f45a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1ad32ecfbbec5796c9e1bc00418f45a">&#9670;&nbsp;</a></span>add() <span class="overload">[1/2]</span></h2>
+<a id="a2f614363ac61eaad28401ecff82c7263" name="a2f614363ac61eaad28401ecff82c7263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f614363ac61eaad28401ecff82c7263">&#9670;&nbsp;</a></span>add() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,13 +355,13 @@ typedef vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;::iterato
           <td class="memname">void ModelImplement::add </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_flow.html">Flow</a> *&#160;</td>
-          <td class="paramname"><em>f</em></td><td>)</td>
+          <td class="paramname"><em>flow</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -319,17 +369,17 @@ typedef vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;::iterato
 <p>Adds <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">f</td><td>pointer to the <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> which will be added to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>. </td></tr>
+    <tr><td class="paramname">flow</td><td>pointer to the <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> which will be added to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_model.html#ad248b54040ab38124af621cbc4c7c2e6">Model</a>.</p>
+<p>Implements <a class="el" href="class_model.html#ab7df81041f62f049cfc6e4d50dcaf721">Model</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_model_implement_aa1ad32ecfbbec5796c9e1bc00418f45a_cgraph.png" border="0" usemap="#aclass_model_implement_aa1ad32ecfbbec5796c9e1bc00418f45a_cgraph" alt=""/></div>
-<map name="aclass_model_implement_aa1ad32ecfbbec5796c9e1bc00418f45a_cgraph" id="aclass_model_implement_aa1ad32ecfbbec5796c9e1bc00418f45a_cgraph">
+<div class="center"><img src="class_model_implement_a2f614363ac61eaad28401ecff82c7263_cgraph.png" border="0" usemap="#aclass_model_implement_a2f614363ac61eaad28401ecff82c7263_cgraph" alt=""/></div>
+<map name="aclass_model_implement_a2f614363ac61eaad28401ecff82c7263_cgraph" id="aclass_model_implement_a2f614363ac61eaad28401ecff82c7263_cgraph">
 <area shape="rect" title="Adds Flow to the Model graph." alt="" coords="5,5,152,32"/>
 <area shape="rect" href="class_model_implement.html#a6871a545194b451b59fd059b750c2242" title="Returns pointer for the last Flow in the array." alt="" coords="200,5,373,32"/>
 </map>
@@ -337,8 +387,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a474eb13b12ffe232b0529aa773e8a235" name="a474eb13b12ffe232b0529aa773e8a235"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a474eb13b12ffe232b0529aa773e8a235">&#9670;&nbsp;</a></span>add() <span class="overload">[2/2]</span></h2>
+<a id="a260e2afd64de9b213e845a51d8b194d6" name="a260e2afd64de9b213e845a51d8b194d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a260e2afd64de9b213e845a51d8b194d6">&#9670;&nbsp;</a></span>add() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,13 +400,13 @@ Here is the call graph for this function:</div>
           <td class="memname">void ModelImplement::add </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
+          <td class="paramname"><em>sys</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -364,17 +414,17 @@ Here is the call graph for this function:</div>
 <p>Adds <a class="el" href="class_system.html" title="Interface for class System.">System</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>pointer to the <a class="el" href="class_system.html" title="Interface for class System.">System</a> which will be added to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>. </td></tr>
+    <tr><td class="paramname">sys</td><td>pointer to the <a class="el" href="class_system.html" title="Interface for class System.">System</a> which will be added to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_model.html#a1c57f13b17e1fd598fa7ebe1fa55a7df">Model</a>.</p>
+<p>Implements <a class="el" href="class_model.html#a94c8319fa87ab9f33a4ac2b362837e5d">Model</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_model_implement_a474eb13b12ffe232b0529aa773e8a235_cgraph.png" border="0" usemap="#aclass_model_implement_a474eb13b12ffe232b0529aa773e8a235_cgraph" alt=""/></div>
-<map name="aclass_model_implement_a474eb13b12ffe232b0529aa773e8a235_cgraph" id="aclass_model_implement_a474eb13b12ffe232b0529aa773e8a235_cgraph">
+<div class="center"><img src="class_model_implement_a260e2afd64de9b213e845a51d8b194d6_cgraph.png" border="0" usemap="#aclass_model_implement_a260e2afd64de9b213e845a51d8b194d6_cgraph" alt=""/></div>
+<map name="aclass_model_implement_a260e2afd64de9b213e845a51d8b194d6_cgraph" id="aclass_model_implement_a260e2afd64de9b213e845a51d8b194d6_cgraph">
 <area shape="rect" title="Adds System to the Model graph." alt="" coords="5,5,152,32"/>
 <area shape="rect" href="class_model_implement.html#aa00e8dcaa2f7b35477fe278fc597f7bf" title="Returns pointer for the last System in the array." alt="" coords="200,5,391,32"/>
 </map>
@@ -382,10 +432,10 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_model_implement_a474eb13b12ffe232b0529aa773e8a235_icgraph.png" border="0" usemap="#aclass_model_implement_a474eb13b12ffe232b0529aa773e8a235_icgraph" alt=""/></div>
-<map name="aclass_model_implement_a474eb13b12ffe232b0529aa773e8a235_icgraph" id="aclass_model_implement_a474eb13b12ffe232b0529aa773e8a235_icgraph">
+<div class="center"><img src="class_model_implement_a260e2afd64de9b213e845a51d8b194d6_icgraph.png" border="0" usemap="#aclass_model_implement_a260e2afd64de9b213e845a51d8b194d6_icgraph" alt=""/></div>
+<map name="aclass_model_implement_a260e2afd64de9b213e845a51d8b194d6_icgraph" id="aclass_model_implement_a260e2afd64de9b213e845a51d8b194d6_icgraph">
 <area shape="rect" title="Adds System to the Model graph." alt="" coords="260,5,407,32"/>
-<area shape="rect" href="class_model_implement.html#aa3ffb2520bd165ae7788a673cfeb4ff5" title="Creates System for the model." alt="" coords="5,5,212,32"/>
+<area shape="rect" href="class_model_implement.html#a571710bd7d28ccfdfee2c49eaa9ab9da" title="Creates System for the model." alt="" coords="5,5,212,32"/>
 </map>
 </div>
 
@@ -476,8 +526,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Creates whole model. </p>
-<dl class="section return"><dt>Returns</dt><dd>Reference for created <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>. </dd></dl>
+<p>Creates the model. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer for created <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>. </dd></dl>
 
 <p>Implements <a class="el" href="class_model.html#accd28300871325fce68d551cebf27220">Model</a>.</p>
 <div class="dynheader">
@@ -485,7 +535,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_model_implement_a2850037f8e3f37b9a0148014bfd0e30d_cgraph.png" border="0" usemap="#aclass_model_implement_a2850037f8e3f37b9a0148014bfd0e30d_cgraph" alt=""/></div>
 <map name="aclass_model_implement_a2850037f8e3f37b9a0148014bfd0e30d_cgraph" id="aclass_model_implement_a2850037f8e3f37b9a0148014bfd0e30d_cgraph">
-<area shape="rect" title="Creates whole model." alt="" coords="5,5,201,32"/>
+<area shape="rect" title="Creates the model." alt="" coords="5,5,201,32"/>
 <area shape="rect" href="class_model_implement.html#af8f9c855aff38c43ef8ad1374ac2e687" title="Default constructor for Model." alt="" coords="249,5,469,32"/>
 </map>
 </div>
@@ -494,22 +544,33 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_model_implement_a2850037f8e3f37b9a0148014bfd0e30d_icgraph.png" border="0" usemap="#aclass_model_implement_a2850037f8e3f37b9a0148014bfd0e30d_icgraph" alt=""/></div>
 <map name="aclass_model_implement_a2850037f8e3f37b9a0148014bfd0e30d_icgraph" id="aclass_model_implement_a2850037f8e3f37b9a0148014bfd0e30d_icgraph">
-<area shape="rect" title="Creates whole model." alt="" coords="597,132,793,159"/>
-<area shape="rect" href="class_model.html#accd28300871325fce68d551cebf27220" title="Creates whole model." alt="" coords="413,132,549,159"/>
-<area shape="rect" href="functional__tests_8cpp.html#a746e76c514f8a88e9c55e35aacf9ebb3" title="Tests the complex model provided by the customer." alt="" coords="216,5,341,32"/>
-<area shape="rect" href="functional__tests_8cpp.html#a818a6ca1a8f10c80d1c9fd75d2ec0a25" title="Tests the exponential model provided by the customer." alt="" coords="207,56,350,83"/>
-<area shape="rect" href="functional__tests_8cpp.html#ad526582e2690a4c6e0225ca0563ab4f2" title="Tests the logistic model provided by the customer." alt="" coords="220,107,337,133"/>
-<area shape="rect" href="unit___model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="Tests the flow creators." alt="" coords="201,157,356,184"/>
-<area shape="rect" href="unit___model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="Tests the model creators." alt="" coords="197,208,360,235"/>
-<area shape="rect" href="unit___model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Tests the system creators." alt="" coords="192,259,365,285"/>
-<area shape="rect" href="functional__tests_8cpp.html#a48e9960f5c9d263fd115528f9a3fc039" title="Global call for all functional tests." alt="" coords="5,49,144,90"/>
+<area shape="rect" title="Creates the model." alt="" coords="609,360,805,387"/>
+<area shape="rect" href="class_model.html#accd28300871325fce68d551cebf27220" title="Creates whole model." alt="" coords="425,360,561,387"/>
+<area shape="rect" href="functional__tests_8cpp.html#a746e76c514f8a88e9c55e35aacf9ebb3" title="Tests the complex model provided by the customer." alt="" coords="226,5,351,32"/>
+<area shape="rect" href="functional__tests_8cpp.html#a818a6ca1a8f10c80d1c9fd75d2ec0a25" title="Tests the exponential model provided by the customer." alt="" coords="217,56,360,83"/>
+<area shape="rect" href="functional__tests_8cpp.html#ad526582e2690a4c6e0225ca0563ab4f2" title="Tests the logistic model provided by the customer." alt="" coords="230,107,347,133"/>
+<area shape="rect" href="unit___flow_8cpp.html#ad528dbdb3c62bfc55188e045359aba43" title="Tests lastValue getter." alt="" coords="209,157,369,184"/>
+<area shape="rect" href="unit___model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Tests the Flow* and System* associators." alt="" coords="232,208,345,235"/>
+<area shape="rect" href="unit___model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Tests the Model constructors." alt="" coords="210,259,367,285"/>
+<area shape="rect" href="unit___model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="Tests the flow creators." alt="" coords="211,309,366,336"/>
+<area shape="rect" href="unit___model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="Tests the model creators." alt="" coords="207,360,370,387"/>
+<area shape="rect" href="unit___model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Tests the system creators." alt="" coords="202,411,375,437"/>
+<area shape="rect" href="unit___model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59" title="Tests the Model execution." alt="" coords="219,461,358,488"/>
+<area shape="rect" href="unit___model_8cpp.html#a5405e4ad382f91d5487d8c8c30567b24" title="Tests the Flow* getter." alt="" coords="220,512,357,539"/>
+<area shape="rect" href="unit___model_8cpp.html#a3cccf91ec949426c8c8f839d4ef8b43d" title="Tests the current time getter." alt="" coords="219,563,358,589"/>
+<area shape="rect" href="unit___model_8cpp.html#aca4b3243c61a709985d47617c965b511" title="Tests the current time incrementer." alt="" coords="200,613,377,640"/>
+<area shape="rect" href="unit___model_8cpp.html#ab4575dc752bc4d5c37dd584b34edd4e3" title="Tests the Flow* and System* disassociators." alt="" coords="222,664,355,691"/>
+<area shape="rect" href="unit___model_8cpp.html#a08ad72f756534b6b0f87eb638731d0ef" title="Tests the current time setter." alt="" coords="219,715,358,741"/>
+<area shape="rect" href="functional__tests_8cpp.html#a48e9960f5c9d263fd115528f9a3fc039" title="Global call for all functional tests." alt="" coords="9,49,148,90"/>
+<area shape="rect" href="unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="9,157,148,184"/>
+<area shape="rect" href="unit___model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Global call for unitary tests for the methods of class Model." alt="" coords="5,259,152,285"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="aa3ffb2520bd165ae7788a673cfeb4ff5" name="aa3ffb2520bd165ae7788a673cfeb4ff5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3ffb2520bd165ae7788a673cfeb4ff5">&#9670;&nbsp;</a></span>createSystem()</h2>
+<a id="a571710bd7d28ccfdfee2c49eaa9ab9da" name="a571710bd7d28ccfdfee2c49eaa9ab9da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a571710bd7d28ccfdfee2c49eaa9ab9da">&#9670;&nbsp;</a></span>createSystem()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -518,7 +579,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_system.html">System</a> &amp; ModelImplement::createSystem </td>
+          <td class="memname"><a class="el" href="class_system.html">System</a> * ModelImplement::createSystem </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
@@ -535,14 +596,14 @@ Here is the caller graph for this function:</div>
 <p>Creates <a class="el" href="class_system.html" title="Interface for class System.">System</a> for the model. </p>
 <dl class="section return"><dt>Returns</dt><dd>Reference for created <a class="el" href="class_system.html" title="Interface for class System.">System</a>. </dd></dl>
 
-<p>Implements <a class="el" href="class_model.html#adf54e0cbff9f14421447cb8a6bc05b54">Model</a>.</p>
+<p>Implements <a class="el" href="class_model.html#a570a50196f9fcbe5904f90e55695af81">Model</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_model_implement_aa3ffb2520bd165ae7788a673cfeb4ff5_cgraph.png" border="0" usemap="#aclass_model_implement_aa3ffb2520bd165ae7788a673cfeb4ff5_cgraph" alt=""/></div>
-<map name="aclass_model_implement_aa3ffb2520bd165ae7788a673cfeb4ff5_cgraph" id="aclass_model_implement_aa3ffb2520bd165ae7788a673cfeb4ff5_cgraph">
+<div class="center"><img src="class_model_implement_a571710bd7d28ccfdfee2c49eaa9ab9da_cgraph.png" border="0" usemap="#aclass_model_implement_a571710bd7d28ccfdfee2c49eaa9ab9da_cgraph" alt=""/></div>
+<map name="aclass_model_implement_a571710bd7d28ccfdfee2c49eaa9ab9da_cgraph" id="aclass_model_implement_a571710bd7d28ccfdfee2c49eaa9ab9da_cgraph">
 <area shape="rect" title="Creates System for the model." alt="" coords="5,5,212,32"/>
-<area shape="rect" href="class_model_implement.html#a474eb13b12ffe232b0529aa773e8a235" title="Adds System to the Model graph." alt="" coords="260,5,407,32"/>
+<area shape="rect" href="class_model_implement.html#a260e2afd64de9b213e845a51d8b194d6" title="Adds System to the Model graph." alt="" coords="260,5,407,32"/>
 <area shape="rect" href="class_model_implement.html#aa00e8dcaa2f7b35477fe278fc597f7bf" title="Returns pointer for the last System in the array." alt="" coords="455,5,645,32"/>
 </map>
 </div>
@@ -645,7 +706,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_model_implement_ad5ffe7323120bfe5b6730e15fad33f7b_icgraph.png" border="0" usemap="#aclass_model_implement_ad5ffe7323120bfe5b6730e15fad33f7b_icgraph" alt=""/></div>
 <map name="aclass_model_implement_ad5ffe7323120bfe5b6730e15fad33f7b_icgraph" id="aclass_model_implement_ad5ffe7323120bfe5b6730e15fad33f7b_icgraph">
 <area shape="rect" title="Returns pointer for the first Flow in the array." alt="" coords="220,5,393,32"/>
-<area shape="rect" href="class_model_implement.html#af24502158f4835e7b371e7a68260e808" title="Removes Flow to the Model graph." alt="" coords="5,5,172,32"/>
+<area shape="rect" href="class_model_implement.html#ad15fdc74e0ce8d4f3dd5a96cb92ba245" title="Removes Flow to the Model graph." alt="" coords="5,5,172,32"/>
 </map>
 </div>
 
@@ -684,7 +745,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_model_implement_af2ea58cb38f189af87ce294645388f06_icgraph.png" border="0" usemap="#aclass_model_implement_af2ea58cb38f189af87ce294645388f06_icgraph" alt=""/></div>
 <map name="aclass_model_implement_af2ea58cb38f189af87ce294645388f06_icgraph" id="aclass_model_implement_af2ea58cb38f189af87ce294645388f06_icgraph">
 <area shape="rect" title="Returns pointer for the first System in the array." alt="" coords="220,5,411,32"/>
-<area shape="rect" href="class_model_implement.html#ae0d844f978c934f4a9140fafb38e5e80" title="Removes System to the Model graph." alt="" coords="5,5,172,32"/>
+<area shape="rect" href="class_model_implement.html#a32dfdc3ee0606f1e27b66b5611850037" title="Removes System to the Model graph." alt="" coords="5,5,172,32"/>
 </map>
 </div>
 
@@ -860,7 +921,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_model_implement_a6871a545194b451b59fd059b750c2242_icgraph.png" border="0" usemap="#aclass_model_implement_a6871a545194b451b59fd059b750c2242_icgraph" alt=""/></div>
 <map name="aclass_model_implement_a6871a545194b451b59fd059b750c2242_icgraph" id="aclass_model_implement_a6871a545194b451b59fd059b750c2242_icgraph">
 <area shape="rect" title="Returns pointer for the last Flow in the array." alt="" coords="200,5,373,32"/>
-<area shape="rect" href="class_model_implement.html#aa1ad32ecfbbec5796c9e1bc00418f45a" title="Adds Flow to the Model graph." alt="" coords="5,5,152,32"/>
+<area shape="rect" href="class_model_implement.html#a2f614363ac61eaad28401ecff82c7263" title="Adds Flow to the Model graph." alt="" coords="5,5,152,32"/>
 </map>
 </div>
 
@@ -899,15 +960,15 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_model_implement_aa00e8dcaa2f7b35477fe278fc597f7bf_icgraph.png" border="0" usemap="#aclass_model_implement_aa00e8dcaa2f7b35477fe278fc597f7bf_icgraph" alt=""/></div>
 <map name="aclass_model_implement_aa00e8dcaa2f7b35477fe278fc597f7bf_icgraph" id="aclass_model_implement_aa00e8dcaa2f7b35477fe278fc597f7bf_icgraph">
 <area shape="rect" title="Returns pointer for the last System in the array." alt="" coords="455,5,645,32"/>
-<area shape="rect" href="class_model_implement.html#a474eb13b12ffe232b0529aa773e8a235" title="Adds System to the Model graph." alt="" coords="260,5,407,32"/>
-<area shape="rect" href="class_model_implement.html#aa3ffb2520bd165ae7788a673cfeb4ff5" title="Creates System for the model." alt="" coords="5,5,212,32"/>
+<area shape="rect" href="class_model_implement.html#a260e2afd64de9b213e845a51d8b194d6" title="Adds System to the Model graph." alt="" coords="260,5,407,32"/>
+<area shape="rect" href="class_model_implement.html#a571710bd7d28ccfdfee2c49eaa9ab9da" title="Creates System for the model." alt="" coords="5,5,212,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="af24502158f4835e7b371e7a68260e808" name="af24502158f4835e7b371e7a68260e808"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af24502158f4835e7b371e7a68260e808">&#9670;&nbsp;</a></span>remove() <span class="overload">[1/2]</span></h2>
+<a id="ad15fdc74e0ce8d4f3dd5a96cb92ba245" name="ad15fdc74e0ce8d4f3dd5a96cb92ba245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad15fdc74e0ce8d4f3dd5a96cb92ba245">&#9670;&nbsp;</a></span>remove() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -919,7 +980,7 @@ Here is the caller graph for this function:</div>
           <td class="memname">void ModelImplement::remove </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_flow.html">Flow</a> *&#160;</td>
-          <td class="paramname"><em>f</em></td><td>)</td>
+          <td class="paramname"><em>flow</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -933,17 +994,17 @@ Here is the caller graph for this function:</div>
 <p>Removes <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">f</td><td>pointer to the <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> which will be removed to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>. </td></tr>
+    <tr><td class="paramname">flow</td><td>pointer to the <a class="el" href="class_flow.html" title="Interface for class Flow.">Flow</a> which will be removed to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_model.html#a7e199aa629d10014ca28d48aef8d4134">Model</a>.</p>
+<p>Implements <a class="el" href="class_model.html#a8af2e0747cdca00538d4ddf339621582">Model</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_model_implement_af24502158f4835e7b371e7a68260e808_cgraph.png" border="0" usemap="#aclass_model_implement_af24502158f4835e7b371e7a68260e808_cgraph" alt=""/></div>
-<map name="aclass_model_implement_af24502158f4835e7b371e7a68260e808_cgraph" id="aclass_model_implement_af24502158f4835e7b371e7a68260e808_cgraph">
+<div class="center"><img src="class_model_implement_ad15fdc74e0ce8d4f3dd5a96cb92ba245_cgraph.png" border="0" usemap="#aclass_model_implement_ad15fdc74e0ce8d4f3dd5a96cb92ba245_cgraph" alt=""/></div>
+<map name="aclass_model_implement_ad15fdc74e0ce8d4f3dd5a96cb92ba245_cgraph" id="aclass_model_implement_ad15fdc74e0ce8d4f3dd5a96cb92ba245_cgraph">
 <area shape="rect" title="Removes Flow to the Model graph." alt="" coords="5,5,172,32"/>
 <area shape="rect" href="class_model_implement.html#ad5ffe7323120bfe5b6730e15fad33f7b" title="Returns pointer for the first Flow in the array." alt="" coords="220,5,393,32"/>
 </map>
@@ -951,8 +1012,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="ae0d844f978c934f4a9140fafb38e5e80" name="ae0d844f978c934f4a9140fafb38e5e80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0d844f978c934f4a9140fafb38e5e80">&#9670;&nbsp;</a></span>remove() <span class="overload">[2/2]</span></h2>
+<a id="a32dfdc3ee0606f1e27b66b5611850037" name="a32dfdc3ee0606f1e27b66b5611850037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32dfdc3ee0606f1e27b66b5611850037">&#9670;&nbsp;</a></span>remove() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -964,7 +1025,7 @@ Here is the call graph for this function:</div>
           <td class="memname">void ModelImplement::remove </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
+          <td class="paramname"><em>sys</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -978,17 +1039,17 @@ Here is the call graph for this function:</div>
 <p>Removes <a class="el" href="class_system.html" title="Interface for class System.">System</a> to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a> graph. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">f</td><td>pointer to the <a class="el" href="class_system.html" title="Interface for class System.">System</a> which will be removed to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>. </td></tr>
+    <tr><td class="paramname">sys</td><td>pointer to the <a class="el" href="class_system.html" title="Interface for class System.">System</a> which will be removed to the <a class="el" href="class_model.html" title="Interface for class Model.">Model</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_model.html#ade7525abe2c2081098fd5377f50e77f4">Model</a>.</p>
+<p>Implements <a class="el" href="class_model.html#adbd9179086a62368503bc04baae0b5ae">Model</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_model_implement_ae0d844f978c934f4a9140fafb38e5e80_cgraph.png" border="0" usemap="#aclass_model_implement_ae0d844f978c934f4a9140fafb38e5e80_cgraph" alt=""/></div>
-<map name="aclass_model_implement_ae0d844f978c934f4a9140fafb38e5e80_cgraph" id="aclass_model_implement_ae0d844f978c934f4a9140fafb38e5e80_cgraph">
+<div class="center"><img src="class_model_implement_a32dfdc3ee0606f1e27b66b5611850037_cgraph.png" border="0" usemap="#aclass_model_implement_a32dfdc3ee0606f1e27b66b5611850037_cgraph" alt=""/></div>
+<map name="aclass_model_implement_a32dfdc3ee0606f1e27b66b5611850037_cgraph" id="aclass_model_implement_a32dfdc3ee0606f1e27b66b5611850037_cgraph">
 <area shape="rect" title="Removes System to the Model graph." alt="" coords="5,5,172,32"/>
 <area shape="rect" href="class_model_implement.html#af2ea58cb38f189af87ce294645388f06" title="Returns pointer for the first System in the array." alt="" coords="220,5,411,32"/>
 </map>

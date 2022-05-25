@@ -1,0 +1,6 @@
+<map id="unit_Model_constructor" name="unit_Model_constructor">
+<area shape="rect" id="node1" title="Tests the Model constructors." alt="" coords="5,5,163,32"/>
+<area shape="rect" id="node2" href="$class_model.html#accd28300871325fce68d551cebf27220" title="Creates whole model." alt="" coords="211,5,347,32"/>
+<area shape="rect" id="node3" href="$class_model_implement.html#a2850037f8e3f37b9a0148014bfd0e30d" title="Creates the model." alt="" coords="395,5,591,32"/>
+<area shape="rect" id="node4" href="$class_model_implement.html#af8f9c855aff38c43ef8ad1374ac2e687" title="Default constructor for Model." alt="" coords="639,5,859,32"/>
+</map>

@@ -166,7 +166,7 @@ public:
   void execute(int start = 1, int final = 100, int incr = 1);
 
 private:
-  /** @brief Single instance. */
+  /** @brief Single instance for Model. */
   static Model *_instance;
 
   /**
