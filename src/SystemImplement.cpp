@@ -37,16 +37,6 @@ SystemImplement *SystemImplement::operator=(const System *sys)
   return this;
 }
 
-// SystemImplement &SystemImplement::operator=(const System &sys)
-// {
-//   if (this == &sys)
-//   {
-//     return *this;
-//   }
-//   setValue(sys.getValue());
-//   return *this;
-// }
-
 SystemImplement::SystemImplement(double v)
 {
   value = v;

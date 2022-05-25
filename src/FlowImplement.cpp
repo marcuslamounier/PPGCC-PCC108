@@ -31,18 +31,18 @@ FlowImplement::FlowImplement(const Flow &flow)
   lastValue = flow.getLastValue();
 }
 
-FlowImplement &FlowImplement::operator=(const Flow &flow)
+FlowImplement *FlowImplement::operator=(const Flow *flow)
 {
-  if (this == &flow)
+  if (this == flow)
   {
-    return *this;
+    return this;
   }
 
-  setSource(flow.getSource());
-  setTarget(flow.getTarget());
-  setLastValue(flow.getLastValue());
+  setSource(flow->getSource());
+  setTarget(flow->getTarget());
+  setLastValue(flow->getLastValue());
 
-  return *this;
+  return this;
 }
 
 FlowImplement::FlowImplement(System *from, System *to, double lv)
