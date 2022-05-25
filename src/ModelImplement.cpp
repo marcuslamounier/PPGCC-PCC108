@@ -49,9 +49,12 @@ ModelImplement &ModelImplement::operator=(const Model &model)
 
 ModelImplement::~ModelImplement()
 {
-  for (System* sys : systems) delete (SystemImplement*) sys;
-  for (Flow* flow : flows) delete (FlowImplement*) flow;
-  for (Model* model : models) delete (ModelImplement*) model;
+  // for (System* sys : systems) delete (SystemImplement*) sys;
+  // for (Flow* flow : flows) delete (FlowImplement*) flow;
+  // for (Model* model : models) delete (ModelImplement*) model;
+  for (int i = systems.size() - 1; i == 0; i--) delete (SystemImplement*) systems[i];
+  for (int i = flows.size() - 1; i == 0; i--) delete (FlowImplement*) flows[i];
+  // for (int i = models.size() - 1; i == 0; i--) delete (ModelImplement*) models[i];
 }
 
 ModelImplement::iteratorSystem ModelImplement::firstSystem()

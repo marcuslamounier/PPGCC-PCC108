@@ -66,14 +66,10 @@ void unit_Flow_getTarget()
 
 void unit_Flow_getLastValue()
 {
-  Model *m = new ModelImplement(0);
-  System *s1 = new SystemImplement(100.0);
-  System *s2 = new SystemImplement(0.0);
-  Flow *f = new ExponentialFlow(s1, s2);
-
-  m->add(f);
-  m->add(s1);
-  m->add(s2);
+  Model *m = Model::createModel();
+  System *s1 = &m->createSystem(100.0);
+  System *s2 = &m->createSystem(0.0);
+  Flow *f = m->createFlow<ExponentialFlow>(s1, s2);
 
   m->execute(1, 1, 1);
   assert(abs(s2->getValue() - f->getLastValue()) < 0.1);

@@ -26,7 +26,6 @@ void exponentialFuncTest()
   Model *expModel = Model::createModel();
   System *pop1 = &expModel->createSystem(100.0);
   System *pop2 = &expModel->createSystem(0.0);
-  expModel->createSystem(0.0);
   expModel->createFlow<ExponentialFlow>(pop1, pop2);
 
   assert(abs(pop1->getValue() - 100.0) < 0.0001);
@@ -52,8 +51,6 @@ void logisticFuncTest()
   System *p1 = &logModel->createSystem(100.0);
   System *p2 = &logModel->createSystem(10.0);
   logModel->createFlow<LogisticFlow>(p1, p2);
-  // Flow *f = new LogisticFlow(p1, p2, 0.01, 70.0);
-  // logModel->add(f);
 
   assert(abs(p1->getValue() - 100.0) < 0.0001);
   assert(abs(p2->getValue() - 10.0) < 0.0001);

@@ -77,9 +77,8 @@ void unit_Model_createFlow() {
 
 void unit_Model_getSystemImplement()
 {
-  Model *m = new ModelImplement();
-  System *s = new SystemImplement(0.0);
-  m->add(s);
+  Model *m = Model::createModel();
+  System *s = &m->createSystem(0.0);
 
   assert(m->getSystem(0) == s);
 
@@ -88,9 +87,8 @@ void unit_Model_getSystemImplement()
 
 void unit_Model_getFlow()
 {
-  Model *m = new ModelImplement();
-  Flow *f = new ExponentialFlow();
-  m->add(f);
+  Model *m = Model::createModel();
+  Flow *f = m->createFlow<ExponentialFlow>();
 
   assert(m->getFlow(0) == f);
 
@@ -136,13 +134,9 @@ void unit_Model_incrementTime()
 
 void unit_Model_add()
 {
-  Model *m = new ModelImplement();
-
-  System *s = new SystemImplement(100.0);
-  Flow *f = new ExponentialFlow();
-
-  m->add(s);
-  m->add(f);
+  Model *m = Model::createModel();
+  System *s = &m->createSystem(100.0);
+  Flow *f = m->createFlow<ExponentialFlow>();
 
   bool foundSystem = false;
   for (Model::iteratorSystem it = m->firstSystem(); it != m->lastSystem(); it++)
@@ -163,13 +157,9 @@ void unit_Model_add()
 
 void unit_Model_remove()
 {
-  Model *m = new ModelImplement();
-
-  System *s = new SystemImplement(100);
-  m->add(s);
-
-  ExponentialFlow *f = new ExponentialFlow();
-  m->add(f);
+  Model *m = Model::createModel();
+  System *s = &m->createSystem(100.0);
+  Flow *f = m->createFlow<ExponentialFlow>();
 
   bool foundSystem, foundFlow;
 
