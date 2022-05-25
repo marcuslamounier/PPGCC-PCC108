@@ -12,6 +12,7 @@
 #define SYSTEM_H
 
 #include "System.h"
+#include "BridgeTemplate.h"
 
 /**
  * @class SystemImplement
@@ -21,25 +22,13 @@
  * The class System will hold the energy.
  */
 
-class SystemImplement : public System
+class SystemBody: public Body
 {
 protected:
   /// Value stored in the System.
   double value;
 
 public:
-  /// Default constructor for System.
-  SystemImplement();
-
-  /// Parameter's constructor for System.
-  /**
-   * @param v: value stored in the System.
-   */
-  SystemImplement(double v);
-
-  /// Virtual destructor for System
-  virtual ~SystemImplement();
-
   /// Returns the value stored in the System.
   /**
    * @return the value stored in the System.
@@ -51,19 +40,43 @@ public:
    * @param v current value stored in the System.
    */
   void setValue(double v);
+};
 
-private:
-  /// Copy constructor for System.
-  /**
-   * @param sys: pointer for the System which will be copied.
-   */
-  SystemImplement(const System *sys);
+class SystemHandle : public System, public Handle<SystemBody>
+{
+public:
+  /// Default constructor for System.
+  SystemHandle();
 
-  /// Overloads for operator "=".
+  /// Parameter's constructor for System.
   /**
-   * @param sys: pointer for the System which will be copied.
+   * @param v: value stored in the System.
    */
-  SystemImplement *operator=(const System *sys);
+  SystemHandle(double v);
+
+  // /// Copy constructor for System.
+  // /**
+  //  * @param sys: reference for the System which will be copied.
+  //  */
+  // SystemHandle(const SystemHandle *sys);
+
+  // /// Overloads for operator "=".
+  // /**
+  //  * @param sys: reference for the System which will be copied.
+  //  */
+  // SystemHandle &operator=(const SystemHandle *sys);
+
+  /// Returns the value stored in the System.
+  /**
+   * @return the value stored in the System.
+   */
+  double getValue() const;
+  
+  /// Updates the value stored in the System.
+  /**
+   * @param v current value stored in the System.
+   */
+  void setValue(double v);
 };
 
 #endif

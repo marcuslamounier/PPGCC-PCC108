@@ -78,14 +78,14 @@ void complexFuncTest()
   System *Q3 = complexModel->createSystem(100);
   System *Q4 = complexModel->createSystem(0);
   System *Q5 = complexModel->createSystem(0);
-  
+
   complexModel->createFlow<ExponentialFlow>(Q1, Q2);
   complexModel->createFlow<ExponentialFlow>(Q1, Q3);
   complexModel->createFlow<ExponentialFlow>(Q2, Q5);
   complexModel->createFlow<ExponentialFlow>(Q2, Q3);
   complexModel->createFlow<ExponentialFlow>(Q3, Q4);
   complexModel->createFlow<ExponentialFlow>(Q4, Q1);
-  
+
   assert(abs(Q1->getValue() - 100.0) < 0.0001);
   assert(abs(Q2->getValue() - 0.0) < 0.0001);
   assert(abs(Q3->getValue() - 100.0) < 0.0001);

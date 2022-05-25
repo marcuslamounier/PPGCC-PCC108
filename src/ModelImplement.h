@@ -68,6 +68,9 @@ public:
    */
   static Model *createModel();
 
+  /// Static destructor for Model
+  static void destroyModel();
+
   /// Virtual destructor for Model
   virtual ~ModelImplement();
 

@@ -49,14 +49,23 @@ ModelImplement *ModelImplement::operator=(const Model *model)
 
 ModelImplement::~ModelImplement()
 {
-  for (int i = systems.size() - 1; i == 0; i--) delete (SystemImplement*) systems[i];
-  for (int i = flows.size() - 1; i == 0; i--) delete (FlowImplement*) flows[i];
+  for (int i = systems.size() - 1; i == 0; i--)
+    delete (SystemHandle *)systems[i];
+  for (int i = flows.size() - 1; i == 0; i--)
+    delete (FlowImplement *)flows[i];
   _instance = 0;
 }
 
-Model *ModelImplement::createModel() {
-  if (_instance == 0) _instance = new ModelImplement;
+Model *ModelImplement::createModel()
+{
+  if (_instance == 0)
+    _instance = new ModelImplement;
   return _instance;
+}
+
+void ModelImplement::destroyModel() {
+  delete (Model *) _instance;
+  _instance = 0;
 }
 
 ModelImplement::iteratorSystem ModelImplement::firstSystem()
@@ -79,13 +88,14 @@ ModelImplement::iteratorFlow ModelImplement::lastFlow()
   return flows.end();
 }
 
-Model *Model::createModel() {
+Model *Model::createModel()
+{
   return ModelImplement::createModel();
 }
 
 System *ModelImplement::createSystem(double v)
 {
-  System *s = new SystemImplement(v);
+  System *s = new SystemHandle(v);
   add(s);
   return s;
 }

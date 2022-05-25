@@ -13,43 +13,48 @@
 
 using namespace std;
 
-SystemImplement::SystemImplement()
-{
-  value = 0.0;
-}
-
-SystemImplement::SystemImplement(const System *sys)
-{
-  if (this == sys)
-  {
-    return;
-  }
-  value = sys->getValue();
-}
-
-SystemImplement *SystemImplement::operator=(const System *sys)
-{
-  if (this == sys)
-  {
-    return this;
-  }
-  setValue(sys->getValue());
-  return this;
-}
-
-SystemImplement::SystemImplement(double v)
-{
-  value = v;
-}
-
-SystemImplement::~SystemImplement(){}
-
-double SystemImplement::getValue() const
+double SystemBody::getValue() const
 {
   return value;
 }
 
-void SystemImplement::setValue(double v)
+void SystemBody::setValue(double v)
 {
   value = v;
+}
+
+SystemHandle::SystemHandle()
+{
+  pImpl_ = new SystemBody();
+  pImpl_->attach();
+};
+
+SystemHandle::SystemHandle(double v)
+{
+  pImpl_ = new SystemBody();
+  pImpl_->setValue(v);
+  pImpl_->attach();
+};
+
+// SystemHandle(const SystemHandle *sys) {}
+
+// SystemHandle &operator=(const SystemHandle &hd);
+// {
+//   if (this != &hd)
+//   {
+//     hd.pImpl_->attach();
+//     pImpl_->detach();
+//     pImpl_ = hd.pImpl_;
+//   }
+//   return *this;
+// }
+
+void SystemHandle::setValue(double v)
+{
+  pImpl_->setValue(v);
+}
+
+double SystemHandle::getValue() const
+{
+  return pImpl_->getValue();
 }

@@ -41,8 +41,8 @@ void unit_Flow_destructor()
 void unit_Flow_getSource()
 {
   double v = 100.0;
-  System *s1 = new SystemImplement(v);
-  System *s2 = new SystemImplement(0.0);
+  System *s1 = new SystemHandle(v);
+  System *s2 = new SystemHandle(0.0);
 
   Flow *f = new ExponentialFlow(s1, s2);
 
@@ -54,14 +54,15 @@ void unit_Flow_getSource()
 void unit_Flow_getTarget()
 {
   double v = 100.0;
-  System *s1 = new SystemImplement(0.0);
-  System *s2 = new SystemImplement(v);
+  System *s1 = new SystemHandle(0.0);
+  System *s2 = new SystemHandle(v);
 
   Flow *f = new ExponentialFlow(s1, s2);
 
   assert(abs(f->getTarget()->getValue() - v) < 0.1);
 
-  delete f, s1, s2;
+  delete (System *) s1, s2;
+  delete (Flow *) f;
 }
 
 void unit_Flow_getLastValue()
@@ -74,31 +75,33 @@ void unit_Flow_getLastValue()
   m->execute(1, 1, 1);
   assert(abs(s2->getValue() - f->getLastValue()) < 0.1);
 
-  delete f, s1, s2, m;
+  delete (Model *) m;;
 }
 
 void unit_Flow_setSource()
 {
   double v = 100.0;
-  System *s = new SystemImplement(v);
+  System *s = new SystemHandle(v);
   Flow *f = new ExponentialFlow();
 
   f->setSource(s);
   assert(abs(f->getSource()->getValue() - v) < 0.1);
 
-  delete f, s;
+  delete (System *) s;
+  delete (Flow *) f;
 }
 
 void unit_Flow_setTarget()
 {
   double v = 100.0;
-  System *s = new SystemImplement(v);
+  System *s = new SystemHandle(v);
   Flow *f = new ExponentialFlow();
 
   f->setTarget(s);
   assert(abs(f->getTarget()->getValue() - v) < 0.1);
 
-  delete f, s;
+  delete (System *) s;
+  delete (Flow *) f;
 }
 
 void unit_Flow_setLastValue()
@@ -108,12 +111,12 @@ void unit_Flow_setLastValue()
   f->setLastValue(v);
   assert(abs(f->getLastValue() - v) < 0.01);
 
-  delete f;
+  delete (Flow *) f;
 }
 
 void unit_Flow_clearSource()
 {
-  System *s = new SystemImplement(0.0);
+  System *s = new SystemHandle(0.0);
   Flow *f = new ExponentialFlow();
   f->setSource(s);
   assert(f->getSource() == s);
@@ -121,12 +124,13 @@ void unit_Flow_clearSource()
   f->clearSource();
   assert(f->getSource() == NULL);
 
-  delete f, s;
+  delete (System *) s;
+  delete (Flow *) f;
 }
 
 void unit_Flow_clearTarget()
 {
-  System *s = new SystemImplement(0.0);
+  System *s = new SystemHandle(0.0);
   Flow *f = new ExponentialFlow();
   f->setTarget(s);
   assert(f->getTarget() == s);
@@ -134,7 +138,8 @@ void unit_Flow_clearTarget()
   f->clearTarget();
   assert(f->getTarget() == NULL);
 
-  delete f, s;
+  delete (System *) s;
+  delete (Flow *) f;
 }
 
 void unit_Flow_execute()
@@ -142,13 +147,14 @@ void unit_Flow_execute()
   double v = 100.0;
   double factor = 0.01;
 
-  System *s1 = new SystemImplement(v);
-  System *s2 = new SystemImplement(0.0);
+  System *s1 = new SystemHandle(v);
+  System *s2 = new SystemHandle(0.0);
   Flow *f = new ExponentialFlow(s1, s2, factor);
 
   assert(abs(f->execute() - (factor * v)) < 0.001);
 
-  delete f, s1, s2;
+  delete (System *) s1, s2;
+  delete (Flow *) f;
 }
 
 void run_unit_tests_Flow()

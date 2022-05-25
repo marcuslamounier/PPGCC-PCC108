@@ -22,7 +22,7 @@
 class System
 {
 public:
-  /// Virtual destructor for System
+  /// Virtual destructor for Flow
   virtual ~System() {}
 
   /// Returns the value stored in the System.

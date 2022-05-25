@@ -18,12 +18,18 @@
 
 using namespace std;
 
+static int x = 1;
+void printStep() {
+  cout << "test " << x << endl;
+  x++;
+}
+
 void unit_Model_constructor()
 {
   Model *m = Model::createModel();
   assert(m != NULL);
 
-  delete m;
+  delete (Model *) m;
 }
 
 void unit_Model_destructor()
@@ -205,14 +211,33 @@ void unit_Model_execute()
 
 void run_unit_tests_Model()
 {
+  // printStep();
   unit_Model_constructor();
+
+  // printStep();
   unit_Model_destructor();
+  
+  // printStep();
   unit_Model_getSystemImplement();
+  
+  // printStep();
   unit_Model_getFlow();
+  
+  // printStep();
   unit_Model_getTime();
+  
+  // printStep();
   unit_Model_setTime();
+  
+  // printStep();
   unit_Model_incrementTime();
+  
+  // printStep();
   unit_Model_add();
+  
+  // printStep();
   unit_Model_remove();
+  
+  // printStep();
   unit_Model_execute();
 }
