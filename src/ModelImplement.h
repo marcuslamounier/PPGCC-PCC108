@@ -24,6 +24,21 @@
 class ModelImplement : public Model
 {
 protected:
+  /// Default constructor for Model.
+  ModelImplement();
+
+  /// Parameter's constructor for System.
+  /**
+   * @param t: start time for Model execution.
+   */
+  ModelImplement(int t);
+
+  /**
+   * @brief Copy constructor for Model.
+   * @param model: pointer for the Model which will be copied.
+   */
+  ModelImplement(const Model *model);
+
   /// Actual time which the model execution is positioned.
   int time;
 
@@ -32,9 +47,6 @@ protected:
 
   /// Array of Flow pointers for flows.
   vector<Flow *> flows;
-
-  /// Array of Model pointers for models.
-  static vector<Model *> models;
 
   /// Adds System to the Model graph.
   /**
@@ -49,14 +61,12 @@ protected:
   void add(Flow *flow);
 
 public:
-  /// Default constructor for Model.
-  ModelImplement();
 
-  /// Parameter's constructor for System.
   /**
-   * @param t: start time for Model execution.
+   * @brief Creates the model.
+   * @return Pointer for created Model.
    */
-  ModelImplement(int t);
+  static Model *createModel();
 
   /// Virtual destructor for Model
   virtual ~ModelImplement();
@@ -84,12 +94,6 @@ public:
    * @return pointer for the last Flow in the array.
    */
   iteratorFlow lastFlow();
-
-  /**
-   * @brief Creates whole model.
-   * @return Reference for created Model.
-   */
-  static Model *createModel();
 
   /// Creates System for the model.
   /**
@@ -162,16 +166,11 @@ public:
   void execute(int start = 1, int final = 100, int incr = 1);
 
 private:
-  /// Copy constructor for Model.
-  /**
-   * This is a @b private method. So it is not included in the docs.
-   * @param model: reference for the Model which will be copied.
-   */
-  ModelImplement(const Model *model);
+  /** @brief Single instance. */
+  static Model *_instance;
 
-  /// Override for operator "=".
   /**
-   * This is a @b private method. So it is not included in the docs.
+   * @brief Override for operator "=".
    * @param model: reference for the Model which will be copied.
    */
   ModelImplement *operator=(const Model *model);

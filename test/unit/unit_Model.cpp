@@ -20,7 +20,7 @@ using namespace std;
 
 void unit_Model_constructor()
 {
-  Model *m = new ModelImplement();
+  Model *m = Model::createModel();
   assert(m != NULL);
 
   delete m;
@@ -82,7 +82,7 @@ void unit_Model_getSystemImplement()
 
   assert(m->getSystem(0) == s);
 
-  delete s, m;
+  delete (Model *) m;
 }
 
 void unit_Model_getFlow()
@@ -92,28 +92,29 @@ void unit_Model_getFlow()
 
   assert(m->getFlow(0) == f);
 
-  delete f, m;
+  delete (Model *) m;
 }
 
 void unit_Model_getTime()
 {
   int t = 0;
 
-  Model *m = new ModelImplement(t);
+  Model *m = Model::createModel();
+  m->setTime(t);
   assert(m->getTime() == t);
 
-  delete m;
+  delete (Model *) m;
 }
 
 void unit_Model_setTime()
 {
   int t = 1;
 
-  Model *m = new ModelImplement();
+  Model *m = Model::createModel();
   m->setTime(t);
   assert(m->getTime() == t);
 
-  delete m;
+  delete (Model *) m;
 }
 
 void unit_Model_incrementTime()
@@ -121,7 +122,8 @@ void unit_Model_incrementTime()
   int incr = 2;
   int t = 0;
 
-  Model *m = new ModelImplement(t);
+  Model *m = Model::createModel();
+  m->setTime(t);
   m->incrementTime();
   assert(m->getTime() == t + 1);
 
@@ -152,7 +154,7 @@ void unit_Model_add()
   }
   assert(foundFlow);
 
-  delete f, s, m;
+  delete (Model *) m;
 }
 
 void unit_Model_remove()
@@ -187,18 +189,18 @@ void unit_Model_remove()
   }
   assert(!foundFlow);
 
-  delete f, s, m;
+  delete (Model *) m;
 }
 
 void unit_Model_execute()
 {
-  Model *m = new ModelImplement(0);
+  Model *m = Model::createModel();
   int duration = 100;
 
   m->execute(1, duration, 1);
   assert(m->getTime() == duration);
 
-  delete m;
+  delete (Model *) m;
 }
 
 void run_unit_tests_Model()

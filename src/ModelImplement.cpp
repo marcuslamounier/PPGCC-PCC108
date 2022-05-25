@@ -16,7 +16,7 @@
 
 using namespace std;
 
-vector<Model *> ModelImplement::models;
+Model *ModelImplement::_instance = 0;
 
 ModelImplement::ModelImplement()
 {
@@ -51,7 +51,12 @@ ModelImplement::~ModelImplement()
 {
   for (int i = systems.size() - 1; i == 0; i--) delete (SystemImplement*) systems[i];
   for (int i = flows.size() - 1; i == 0; i--) delete (FlowImplement*) flows[i];
-  // for (int i = models.size() - 1; i == 0; i--) delete (ModelImplement*) models[i];
+  _instance = 0;
+}
+
+Model *ModelImplement::createModel() {
+  if (_instance == 0) _instance = new ModelImplement;
+  return _instance;
 }
 
 ModelImplement::iteratorSystem ModelImplement::firstSystem()
@@ -72,12 +77,6 @@ ModelImplement::iteratorFlow ModelImplement::firstFlow()
 ModelImplement::iteratorFlow ModelImplement::lastFlow()
 {
   return flows.end();
-}
-
-Model *ModelImplement::createModel() {
-  Model *m = new ModelImplement;
-  models.push_back(m);
-  return m;
 }
 
 Model *Model::createModel() {
@@ -145,7 +144,7 @@ void ModelImplement::remove(Flow *flow)
   auto i = firstFlow();
   for (Flow *f : flows)
   {
-    if (flow == f)
+    if (flow == flow)
     {
       flows.erase(i);
       break;
