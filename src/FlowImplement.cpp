@@ -20,15 +20,15 @@ FlowImplement::FlowImplement()
   lastValue = 0.0;
 }
 
-FlowImplement::FlowImplement(const Flow &flow)
+FlowImplement::FlowImplement(const Flow *flow)
 {
-  if (this == &flow)
+  if (this == flow)
   {
     return;
   }
-  source = flow.getSource();
-  target = flow.getTarget();
-  lastValue = flow.getLastValue();
+  source = flow->getSource();
+  target = flow->getTarget();
+  lastValue = flow->getLastValue();
 }
 
 FlowImplement *FlowImplement::operator=(const Flow *flow)

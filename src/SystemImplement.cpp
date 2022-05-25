@@ -18,13 +18,13 @@ SystemImplement::SystemImplement()
   value = 0.0;
 }
 
-SystemImplement::SystemImplement(const System &sys)
+SystemImplement::SystemImplement(const System *sys)
 {
-  if (this == &sys)
+  if (this == sys)
   {
     return;
   }
-  value = sys.getValue();
+  value = sys->getValue();
 }
 
 SystemImplement *SystemImplement::operator=(const System *sys)

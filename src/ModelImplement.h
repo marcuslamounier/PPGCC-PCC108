@@ -167,14 +167,14 @@ private:
    * This is a @b private method. So it is not included in the docs.
    * @param model: reference for the Model which will be copied.
    */
-  ModelImplement(const Model &model);
+  ModelImplement(const Model *model);
 
   /// Override for operator "=".
   /**
    * This is a @b private method. So it is not included in the docs.
    * @param model: reference for the Model which will be copied.
    */
-  ModelImplement &operator=(const Model &model);
+  ModelImplement *operator=(const Model *model);
 
 };
 

@@ -55,9 +55,9 @@ public:
 private:
   /// Copy constructor for System.
   /**
-   * @param sys: reference for the System which will be copied.
+   * @param sys: pointer for the System which will be copied.
    */
-  SystemImplement(const System &sys);
+  SystemImplement(const System *sys);
 
   /// Overloads for operator "=".
   /**

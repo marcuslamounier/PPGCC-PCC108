@@ -28,23 +28,23 @@ ModelImplement::ModelImplement(int t)
   time = t;
 }
 
-ModelImplement::ModelImplement(const Model &model)
+ModelImplement::ModelImplement(const Model *model)
 {
-  if (this == &model)
+  if (this == model)
   {
     return;
   }
-  time = model.getTime();
+  time = model->getTime();
 }
 
-ModelImplement &ModelImplement::operator=(const Model &model)
+ModelImplement *ModelImplement::operator=(const Model *model)
 {
-  if (this == &model)
+  if (this == model)
   {
-    return *this;
+    return this;
   }
-  setTime(model.getTime());
-  return *this;
+  setTime(model->getTime());
+  return this;
 }
 
 ModelImplement::~ModelImplement()

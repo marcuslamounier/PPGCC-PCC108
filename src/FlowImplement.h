@@ -102,9 +102,9 @@ private:
   /// Copy constructor for Flow.
   /**
    * This is a @b private method. So it is not included in the docs.
-   * @param flow: reference for the Flow which will be copied.
+   * @param flow: pointer for the Flow which will be copied.
    */
-  FlowImplement(const Flow &flow);
+  FlowImplement(const Flow *flow);
 
   /// Override for operator "=".
   /**
