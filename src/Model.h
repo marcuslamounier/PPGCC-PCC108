@@ -30,15 +30,15 @@ class Model
 protected:
   /// Adds System to the Model graph.
   /**
-   * @param s pointer to the System which will be added to the Model.
+   * @param sys pointer to the System which will be added to the Model.
    */
-  virtual void add(System *s) = 0;
+  virtual void add(System *sys) = 0;
 
   /// Adds Flow to the Model graph.
   /**
-   * @param f pointer to the Flow which will be added to the Model.
+   * @param flow pointer to the Flow which will be added to the Model.
    */
-  virtual void add(Flow *f) = 0;
+  virtual void add(Flow *flow) = 0;
 
 public:
   /** @brief Iterator for array of System pointers. */
@@ -146,15 +146,15 @@ public:
 
   /// Removes System to the Model graph.
   /**
-   * @param f pointer to the System which will be removed to the Model.
+   * @param sys pointer to the System which will be removed to the Model.
    */
-  virtual void remove(System *s) = 0;
+  virtual void remove(System *sys) = 0;
 
   /// Removes Flow to the Model graph.
   /**
-   * @param f pointer to the Flow which will be removed to the Model.
+   * @param flow pointer to the Flow which will be removed to the Model.
    */
-  virtual void remove(Flow *f) = 0;
+  virtual void remove(Flow *flow) = 0;
 
   /// Executes the Model.
   /**

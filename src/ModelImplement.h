@@ -38,15 +38,15 @@ protected:
 
   /// Adds System to the Model graph.
   /**
-   * @param s pointer to the System which will be added to the Model.
+   * @param sys pointer to the System which will be added to the Model.
    */
-  void add(System *s);
+  void add(System *sys);
 
   /// Adds Flow to the Model graph.
   /**
-   * @param f pointer to the Flow which will be added to the Model.
+   * @param flow pointer to the Flow which will be added to the Model.
    */
-  void add(Flow *f);
+  void add(Flow *flow);
 
 public:
   /// Default constructor for Model.
@@ -143,15 +143,15 @@ public:
 
   /// Removes System to the Model graph.
   /**
-   * @param f pointer to the System which will be removed to the Model.
+   * @param sys pointer to the System which will be removed to the Model.
    */
-  void remove(System *s);
+  void remove(System *sys);
 
   /// Removes Flow to the Model graph.
   /**
-   * @param f pointer to the Flow which will be removed to the Model.
+   * @param flow pointer to the Flow which will be removed to the Model.
    */
-  void remove(Flow *f);
+  void remove(Flow *flow);
 
   /// Executes the Model.
   /**
