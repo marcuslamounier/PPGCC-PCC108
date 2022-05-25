@@ -27,15 +27,25 @@ SystemImplement::SystemImplement(const System &sys)
   value = sys.getValue();
 }
 
-SystemImplement &SystemImplement::operator=(const System &sys)
+SystemImplement *SystemImplement::operator=(const System *sys)
 {
-  if (this == &sys)
+  if (this == sys)
   {
-    return *this;
+    return this;
   }
-  setValue(sys.getValue());
-  return *this;
+  setValue(sys->getValue());
+  return this;
 }
+
+// SystemImplement &SystemImplement::operator=(const System &sys)
+// {
+//   if (this == &sys)
+//   {
+//     return *this;
+//   }
+//   setValue(sys.getValue());
+//   return *this;
+// }
 
 SystemImplement::SystemImplement(double v)
 {

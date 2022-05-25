@@ -19,15 +19,15 @@ using namespace std;
 
 void run_unit_tests_globals()
 {
-  cout << "System tests" << endl;
+  cout << "Phase 1 - System tests" << endl;
   run_unit_tests_System();
   cout << GREEN << "OK!" << RESET << endl;
 
-  cout << "Flow tests" << endl;
+  cout << "Phase 2 - Flow tests" << endl;
   run_unit_tests_Flow();
   cout << GREEN << "OK!" << RESET << endl;
 
-  cout << "Model tests" << endl;
+  cout << "Phase 3 - Model tests" << endl;
   run_unit_tests_Model();
   cout << GREEN << "OK!" << RESET << endl;
 }

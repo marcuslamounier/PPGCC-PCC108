@@ -63,7 +63,8 @@ private:
   /**
    * @param sys: reference for the System which will be copied.
    */
-  SystemImplement &operator=(const System &sys);
+  // SystemImplement &operator=(const System &sys);
+  SystemImplement *operator=(const System *sys);
 };
 
 #endif

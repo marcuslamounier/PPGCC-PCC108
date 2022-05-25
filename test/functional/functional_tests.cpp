@@ -24,8 +24,8 @@ void exponentialFuncTest()
   cout << "Test 1 - Exponential flow" << endl;
 
   Model *expModel = Model::createModel();
-  System *pop1 = &expModel->createSystem(100.0);
-  System *pop2 = &expModel->createSystem(0.0);
+  System *pop1 = expModel->createSystem(100.0);
+  System *pop2 = expModel->createSystem(0.0);
   expModel->createFlow<ExponentialFlow>(pop1, pop2);
 
   assert(abs(pop1->getValue() - 100.0) < 0.0001);
@@ -48,8 +48,8 @@ void logisticFuncTest()
   cout << "Test 2 - Logistic flow" << endl;
 
   Model *logModel = Model::createModel();
-  System *p1 = &logModel->createSystem(100.0);
-  System *p2 = &logModel->createSystem(10.0);
+  System *p1 = logModel->createSystem(100.0);
+  System *p2 = logModel->createSystem(10.0);
   logModel->createFlow<LogisticFlow>(p1, p2);
 
   assert(abs(p1->getValue() - 100.0) < 0.0001);
@@ -73,11 +73,11 @@ void complexFuncTest()
 
   Model *complexModel = Model::createModel();
 
-  System *Q1 = &complexModel->createSystem(100);
-  System *Q2 = &complexModel->createSystem(0);
-  System *Q3 = &complexModel->createSystem(100);
-  System *Q4 = &complexModel->createSystem(0);
-  System *Q5 = &complexModel->createSystem(0);
+  System *Q1 = complexModel->createSystem(100);
+  System *Q2 = complexModel->createSystem(0);
+  System *Q3 = complexModel->createSystem(100);
+  System *Q4 = complexModel->createSystem(0);
+  System *Q5 = complexModel->createSystem(0);
   
   complexModel->createFlow<ExponentialFlow>(Q1, Q2);
   complexModel->createFlow<ExponentialFlow>(Q1, Q3);

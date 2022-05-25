@@ -84,7 +84,7 @@ public:
   /**
    * @return Reference for created System.
    */
-  virtual System &createSystem(double v) = 0;
+  virtual System *createSystem(double v) = 0;
 
   /**
    * @brief Creates Flow for the model.

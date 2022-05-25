@@ -67,8 +67,8 @@ void unit_Flow_getTarget()
 void unit_Flow_getLastValue()
 {
   Model *m = Model::createModel();
-  System *s1 = &m->createSystem(100.0);
-  System *s2 = &m->createSystem(0.0);
+  System *s1 = m->createSystem(100.0);
+  System *s2 = m->createSystem(0.0);
   Flow *f = m->createFlow<ExponentialFlow>(s1, s2);
 
   m->execute(1, 1, 1);

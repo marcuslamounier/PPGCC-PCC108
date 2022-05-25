@@ -87,11 +87,11 @@ Model *Model::createModel() {
   return ModelImplement::createModel();
 }
 
-System &ModelImplement::createSystem(double v)
+System *ModelImplement::createSystem(double v)
 {
   System *s = new SystemImplement(v);
   add(s);
-  return *s;
+  return s;
 }
 
 System *ModelImplement::getSystem(int index)
