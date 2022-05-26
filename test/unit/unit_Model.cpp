@@ -18,11 +18,11 @@
 
 using namespace std;
 
-static int x = 1;
-void printStep() {
-  cout << "test " << x << endl;
-  x++;
-}
+// static int x = 1;
+// void printStep() {
+//   cout << "test " << x << endl;
+//   x++;
+// }
 
 void unit_Model_constructor()
 {

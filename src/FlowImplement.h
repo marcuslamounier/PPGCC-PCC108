@@ -35,6 +35,14 @@ protected:
   double lastValue;
 
 public:
+  FlowBody();
+  FlowBody(System *from, System *to);
+  FlowBody(System *from, System *to, double lv);
+
+  /// Returns pointer for the source System.
+  /**
+   * @return pointer for the source System.
+   */
   System *getSource() const;
 
   /// Returns pointer for the target System.
@@ -89,6 +97,13 @@ class FlowHandle : public Flow, public Handle<FlowBody>
 public:
   /// Default constructor for Flow.
   FlowHandle();
+
+  /// Parameter's constructor for Flow.
+  /**
+   * @param from: pointer for the source System.
+   * @param to: pointer for the target System.
+   */
+  FlowHandle(System *from, System *to);
 
   /// Parameter's constructor for Flow.
   /**

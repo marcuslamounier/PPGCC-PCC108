@@ -107,10 +107,9 @@ public:
   template <typename T_FLOW_IMPLEMENT>
   Flow *createFlow(System *from, System *to)
   {
-    Flow *f = new T_FLOW_IMPLEMENT(from, to);
-    // Flow *f = new T_FLOW_IMPLEMENT();
-    // f->setSource(from);
-    // f->setTarget(to);
+    Flow *f = new T_FLOW_IMPLEMENT();
+    f->setSource(from);
+    f->setTarget(to);
     add(f);
     return f;
   }

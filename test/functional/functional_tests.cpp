@@ -26,7 +26,11 @@ void exponentialFuncTest()
   Model *expModel = Model::createModel();
   System *pop1 = expModel->createSystem(100.0);
   System *pop2 = expModel->createSystem(0.0);
-  expModel->createFlow<ExponentialFlow>(pop1, pop2);
+  // expModel->createFlow<ExponentialFlow>(pop1, pop2);
+  Flow *f = expModel->createFlow<ExponentialFlow>();
+  f->setSource(pop1);
+  f->setTarget(pop2);
+
 
   assert(abs(pop1->getValue() - 100.0) < 0.0001);
   assert(abs(pop2->getValue() - 0.0) < 0.0001);

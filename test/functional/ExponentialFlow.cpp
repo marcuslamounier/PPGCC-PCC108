@@ -14,20 +14,22 @@
 using namespace std;
 
 ExponentialFlow::ExponentialFlow() {
-  source = NULL;
-  target = NULL;
+  pImpl_ = new FlowBody();
+  pImpl_->setSource(NULL);
+  pImpl_->setSource(NULL);
+  pImpl_->setLastValue(0.0);
   factor = 0.01;
 }
 
 ExponentialFlow::ExponentialFlow(System *from, System *to) {
-  source = from;
-  target = to;
+  pImpl_ = new FlowBody(from, to);
+  pImpl_->setLastValue(0.0);
   factor = 0.01;
 }
 
 ExponentialFlow::ExponentialFlow(System *from, System *to, double f) {
-  source = from;
-  target = to;
+  pImpl_ = new FlowBody(from, to);
+  pImpl_->setLastValue(0.0);
   factor = f;
 }
 

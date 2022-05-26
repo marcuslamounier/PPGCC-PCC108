@@ -22,7 +22,7 @@
  * by a rate provided by a logistic equation.
  */
 
-class LogisticFlow : public FlowBody
+class LogisticFlow : public FlowHandle
 {
 private:
   /// Factor of logistic flow transfer rate.

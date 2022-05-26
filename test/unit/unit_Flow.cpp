@@ -17,6 +17,12 @@
 
 using namespace std;
 
+static int x = 1;
+void printStep() {
+  cout << "test " << x << endl;
+  x++;
+}
+
 void unit_Flow_constructor()
 {
   Flow *f = new ExponentialFlow();
@@ -159,15 +165,37 @@ void unit_Flow_execute()
 
 void run_unit_tests_Flow()
 {
+
+  // printStep();
   unit_Flow_constructor();
+
+  // printStep();
   unit_Flow_destructor();
+
+  // printStep();
   unit_Flow_getSource();
+
+  // printStep();
   unit_Flow_getTarget();
+
+  // printStep();
   unit_Flow_getLastValue();
+
+  // printStep();
   unit_Flow_setSource();
+
+  // printStep();
   unit_Flow_setTarget();
+
+  // printStep();
   unit_Flow_setLastValue();
+
+  // printStep();
   unit_Flow_clearSource();
+
+  // printStep();
   unit_Flow_clearTarget();
+
+  // printStep();
   unit_Flow_execute();
 }
