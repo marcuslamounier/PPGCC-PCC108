@@ -1,5 +1,0 @@
-<map id="ModelImplement::createSystem" name="ModelImplement::createSystem">
-<area shape="rect" id="node1" title="Creates System for the model." alt="" coords="5,5,212,32"/>
-<area shape="rect" id="node2" href="$class_model_implement.html#a260e2afd64de9b213e845a51d8b194d6" title="Adds System to the Model graph." alt="" coords="260,5,407,32"/>
-<area shape="rect" id="node3" href="$class_model_implement.html#aa00e8dcaa2f7b35477fe278fc597f7bf" title="Returns pointer for the last System in the array." alt="" coords="455,5,645,32"/>
-</map>

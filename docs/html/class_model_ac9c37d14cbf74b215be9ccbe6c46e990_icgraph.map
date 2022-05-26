@@ -1,5 +1,0 @@
-<map id="Model::getFlow" name="Model::getFlow">
-<area shape="rect" id="node1" title="Returns Flow pointer for Flow in index&#45;th position." alt="" coords="208,31,319,57"/>
-<area shape="rect" id="node2" href="$unit___model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="Tests the flow creators." alt="" coords="5,5,160,32"/>
-<area shape="rect" id="node3" href="$unit___model_8cpp.html#a5405e4ad382f91d5487d8c8c30567b24" title="Tests the Flow* getter." alt="" coords="14,56,151,83"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="Model::getSystem" name="Model::getSystem">
-<area shape="rect" id="node1" title="Returns System pointer for System in index&#45;th position." alt="" coords="227,31,355,57"/>
-<area shape="rect" id="node2" href="$unit___model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="Tests the flow creators." alt="" coords="15,5,169,32"/>
-<area shape="rect" id="node3" href="$unit___model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Tests the system creators." alt="" coords="5,56,179,83"/>
-</map>

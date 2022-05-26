@@ -1,8 +1,0 @@
-<map id="Flow::getSource" name="Flow::getSource">
-<area shape="rect" id="node1" title="Returns pointer for the source System." alt="" coords="395,81,511,108"/>
-<area shape="rect" id="node2" href="$unit___flow_8cpp.html#a91e2ffdd821e194708355a4802d9a838" title="Tests the source System* cleaner." alt="" coords="193,5,346,32"/>
-<area shape="rect" id="node4" href="$unit___flow_8cpp.html#a0dc76658e06597697628386d69327367" title="Tests the source System* getter." alt="" coords="198,56,341,83"/>
-<area shape="rect" id="node5" href="$unit___flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="Tests the source System* setter." alt="" coords="198,107,341,133"/>
-<area shape="rect" id="node6" href="$unit___model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="Tests the flow creators." alt="" coords="192,157,347,184"/>
-<area shape="rect" id="node3" href="$unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="5,56,144,83"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="Model::createSystem" name="Model::createSystem">
-<area shape="rect" id="node1" title="Creates System for the model." alt="" coords="413,107,560,133"/>
-<area shape="rect" id="node2" href="$functional__tests_8cpp.html#a746e76c514f8a88e9c55e35aacf9ebb3" title="Tests the complex model provided by the customer." alt="" coords="216,5,341,32"/>
-<area shape="rect" id="node4" href="$functional__tests_8cpp.html#a818a6ca1a8f10c80d1c9fd75d2ec0a25" title="Tests the exponential model provided by the customer." alt="" coords="207,56,350,83"/>
-<area shape="rect" id="node5" href="$functional__tests_8cpp.html#ad526582e2690a4c6e0225ca0563ab4f2" title="Tests the logistic model provided by the customer." alt="" coords="220,107,337,133"/>
-<area shape="rect" id="node6" href="$unit___model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="Tests the flow creators." alt="" coords="201,157,356,184"/>
-<area shape="rect" id="node7" href="$unit___model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Tests the system creators." alt="" coords="192,208,365,235"/>
-<area shape="rect" id="node3" href="$functional__tests_8cpp.html#a48e9960f5c9d263fd115528f9a3fc039" title="Global call for all functional tests." alt="" coords="5,49,144,90"/>
-</map>

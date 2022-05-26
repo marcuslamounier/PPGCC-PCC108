@@ -26,19 +26,20 @@ using namespace std;
 
 void unit_Model_constructor()
 {
-  Model *m = Model::createModel();
+  Model *m = ModelHandle::createModel();
   assert(m != NULL);
 
-  delete (Model *) m;
+  delete (ModelHandle *)m;
 }
 
 void unit_Model_destructor()
 {
   static int x = 0;
-  class MyModel: public ModelImplement {
-    public:
-      MyModel() { x = 0; };
-      virtual ~MyModel() { x = 1; };
+  class MyModel : public ModelHandle
+  {
+  public:
+    MyModel() { x = 0; };
+    virtual ~MyModel() { x = 1; };
   };
   {
     MyModel myModel;
@@ -46,8 +47,9 @@ void unit_Model_destructor()
   assert(x == 1);
 }
 
-void unit_Model_createModel() {
-  Model *m = Model::createModel();
+void unit_Model_createModel()
+{
+  Model *m = ModelHandle::createModel();
   int t0 = 0;
   assert(m->getTime() == t0);
 
@@ -55,72 +57,72 @@ void unit_Model_createModel() {
   m->incrementTime(incr);
   assert(m->getTime() == t0 + incr);
 
-  delete (Model *) m;
+  delete (ModelHandle *)m;
 }
 
-void unit_Model_createSystem() {
-  Model *m = Model::createModel();
+void unit_Model_createSystem()
+{
+  Model *m = ModelHandle::createModel();
 
   double v0 = 100.0;
-  m->createSystem(v0);
-  assert(abs(m->getSystem(0)->getValue() - v0) < 0.0001);
+  System *s = m->createSystem(v0);
+  assert(abs(s->getValue() - v0) < 0.0001);
 
-  delete (Model *) m;
+  delete (ModelHandle *)m;
 }
 
-void unit_Model_createFlow() {
-  Model *m = Model::createModel();
+void unit_Model_createFlow()
+{
+  Model *m = ModelHandle::createModel();
   double v0 = 100.0;
-  m->createSystem(v0);
-  m->createSystem(10.0);
-  m->createFlow<ExponentialFlow>(
-      m->getSystem(0),
-      m->getSystem(1));
+  System *s1 = m->createSystem(v0);
+  System *s2 = m->createSystem(10.0);
+  m->createFlow<ExponentialFlow>(s1, s2);
   assert(abs(m->getFlow(0)->getSource()->getValue() - v0) < 0.0001);
 
-  delete (Model *) m;
+  delete (ModelHandle *)m;
 }
 
 void unit_Model_getSystemImplement()
 {
-  Model *m = Model::createModel();
+  Model *m = ModelHandle::createModel();
   System *s = m->createSystem(0.0);
 
   assert(m->getSystem(0) == s);
 
-  delete (Model *) m;
+  delete (ModelHandle *)m;
 }
 
 void unit_Model_getFlow()
 {
-  Model *m = Model::createModel();
+  Model *m = ModelHandle::createModel();
   Flow *f = m->createFlow<ExponentialFlow>();
 
   assert(m->getFlow(0) == f);
 
-  delete (Model *) m;
+  delete (ModelHandle *)m;
 }
 
 void unit_Model_getTime()
 {
   int t = 0;
 
-  Model *m = Model::createModel();
+  Model *m = ModelHandle::createModel();
   m->setTime(t);
   assert(m->getTime() == t);
 
-  delete (Model *) m;
+  delete (ModelHandle *)m;
 }
 
 void unit_Model_setTime()
 {
   int t = 1;
 
-  Model *m = Model::createModel();
+  Model *m = ModelHandle::createModel();
   m->setTime(t);
   assert(m->getTime() == t);
 
-  delete (Model *) m;
+  delete (ModelHandle *)m;
 }
 
 void unit_Model_incrementTime()
@@ -128,7 +130,7 @@ void unit_Model_incrementTime()
   int incr = 2;
   int t = 0;
 
-  Model *m = Model::createModel();
+  Model *m = ModelHandle::createModel();
   m->setTime(t);
   m->incrementTime();
   assert(m->getTime() == t + 1);
@@ -137,12 +139,12 @@ void unit_Model_incrementTime()
   m->incrementTime(incr);
   assert(m->getTime() == t + incr);
 
-  delete m;
+  delete (ModelHandle *)m;
 }
 
 void unit_Model_add()
 {
-  Model *m = Model::createModel();
+  Model *m = ModelHandle::createModel();
   System *s = m->createSystem(100.0);
   Flow *f = m->createFlow<ExponentialFlow>();
 
@@ -160,12 +162,12 @@ void unit_Model_add()
   }
   assert(foundFlow);
 
-  delete (Model *) m;
+  delete (ModelHandle *)m;
 }
 
 void unit_Model_remove()
 {
-  Model *m = Model::createModel();
+  Model *m = ModelHandle::createModel();
   System *s = m->createSystem(100.0);
   Flow *f = m->createFlow<ExponentialFlow>();
 
@@ -195,18 +197,18 @@ void unit_Model_remove()
   }
   assert(!foundFlow);
 
-  delete (Model *) m;
+  delete (ModelHandle *)m;
 }
 
 void unit_Model_execute()
 {
-  Model *m = Model::createModel();
+  Model *m = ModelHandle::createModel();
   int duration = 100;
 
   m->execute(1, duration, 1);
   assert(m->getTime() == duration);
 
-  delete (Model *) m;
+  delete (ModelHandle *)m;
 }
 
 void run_unit_tests_Model()
@@ -216,28 +218,28 @@ void run_unit_tests_Model()
 
   // printStep();
   unit_Model_destructor();
-  
+
   // printStep();
   unit_Model_getSystemImplement();
-  
+
   // printStep();
   unit_Model_getFlow();
-  
+
   // printStep();
   unit_Model_getTime();
-  
+
   // printStep();
   unit_Model_setTime();
-  
+
   // printStep();
   unit_Model_incrementTime();
-  
+
   // printStep();
   unit_Model_add();
-  
+
   // printStep();
   unit_Model_remove();
-  
+
   // printStep();
   unit_Model_execute();
 }

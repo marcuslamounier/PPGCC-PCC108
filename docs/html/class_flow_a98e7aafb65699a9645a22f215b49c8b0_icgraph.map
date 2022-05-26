@@ -1,5 +1,0 @@
-<map id="Flow::clearSource" name="Flow::clearSource">
-<area shape="rect" id="node1" title="Sets NULL for the source System." alt="" coords="393,5,520,32"/>
-<area shape="rect" id="node2" href="$unit___flow_8cpp.html#a91e2ffdd821e194708355a4802d9a838" title="Tests the source System* cleaner." alt="" coords="192,5,345,32"/>
-<area shape="rect" id="node3" href="$unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="5,5,144,32"/>
-</map>

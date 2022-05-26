@@ -13,11 +13,16 @@
 
 using namespace std;
 
-FlowBody::FlowBody() {}
+FlowBody::FlowBody() {
+  source = NULL;
+  target = NULL;
+  lastValue = 0.0;
+}
 
 FlowBody::FlowBody(System *from, System *to) {
   source = from;
   target = to;
+  lastValue = 0.0;
 }
 
 FlowBody::FlowBody(System *from, System *to, double lv) {
@@ -64,6 +69,10 @@ void FlowBody::clearSource()
 void FlowBody::clearTarget()
 {
   target = NULL;
+}
+
+double FlowBody::execute() {
+  return 0.0;
 }
 
 FlowHandle::FlowHandle()
@@ -123,4 +132,8 @@ void FlowHandle::clearSource()
 void FlowHandle::clearTarget()
 {
   pImpl_->clearTarget();
+}
+
+double FlowHandle::execute() {
+  return pImpl_->execute();
 }

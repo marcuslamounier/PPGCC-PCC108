@@ -1,6 +1,0 @@
-<map id="Model::setTime" name="Model::setTime">
-<area shape="rect" id="node1" title="Updates current time in Model execution." alt="" coords="231,56,341,83"/>
-<area shape="rect" id="node2" href="$unit___model_8cpp.html#a3cccf91ec949426c8c8f839d4ef8b43d" title="Tests the current time getter." alt="" coords="25,5,163,32"/>
-<area shape="rect" id="node3" href="$unit___model_8cpp.html#aca4b3243c61a709985d47617c965b511" title="Tests the current time incrementer." alt="" coords="5,56,183,83"/>
-<area shape="rect" id="node4" href="$unit___model_8cpp.html#a08ad72f756534b6b0f87eb638731d0ef" title="Tests the current time setter." alt="" coords="25,107,163,133"/>
-</map>

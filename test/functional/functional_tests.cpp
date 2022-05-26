@@ -23,13 +23,10 @@ void exponentialFuncTest()
 {
   cout << "Test 1 - Exponential flow" << endl;
 
-  Model *expModel = Model::createModel();
+  Model *expModel = ModelHandle::createModel();
   System *pop1 = expModel->createSystem(100.0);
   System *pop2 = expModel->createSystem(0.0);
-  // expModel->createFlow<ExponentialFlow>(pop1, pop2);
-  Flow *f = expModel->createFlow<ExponentialFlow>();
-  f->setSource(pop1);
-  f->setTarget(pop2);
+  Flow *f = expModel->createFlow<ExponentialFlow>(pop1, pop2);
 
 
   assert(abs(pop1->getValue() - 100.0) < 0.0001);
@@ -42,7 +39,7 @@ void exponentialFuncTest()
   assert(abs(pop2->getValue() - 63.3968) < 0.0001);
   assert(expModel->getTime() == 100);
 
-  delete (ModelImplement *)expModel;
+  delete (ModelHandle *)expModel;
 
   cout << GREEN << "OK!" << RESET << endl;
 }
@@ -51,7 +48,7 @@ void logisticFuncTest()
 {
   cout << "Test 2 - Logistic flow" << endl;
 
-  Model *logModel = Model::createModel();
+  Model *logModel = ModelHandle::createModel();
   System *p1 = logModel->createSystem(100.0);
   System *p2 = logModel->createSystem(10.0);
   logModel->createFlow<LogisticFlow>(p1, p2);
@@ -66,7 +63,7 @@ void logisticFuncTest()
   assert(abs(p2->getValue() - 21.7833) < 0.0001);
   assert(logModel->getTime() == 100);
 
-  delete (ModelImplement *)logModel;
+  delete (ModelHandle *)logModel;
 
   cout << GREEN << "OK!" << RESET << endl;
 }
@@ -75,7 +72,7 @@ void complexFuncTest()
 {
   cout << "Test 3 - Complex model flow" << endl;
 
-  Model *complexModel = Model::createModel();
+  Model *complexModel = ModelHandle::createModel();
 
   System *Q1 = complexModel->createSystem(100);
   System *Q2 = complexModel->createSystem(0);
@@ -106,7 +103,7 @@ void complexFuncTest()
   assert(abs(Q5->getValue() - 16.4612) < 0.0001);
   assert(complexModel->getTime() == 100);
 
-  delete (ModelImplement *)complexModel;
+  delete (ModelHandle *)complexModel;
 
   cout << GREEN << "OK!" << RESET << endl;
 }

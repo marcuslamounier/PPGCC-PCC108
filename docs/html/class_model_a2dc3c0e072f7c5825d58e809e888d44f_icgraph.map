@@ -1,5 +1,0 @@
-<map id="Model::firstFlow" name="Model::firstFlow">
-<area shape="rect" id="node1" title="Returns pointer for the first Flow in the array." alt="" coords="187,31,300,57"/>
-<area shape="rect" id="node2" href="$unit___model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Tests the Flow* and System* associators." alt="" coords="15,5,129,32"/>
-<area shape="rect" id="node3" href="$unit___model_8cpp.html#ab4575dc752bc4d5c37dd584b34edd4e3" title="Tests the Flow* and System* disassociators." alt="" coords="5,56,139,83"/>
-</map>

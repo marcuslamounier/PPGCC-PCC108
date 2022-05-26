@@ -87,7 +87,7 @@ public:
    * It needs to be implemented.
    * @return the momentary flow value.
    */
-  // double execute();
+  double execute();
   // virtual double execute() = 0;
 };
 
@@ -161,7 +161,7 @@ public:
    * It needs to be implemented.
    * @return the momentary flow value.
    */
-  // double execute();
+  double execute();
   // virtual double execute() = 0;
 };
 
