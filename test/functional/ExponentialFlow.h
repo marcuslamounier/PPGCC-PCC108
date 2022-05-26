@@ -22,7 +22,7 @@
  * another by a rate provided by an exponential equation.
  */
 
-class ExponentialFlow : public FlowImplement
+class ExponentialFlow : public FlowBody
 {
 private:
   /// Factor of exponential flow transfer rate.

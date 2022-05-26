@@ -52,7 +52,7 @@ ModelImplement::~ModelImplement()
   for (int i = systems.size() - 1; i == 0; i--)
     delete (SystemHandle *)systems[i];
   for (int i = flows.size() - 1; i == 0; i--)
-    delete (FlowImplement *)flows[i];
+    delete (FlowHandle *)flows[i];
   _instance = 0;
 }
 

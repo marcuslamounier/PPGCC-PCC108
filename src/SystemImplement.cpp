@@ -36,19 +36,6 @@ SystemHandle::SystemHandle(double v)
   pImpl_->attach();
 };
 
-// SystemHandle(const SystemHandle *sys) {}
-
-// SystemHandle &operator=(const SystemHandle &hd);
-// {
-//   if (this != &hd)
-//   {
-//     hd.pImpl_->attach();
-//     pImpl_->detach();
-//     pImpl_ = hd.pImpl_;
-//   }
-//   return *this;
-// }
-
 void SystemHandle::setValue(double v)
 {
   pImpl_->setValue(v);

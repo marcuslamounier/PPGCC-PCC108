@@ -13,83 +13,97 @@
 
 using namespace std;
 
-FlowImplement::FlowImplement()
-{
-  source = NULL;
-  target = NULL;
-  lastValue = 0.0;
-}
-
-FlowImplement::FlowImplement(const Flow *flow)
-{
-  if (this == flow)
-  {
-    return;
-  }
-  source = flow->getSource();
-  target = flow->getTarget();
-  lastValue = flow->getLastValue();
-}
-
-FlowImplement *FlowImplement::operator=(const Flow *flow)
-{
-  if (this == flow)
-  {
-    return this;
-  }
-
-  setSource(flow->getSource());
-  setTarget(flow->getTarget());
-  setLastValue(flow->getLastValue());
-
-  return this;
-}
-
-FlowImplement::FlowImplement(System *from, System *to, double lv)
-{
-  source = from;
-  target = to;
-  lastValue = lv;
-}
-
-FlowImplement::~FlowImplement() {}
-
-System *FlowImplement::getSource() const
+System *FlowBody::getSource() const
 {
   return source;
 }
 
-System *FlowImplement::getTarget() const
+System *FlowBody::getTarget() const
 {
   return target;
 }
 
-double FlowImplement::getLastValue() const
+double FlowBody::getLastValue() const
 {
   return lastValue;
 }
 
-void FlowImplement::setSource(System *s)
+void FlowBody::setSource(System *sys)
 {
-  source = s;
+  source = sys;
 }
 
-void FlowImplement::setTarget(System *s)
+void FlowBody::setTarget(System *sys)
 {
-  target = s;
+  target = sys;
 }
 
-void FlowImplement::setLastValue(double v)
+void FlowBody::setLastValue(double v)
 {
   lastValue = v;
 }
 
-void FlowImplement::clearSource()
+void FlowBody::clearSource()
 {
   source = NULL;
 }
 
-void FlowImplement::clearTarget()
+void FlowBody::clearTarget()
 {
-  target = NULL;
+  source = NULL;
+}
+
+FlowHandle::FlowHandle()
+{
+  pImpl_ = new FlowBody();
+  pImpl_->attach();
+}
+
+FlowHandle::FlowHandle(System *from, System *to, double lv)
+{
+  pImpl_ = new FlowBody();
+  pImpl_->setSource(from);
+  pImpl_->setTarget(to);
+  pImpl_->setLastValue(lv);
+  pImpl_->attach();
+}
+
+System *FlowHandle::getSource() const
+{
+  return pImpl_->getSource();
+}
+
+System *FlowHandle::getTarget() const
+{
+  return pImpl_->getTarget();
+}
+
+double FlowHandle::getLastValue() const
+{
+  return pImpl_->getLastValue();
+}
+
+void FlowHandle::setSource(System *sys)
+{
+  pImpl_->setSource(sys);
+}
+
+void FlowHandle::setTarget(System *sys)
+{
+  pImpl_->setTarget(sys);
+}
+
+void FlowHandle::setLastValue(double v)
+{
+  pImpl_->setLastValue(v);
+}
+
+void FlowHandle::clearSource()
+{
+  pImpl_->clearSource();
+}
+
+void FlowHandle::clearTarget()
+{
+  pImpl_->clearTarget();
 }

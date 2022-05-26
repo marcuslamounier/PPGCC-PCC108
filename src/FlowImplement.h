@@ -12,6 +12,7 @@
 #define FLOW_IMPLEMENT_H
 
 #include "Flow.h"
+#include "BridgeTemplate.h"
 
 /**
  * @class FlowImplement
@@ -21,7 +22,7 @@
  * The class Flow is used for carrying energy from one system to another.
  */
 
-class FlowImplement: public Flow
+class FlowBody : public Body
 {
 protected:
   /// Pointer for the source System
@@ -34,8 +35,60 @@ protected:
   double lastValue;
 
 public:
+  System *getSource() const;
+
+  /// Returns pointer for the target System.
+  /**
+   * @return pointer for the target System.
+   */
+  System *getTarget() const;
+
+  /// Returns the last value carried by Flow.
+  /**
+   * @return the last value carried by Flow.
+   */
+  double getLastValue() const;
+
+  /// Updates the source System.
+  /**
+   * @param s pointer for the System which will be the Flow source.
+   */
+  void setSource(System *sys);
+
+  /// Updates the target System.
+  /**
+   * @param s pointer for the System which will be the Flow target.
+   */
+  void setTarget(System *sys);
+
+  /// Updates the last value carried by the Flow.
+  /**
+   * @param v last value carried by the Flow.
+   */
+  void setLastValue(double v);
+
+  /// Sets NULL for the source System.
+  void clearSource();
+
+  /// Sets NULL for the target System.
+  void clearTarget();
+
+  /// Virtual method unimplemented for executing the Flow.
+  /**
+   * This is a @e required method for all the subclasses derived from Flow.
+   * It needs to be implemented.
+   * @return the momentary flow value.
+   */
+  // double execute();
+  // virtual double execute() = 0;
+};
+
+class FlowHandle : public Flow, public Handle<FlowBody>
+{
+
+public:
   /// Default constructor for Flow.
-  FlowImplement();
+  FlowHandle();
 
   /// Parameter's constructor for Flow.
   /**
@@ -43,10 +96,7 @@ public:
    * @param to: pointer for the target System.
    * @param lv: last value carried by the Flow.
    */
-  FlowImplement(System *from, System *to, double lv);
-
-  /// Virtual destructor for Flow
-  virtual ~FlowImplement();
+  FlowHandle(System *from, System *to, double lv);
 
   /// Returns pointer for the source System.
   /**
@@ -70,13 +120,13 @@ public:
   /**
    * @param s pointer for the System which will be the Flow source.
    */
-  void setSource(System *s);
+  void setSource(System *sys);
 
   /// Updates the target System.
   /**
    * @param s pointer for the System which will be the Flow target.
    */
-  void setTarget(System *s);
+  void setTarget(System *sys);
 
   /// Updates the last value carried by the Flow.
   /**
@@ -96,22 +146,8 @@ public:
    * It needs to be implemented.
    * @return the momentary flow value.
    */
-  virtual double execute() = 0;
-
-private:
-  /// Copy constructor for Flow.
-  /**
-   * This is a @b private method. So it is not included in the docs.
-   * @param flow: pointer for the Flow which will be copied.
-   */
-  FlowImplement(const Flow *flow);
-
-  /// Override for operator "=".
-  /**
-   * This is a @b private method. So it is not included in the docs.
-   * @param flow: pointer for the Flow which will be copied.
-   */
-  FlowImplement *operator=(const Flow *flow);
+  // double execute();
+  // virtual double execute() = 0;
 };
 
 #endif

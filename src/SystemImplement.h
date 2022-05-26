@@ -54,18 +54,6 @@ public:
    */
   SystemHandle(double v);
 
-  // /// Copy constructor for System.
-  // /**
-  //  * @param sys: reference for the System which will be copied.
-  //  */
-  // SystemHandle(const SystemHandle *sys);
-
-  // /// Overloads for operator "=".
-  // /**
-  //  * @param sys: reference for the System which will be copied.
-  //  */
-  // SystemHandle &operator=(const SystemHandle *sys);
-
   /// Returns the value stored in the System.
   /**
    * @return the value stored in the System.
