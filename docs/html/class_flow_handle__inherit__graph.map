@@ -1,0 +1,7 @@
+<map id="FlowHandle" name="FlowHandle">
+<area shape="rect" id="node1" title="Implementation for class Flow." alt="" coords="85,80,174,107"/>
+<area shape="rect" id="node4" href="$class_exponential_flow.html" title="class ExponentialFlow" alt="" coords="5,155,123,181"/>
+<area shape="rect" id="node5" href="$class_logistic_flow.html" title="class LogisticFlow." alt="" coords="147,155,242,181"/>
+<area shape="rect" id="node2" href="$class_flow.html" title="Interface for class Flow." alt="" coords="45,5,94,32"/>
+<area shape="rect" id="node3" href="$class_handle.html" title=" " alt="" coords="118,5,261,32"/>
+</map>

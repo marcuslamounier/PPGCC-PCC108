@@ -1,0 +1,5 @@
+<map id="FlowBody::getSource" name="FlowBody::getSource">
+<area shape="rect" id="node1" title="Returns pointer for the source System." alt="" coords="428,5,575,32"/>
+<area shape="rect" id="node2" href="$class_flow_handle.html#a904492118494d6e5f69f94e7db86d097" title="Returns pointer for the source System." alt="" coords="224,5,380,32"/>
+<area shape="rect" id="node3" href="$class_exponential_flow.html#a8ebb0c298d3bea1d30c48cd79f10ddb1" title="Returns the momentary flow value." alt="" coords="5,5,176,32"/>
+</map>

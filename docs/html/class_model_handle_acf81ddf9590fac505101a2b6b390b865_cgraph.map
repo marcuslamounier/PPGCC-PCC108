@@ -1,0 +1,4 @@
+<map id="ModelHandle::getTime" name="ModelHandle::getTime">
+<area shape="rect" id="node1" title="Returns current time in Model execution." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$class_model_body.html#a572648f46fe7e17026d7beb0f7872354" title="Returns current time in Model execution." alt="" coords="204,5,345,32"/>
+</map>

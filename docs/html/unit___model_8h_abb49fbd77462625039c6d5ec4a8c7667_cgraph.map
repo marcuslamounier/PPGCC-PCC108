@@ -1,0 +1,7 @@
+<map id="unit_Model_createModel" name="unit_Model_createModel">
+<area shape="rect" id="node1" title="Tests the model creators." alt="" coords="5,56,168,83"/>
+<area shape="rect" id="node2" href="$class_model_handle.html#a956f6abcd4b6616c674a8d071d73da76" title="Creates the model." alt="" coords="216,5,392,32"/>
+<area shape="rect" id="node4" href="$class_model.html#a83e718218da786d585ec50800696de02" title="Returns current time in Model execution." alt="" coords="249,56,359,83"/>
+<area shape="rect" id="node5" href="$class_model.html#a69fed3f544934d687904bc3d40a28ce6" title="Increments the time in Model execution." alt="" coords="229,107,379,133"/>
+<area shape="rect" id="node3" href="$class_model_body.html#a1d164def69ad2b9180aaf5081a3d445b" title="Creates the model." alt="" coords="440,5,607,32"/>
+</map>

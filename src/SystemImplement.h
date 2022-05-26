@@ -15,9 +15,9 @@
 #include "BridgeTemplate.h"
 
 /**
- * @class SystemImplement
+ * @class SystemBody
  *
- * @brief Implementation class for class System.
+ * @brief Body interface for class System.
  *
  * The class System will hold the energy.
  */
@@ -41,6 +41,14 @@ public:
    */
   void setValue(double v);
 };
+
+/**
+ * @class SystemHandle
+ *
+ * @brief Implementation class for class System.
+ *
+ * The class System will hold the energy.
+ */
 
 class SystemHandle : public System, public Handle<SystemBody>
 {

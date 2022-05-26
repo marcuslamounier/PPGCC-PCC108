@@ -1,0 +1,19 @@
+<map id="System::getValue" name="System::getValue">
+<area shape="rect" id="node1" title="Returns the value stored in the System." alt="" coords="631,284,757,311"/>
+<area shape="rect" id="node2" href="$functional__tests_8cpp.html#a746e76c514f8a88e9c55e35aacf9ebb3" title="Tests the complex model provided by the customer." alt="" coords="433,5,559,32"/>
+<area shape="rect" id="node4" href="$functional__tests_8cpp.html#a818a6ca1a8f10c80d1c9fd75d2ec0a25" title="Tests the exponential model provided by the customer." alt="" coords="425,56,567,83"/>
+<area shape="rect" id="node5" href="$functional__tests_8cpp.html#ad526582e2690a4c6e0225ca0563ab4f2" title="Tests the logistic model provided by the customer." alt="" coords="437,107,555,133"/>
+<area shape="rect" id="node6" href="$unit___flow_8cpp.html#ad528dbdb3c62bfc55188e045359aba43" title="Tests lastValue getter." alt="" coords="416,157,576,184"/>
+<area shape="rect" id="node8" href="$unit___flow_8cpp.html#a0dc76658e06597697628386d69327367" title="Tests the source System* getter." alt="" coords="425,208,567,235"/>
+<area shape="rect" id="node9" href="$unit___flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title="Tests the target System* getter." alt="" coords="427,259,565,285"/>
+<area shape="rect" id="node10" href="$unit___flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="Tests the source System* setter." alt="" coords="425,309,567,336"/>
+<area shape="rect" id="node11" href="$unit___flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Tests the target System* setter." alt="" coords="427,360,565,387"/>
+<area shape="rect" id="node12" href="$unit___model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="Tests the flow creators." alt="" coords="419,411,573,437"/>
+<area shape="rect" id="node13" href="$unit___model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Tests the system creators." alt="" coords="409,461,583,488"/>
+<area shape="rect" id="node14" href="$unit___system_8cpp.html#ab320622db511f54344c510a9cfdbff94" title="Tests getter for stored value in System." alt="" coords="419,512,573,539"/>
+<area shape="rect" id="node17" href="$unit___system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6" title="Tests setter for stored value in System." alt="" coords="419,563,573,589"/>
+<area shape="rect" id="node3" href="$functional__tests_8cpp.html#a48e9960f5c9d263fd115528f9a3fc039" title="Global call for all functional tests." alt="" coords="214,49,353,90"/>
+<area shape="rect" id="node7" href="$unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="214,259,353,285"/>
+<area shape="rect" id="node15" href="$unit___system_8cpp.html#ad467de422f8fd316dde6be5ded75b13b" title="Global call for unitary tests for the methods of class System." alt="" coords="205,537,361,564"/>
+<area shape="rect" id="node16" href="$unit__tests_8cpp.html#aaef0e580ac1123f30a7c742b9b73e51a" title="Global call for unitary tests for all classes." alt="" coords="5,537,157,564"/>
+</map>

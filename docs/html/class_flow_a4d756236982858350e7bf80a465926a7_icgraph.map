@@ -1,0 +1,7 @@
+<map id="Flow::setSource" name="Flow::setSource">
+<area shape="rect" id="node1" title="Updates the source System." alt="" coords="393,56,509,83"/>
+<area shape="rect" id="node2" href="$class_model.html#ad26419692157b99701cc2811d57ab2ea" title="Creates Flow for the model." alt="" coords="205,5,333,32"/>
+<area shape="rect" id="node3" href="$unit___flow_8cpp.html#a91e2ffdd821e194708355a4802d9a838" title="Tests the source System* cleaner." alt="" coords="192,56,345,83"/>
+<area shape="rect" id="node5" href="$unit___flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="Tests the source System* setter." alt="" coords="197,107,340,133"/>
+<area shape="rect" id="node4" href="$unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="5,81,144,108"/>
+</map>

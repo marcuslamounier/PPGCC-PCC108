@@ -1,10 +1,13 @@
-/*!
- \file Bridge.h
- \brief The classes Handle and Body implements "bridge" design pattern (also known as 
-	"handle/body idiom").The class Body was implemented based on the class teCounted
-	writed by Ricardo Cartaxo and Gilberto Camara and founded in the geographic library TerraLib.
- \author Prof. Tiago Garcia de Senna Carneiro - UFOP, MG, Brazil
-*/
+/**
+ * @file BridgeTemplate.h
+ *
+ * @brief Handle/body idiom template
+ * 
+ * The classes Handle and Body implements "bridge" design pattern (also known as "handle/body idiom").The class Body was implemented based on the class teCounted writed by Ricardo Cartaxo and Gilberto Camara and founded in the geographic library TerraLib.
+ *
+ * @author Prof. Tiago Garcia de Senna Carneiro - UFOP, MG, Brazil
+ *
+ */
 
 #if ! defined( HANDLE_BODY )
 #define HANDLE_BODY

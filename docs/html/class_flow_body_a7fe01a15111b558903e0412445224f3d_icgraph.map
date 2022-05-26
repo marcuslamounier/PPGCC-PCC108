@@ -1,0 +1,7 @@
+<map id="FlowBody::setLastValue" name="FlowBody::setLastValue">
+<area shape="rect" id="node1" title="Updates the last value carried by the Flow." alt="" coords="273,81,436,108"/>
+<area shape="rect" id="node2" href="$class_exponential_flow.html#a1f981db78e6635fd9837648960d8dc8d" title="Default constructor for ExponentialFlow." alt="" coords="5,5,225,32"/>
+<area shape="rect" id="node3" href="$class_flow_handle.html#a01b4c36f6d55d35bfaf69f7875b5ed6b" title="Parameter&#39;s constructor for Flow." alt="" coords="33,56,197,83"/>
+<area shape="rect" id="node4" href="$class_logistic_flow.html#ab0f7906cfe1a27e18a4f558124e53ee0" title="Default constructor for ExponentialFlow." alt="" coords="28,107,203,133"/>
+<area shape="rect" id="node5" href="$class_flow_handle.html#af207734c7569b80f59b770cf1244ae48" title="Updates the last value carried by the Flow." alt="" coords="29,157,202,184"/>
+</map>

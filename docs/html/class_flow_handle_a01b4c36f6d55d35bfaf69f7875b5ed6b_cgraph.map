@@ -1,0 +1,5 @@
+<map id="FlowHandle::FlowHandle" name="FlowHandle::FlowHandle">
+<area shape="rect" id="node1" title="Parameter&#39;s constructor for Flow." alt="" coords="5,31,169,57"/>
+<area shape="rect" id="node2" href="$class_body.html#a5d53322c76a6952d096cb7564ac86db1" title="Increases the number of references to this object." alt="" coords="251,5,347,32"/>
+<area shape="rect" id="node3" href="$class_flow_body.html#a7fe01a15111b558903e0412445224f3d" title="Updates the last value carried by the Flow." alt="" coords="217,56,380,83"/>
+</map>

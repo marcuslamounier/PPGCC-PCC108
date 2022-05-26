@@ -15,9 +15,9 @@
 #include "BridgeTemplate.h"
 
 /**
- * @class FlowImplement
+ * @class FlowBody
  *
- * @brief Implementation class for class Flow.
+ * @brief Body interface for class Flow.
  *
  * The class Flow is used for carrying energy from one system to another.
  */
@@ -35,8 +35,22 @@ protected:
   double lastValue;
 
 public:
+  /// Default constructor for FlowB.
   FlowBody();
+
+  /// Parameter's constructor for Flow.
+  /**
+   * @param from: pointer for the source System.
+   * @param to: pointer for the target System.
+   */
   FlowBody(System *from, System *to);
+
+  /// Parameter's constructor for Flow.
+  /**
+   * @param from: pointer for the source System.
+   * @param to: pointer for the target System.
+   * @param lv: last value carried by the Flow.
+   */
   FlowBody(System *from, System *to, double lv);
 
   /// Returns pointer for the source System.
@@ -81,15 +95,22 @@ public:
   /// Sets NULL for the target System.
   void clearTarget();
 
-  /// Virtual method unimplemented for executing the Flow.
+  /// Unimplemented method for executing the Flow.
   /**
    * This is a @e required method for all the subclasses derived from Flow.
    * It needs to be implemented.
    * @return the momentary flow value.
    */
   double execute();
-  // virtual double execute() = 0;
 };
+
+/**
+ * @class FlowHandle
+ *
+ * @brief Implementation for class Flow.
+ *
+ * The class Flow is used for carrying energy from one system to another.
+ */
 
 class FlowHandle : public Flow, public Handle<FlowBody>
 {
@@ -155,14 +176,13 @@ public:
   /// Sets NULL for the target System.
   void clearTarget();
 
-  /// Virtual method unimplemented for executing the Flow.
+  /// Unimplemented method for executing the Flow.
   /**
    * This is a @e required method for all the subclasses derived from Flow.
    * It needs to be implemented.
    * @return the momentary flow value.
    */
   double execute();
-  // virtual double execute() = 0;
 };
 
 #endif

@@ -1,0 +1,7 @@
+<map id="run_unit_tests_Model" name="run_unit_tests_Model">
+<area shape="rect" id="node1" title="Global call for unitary tests for the methods of class Model." alt="" coords="5,31,152,57"/>
+<area shape="rect" id="node2" href="$unit___model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Tests the Model constructors." alt="" coords="200,5,357,32"/>
+<area shape="rect" id="node5" href="$unit___model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Tests the Model destructors." alt="" coords="203,56,354,83"/>
+<area shape="rect" id="node3" href="$class_model_handle.html#a956f6abcd4b6616c674a8d071d73da76" title="Creates the model." alt="" coords="405,5,581,32"/>
+<area shape="rect" id="node4" href="$class_model_body.html#a1d164def69ad2b9180aaf5081a3d445b" title="Creates the model." alt="" coords="629,5,796,32"/>
+</map>

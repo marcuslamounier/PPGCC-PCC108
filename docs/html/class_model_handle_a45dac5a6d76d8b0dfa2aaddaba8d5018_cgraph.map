@@ -1,0 +1,5 @@
+<map id="ModelHandle::remove" name="ModelHandle::remove">
+<area shape="rect" id="node1" title="Removes Flow to the Model graph." alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node2" href="$class_model_body.html#ab5a788d955640341c59102f6f4f5a81b" title="Removes System to the Model graph." alt="" coords="200,5,336,32"/>
+<area shape="rect" id="node3" href="$class_model_body.html#aef179572bbf530cd11b168c2f87f1fc5" title="Returns pointer for the first System in the array." alt="" coords="384,5,545,32"/>
+</map>

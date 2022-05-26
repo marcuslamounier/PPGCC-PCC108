@@ -15,9 +15,9 @@
 #include "BridgeTemplate.h"
 
 /**
- * @class ModelImplement
+ * @class ModelBody
  *
- * @brief Implementation class for class Model.
+ * @brief Body interface for class Model.
  *
  * The class Model is the program's main class.
  */
@@ -164,6 +164,14 @@ public:
    */
   void execute(int start = 1, int final = 100, int incr = 1);
 };
+
+/**
+ * @class ModelHandle
+ *
+ * @brief Implementation for class Model.
+ *
+ * The class Model is the program's main class.
+ */
 
 class ModelHandle : public Model, public Handle<ModelBody>
 {

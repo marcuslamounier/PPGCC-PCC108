@@ -1,0 +1,4 @@
+<map id="ModelBody::remove" name="ModelBody::remove">
+<area shape="rect" id="node1" title="Removes Flow to the Model graph." alt="" coords="5,5,141,32"/>
+<area shape="rect" id="node2" href="$class_model_body.html#afcc024b83ceee7d488b5641043319e87" title="Returns pointer for the first Flow in the array." alt="" coords="189,5,332,32"/>
+</map>
