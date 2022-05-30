@@ -3,6 +3,7 @@
 <area shape="rect" id="node2" title=" " alt="" coords="5,95,77,121"/>
 <area shape="rect" id="node3" href="$_logistic_flow_8h.html" title="Declaration for class LogisticFlow." alt="" coords="102,95,207,121"/>
 <area shape="rect" id="node4" href="$_flow_implement_8h.html" title="Implementation class for class Flow." alt="" coords="71,169,238,196"/>
-<area shape="rect" id="node5" href="$_flow_8h.html" title="Interface for class Flow." alt="" coords="125,244,185,271"/>
-<area shape="rect" id="node6" href="$_system_8h.html" title="Interface for class System." alt="" coords="115,319,194,345"/>
+<area shape="rect" id="node5" href="$_flow_8h.html" title="Interface for class Flow." alt="" coords="67,244,127,271"/>
+<area shape="rect" id="node7" href="$_bridge_template_8h.html" title="Handle/body idiom template." alt="" coords="152,244,275,271"/>
+<area shape="rect" id="node6" href="$_system_8h.html" title="Interface for class System." alt="" coords="58,319,137,345"/>
 </map>

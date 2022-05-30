@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['main_2ecpp_0',['main.cpp',['../functional_2main_8cpp.html',1,'(Global Namespace)'],['../unit_2main_8cpp.html',1,'(Global Namespace)']]],
-  ['model_1',['Model',['../class_model.html',1,'']]],
-  ['model_2eh_2',['Model.h',['../_model_8h.html',1,'']]],
-  ['modelimplement_3',['ModelImplement',['../class_model_implement.html',1,'ModelImplement'],['../class_model_implement.html#af8f9c855aff38c43ef8ad1374ac2e687',1,'ModelImplement::ModelImplement()'],['../class_model_implement.html#accc91b20dcbad69feabc9a754d15f578',1,'ModelImplement::ModelImplement(int t)']]],
-  ['modelimplement_2ecpp_4',['ModelImplement.cpp',['../_model_implement_8cpp.html',1,'']]],
-  ['modelimplement_2eh_5',['ModelImplement.h',['../_model_implement_8h.html',1,'']]]
+  ['handle_0',['Handle',['../class_handle.html',1,'Handle&lt; T &gt;'],['../class_handle.html#a6a72028918adf79c0ff8d9996e5e4107',1,'Handle::Handle()'],['../class_handle.html#af304e7014a2e600e235140d246783f85',1,'Handle::Handle(const Handle &amp;hd)']]],
+  ['handle_3c_20flowbody_20_3e_1',['Handle&lt; FlowBody &gt;',['../class_handle.html',1,'']]],
+  ['handle_3c_20modelbody_20_3e_2',['Handle&lt; ModelBody &gt;',['../class_handle.html',1,'']]],
+  ['handle_3c_20systembody_20_3e_3',['Handle&lt; SystemBody &gt;',['../class_handle.html',1,'']]]
 ];

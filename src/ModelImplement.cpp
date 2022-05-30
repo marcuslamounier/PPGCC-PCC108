@@ -11,128 +11,145 @@
 #include <iostream>
 #include <vector>
 #include "ModelImplement.h"
+#include "SystemImplement.h"
+#include "FlowImplement.h"
 
 using namespace std;
 
-ModelImplement::ModelImplement()
+Model *ModelBody::_instance = 0;
+
+ModelBody::ModelBody()
 {
   time = 0;
 }
 
-ModelImplement::ModelImplement(int t)
+ModelBody::ModelBody(int t)
 {
   time = t;
 }
 
-ModelImplement::ModelImplement(const Model &model)
-{
-  if (this == &model)
-  {
-    return;
+ModelBody::~ModelBody() {
+  for (int i = systems.size() - 1; i == 0; i--) {
+    delete (SystemHandle *) systems[i];
   }
-  time = model.getTime();
-}
-
-ModelImplement &ModelImplement::operator=(const Model &model)
-{
-  if (this == &model)
-  {
-    return *this;
+  for (int i = flows.size() - 1; i == 0; i--) {
+    delete (FlowHandle *) flows[i];
   }
-  setTime(model.getTime());
-  return *this;
+  _instance = 0;
 }
 
-ModelImplement::~ModelImplement()
+Model *ModelBody::createModel()
 {
-  flows.clear();
-  systems.clear();
+  if (_instance == 0)
+    _instance = new ModelHandle;
+  return _instance;
 }
 
-ModelImplement::iteratorSystem ModelImplement::firstSystem()
+System *ModelBody::createSystem(double v)
+{
+  System *s = new SystemHandle(v);
+  add(s);
+  return s;
+}
+
+Flow *ModelBody::createFlow()
+{
+  Flow *f = new FlowHandle();
+  add(f);
+  return f;
+}
+
+Flow *ModelBody::createFlow(System *from, System *to)
+{
+  Flow *f = new FlowHandle(from, to);
+  add(f);
+  return f;
+}
+
+Model::iteratorSystem ModelBody::firstSystem()
 {
   return systems.begin();
 }
 
-ModelImplement::iteratorSystem ModelImplement::lastSystem()
+Model::iteratorSystem ModelBody::lastSystem()
 {
   return systems.end();
 }
 
-ModelImplement::iteratorFlow ModelImplement::firstFlow()
+Model::iteratorFlow ModelBody::firstFlow()
 {
   return flows.begin();
 }
 
-ModelImplement::iteratorFlow ModelImplement::lastFlow()
+Model::iteratorFlow ModelBody::lastFlow()
 {
   return flows.end();
 }
 
-System *ModelImplement::getSystem(int index)
+System *ModelBody::getSystem(int index)
 {
   return systems[index];
 }
 
-Flow *ModelImplement::getFlow(int index)
+Flow *ModelBody::getFlow(int index)
 {
   return flows[index];
 }
 
-int ModelImplement::getTime() const
+int ModelBody::getTime() const
 {
   return time;
 }
 
-void ModelImplement::setTime(int t)
+void ModelBody::setTime(int t)
 {
   time = t;
 }
 
-void ModelImplement::incrementTime(int incr)
+void ModelBody::incrementTime(int incr)
 {
   time += incr;
 }
 
-void ModelImplement::add(System *s)
+void ModelBody::add(System *sys)
 {
-  systems.insert(lastSystem(), s);
+  systems.insert(lastSystem(), sys);
 }
 
-void ModelImplement::add(Flow *f)
+void ModelBody::add(Flow *flow)
 {
-  flows.insert(lastFlow(), f);
+  flows.insert(lastFlow(), flow);
 }
 
-void ModelImplement::remove(System *s)
+void ModelBody::remove(System *sys)
 {
   auto i = firstSystem();
-  for (System *sys : systems)
+  for (System *s : systems)
   {
-    if (s == sys)
+    if (sys == s)
     {
       systems.erase(i);
       break;
     }
     i++;
   }
-};
+}
 
-void ModelImplement::remove(Flow *f)
+void ModelBody::remove(Flow *flow)
 {
   auto i = firstFlow();
-  for (Flow *flow : flows)
+  for (Flow *f : flows)
   {
-    if (f == flow)
+    if (flow == flow)
     {
       flows.erase(i);
       break;
     }
     i++;
   }
-};
+}
 
-void ModelImplement::execute(int start, int final, int incr)
+void ModelBody::execute(int start, int final, int incr)
 {
   for (int i = start; i <= final; i += incr)
   {
@@ -147,4 +164,94 @@ void ModelImplement::execute(int start, int final, int incr)
     }
     incrementTime(incr);
   }
-};
+}
+
+ModelHandle::ModelHandle()
+{
+  pImpl_->setTime(0);
+}
+
+ModelHandle::ModelHandle(int t)
+{
+  pImpl_->setTime(t);
+}
+
+void ModelHandle::add(System *sys) {
+  pImpl_->add(sys);
+}
+
+void ModelHandle::add(Flow *flow) {
+  pImpl_->add(flow);
+}
+
+Model *ModelHandle::createModel()
+{
+  return ModelBody::createModel();
+}
+
+System *ModelHandle::createSystem(double v)
+{
+  return pImpl_->createSystem(v);
+}
+
+Flow *ModelHandle::createFlow()
+{
+  return pImpl_->createFlow();
+}
+
+Flow *ModelHandle::createFlow(System *from, System *to)
+{
+  return pImpl_->createFlow(from, to);
+}
+
+Model::iteratorSystem ModelHandle::firstSystem()
+{
+  return pImpl_->firstSystem();
+}
+
+Model::iteratorSystem ModelHandle::lastSystem()
+{
+  return pImpl_->lastSystem();
+}
+
+Model::iteratorFlow ModelHandle::firstFlow()
+{
+  return pImpl_->firstFlow();
+}
+
+Model::iteratorFlow ModelHandle::lastFlow()
+{
+  return pImpl_->lastFlow();
+}
+
+System *ModelHandle::getSystem(int index) {
+  return pImpl_->getSystem(index);
+}
+
+Flow *ModelHandle::getFlow(int index) {
+  return pImpl_->getFlow(index);
+}
+
+int ModelHandle::getTime() const {
+  return pImpl_->getTime();
+}
+
+void ModelHandle::setTime(int t) {
+  pImpl_->setTime(t);
+}
+
+void ModelHandle::incrementTime(int incr) {
+  pImpl_->incrementTime(incr);
+}
+
+void ModelHandle::remove(System *sys) {
+  pImpl_->remove(sys);
+}
+
+void ModelHandle::remove(Flow *flow) {
+  pImpl_->remove(flow);
+}
+
+void ModelHandle::execute(int start, int final, int incr) {
+  pImpl_->execute(start, final, incr);
+}

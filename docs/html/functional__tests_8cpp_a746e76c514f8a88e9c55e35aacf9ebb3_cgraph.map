@@ -1,7 +1,11 @@
 <map id="complexFuncTest" name="complexFuncTest">
-<area shape="rect" id="node1" title="Tests the complex model provided by the customer." alt="" coords="5,81,131,108"/>
-<area shape="rect" id="node2" href="$class_model.html#a1c57f13b17e1fd598fa7ebe1fa55a7df" title="Adds System to the Model graph." alt="" coords="199,5,285,32"/>
-<area shape="rect" id="node3" href="$class_model.html#a05054627f93a1f8ef40de6bd6fa3a2ca" title="Executes the Model." alt="" coords="187,56,297,83"/>
-<area shape="rect" id="node4" href="$class_model.html#a83e718218da786d585ec50800696de02" title="Returns current time in Model execution." alt="" coords="187,107,297,133"/>
-<area shape="rect" id="node5" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Returns the value stored in the System." alt="" coords="179,157,305,184"/>
+<area shape="rect" id="node1" title="Tests the complex model provided by the customer." alt="" coords="5,132,131,159"/>
+<area shape="rect" id="node2" href="$class_model.html#a5db68691ba69610ffda576ad3985a774" title="Creates Flow for the model." alt="" coords="203,5,331,32"/>
+<area shape="rect" id="node4" href="$class_model_handle.html#a956f6abcd4b6616c674a8d071d73da76" title="Creates the model." alt="" coords="179,56,355,83"/>
+<area shape="rect" id="node6" href="$class_model.html#a570a50196f9fcbe5904f90e55695af81" title="Creates System for the model." alt="" coords="193,107,340,133"/>
+<area shape="rect" id="node7" href="$class_model.html#a05054627f93a1f8ef40de6bd6fa3a2ca" title="Executes the Model." alt="" coords="211,157,322,184"/>
+<area shape="rect" id="node8" href="$class_model.html#a83e718218da786d585ec50800696de02" title="Returns current time in Model execution." alt="" coords="211,208,322,235"/>
+<area shape="rect" id="node9" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Returns the value stored in the System." alt="" coords="203,259,330,285"/>
+<area shape="rect" id="node3" href="$class_model.html#a94c8319fa87ab9f33a4ac2b362837e5d" title="Adds System to the Model graph." alt="" coords="443,5,529,32"/>
+<area shape="rect" id="node5" href="$class_model_body.html#a1d164def69ad2b9180aaf5081a3d445b" title="Creates the model." alt="" coords="403,56,569,83"/>
 </map>

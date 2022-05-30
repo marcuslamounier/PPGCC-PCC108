@@ -1,5 +1,7 @@
 <map id="unit_Model_setTime" name="unit_Model_setTime">
-<area shape="rect" id="node1" title="Tests the current time setter." alt="" coords="5,31,144,57"/>
-<area shape="rect" id="node2" href="$class_model.html#a83e718218da786d585ec50800696de02" title="Returns current time in Model execution." alt="" coords="192,5,303,32"/>
-<area shape="rect" id="node3" href="$class_model.html#aee3b8b83761d6f0c1c979b7dce823337" title="Updates current time in Model execution." alt="" coords="192,56,303,83"/>
+<area shape="rect" id="node1" title="Tests the current time setter." alt="" coords="5,56,144,83"/>
+<area shape="rect" id="node2" href="$class_model_handle.html#a956f6abcd4b6616c674a8d071d73da76" title="Creates the model." alt="" coords="192,5,368,32"/>
+<area shape="rect" id="node4" href="$class_model.html#a83e718218da786d585ec50800696de02" title="Returns current time in Model execution." alt="" coords="225,56,335,83"/>
+<area shape="rect" id="node5" href="$class_model.html#aee3b8b83761d6f0c1c979b7dce823337" title="Updates current time in Model execution." alt="" coords="225,107,335,133"/>
+<area shape="rect" id="node3" href="$class_model_body.html#a1d164def69ad2b9180aaf5081a3d445b" title="Creates the model." alt="" coords="416,5,583,32"/>
 </map>

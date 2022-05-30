@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['setfactor_0',['setFactor',['../class_exponential_flow.html#a1de8c9e20dc70cf81a614391f21073c5',1,'ExponentialFlow::setFactor()'],['../class_logistic_flow.html#a2b771199a47b93f056eb4af9550e1756',1,'LogisticFlow::setFactor()']]],
-  ['setlastvalue_1',['setLastValue',['../class_flow.html#ac7977747c4f1847f84f16849ba058af9',1,'Flow::setLastValue()'],['../class_flow_implement.html#a91dc25f36bcbc68406a2f59a57e04c8c',1,'FlowImplement::setLastValue()']]],
-  ['setmaxvalue_2',['setMaxValue',['../class_logistic_flow.html#a4cfab90677655846744fbd8c9a016a46',1,'LogisticFlow']]],
-  ['setsource_3',['setSource',['../class_flow.html#a4d756236982858350e7bf80a465926a7',1,'Flow::setSource()'],['../class_flow_implement.html#a94ee1b0b5f7e7679e5f14a5043eada3a',1,'FlowImplement::setSource()']]],
-  ['settarget_4',['setTarget',['../class_flow.html#ab1361d85c69c6c897d0409c8b8ae72fe',1,'Flow::setTarget()'],['../class_flow_implement.html#a42f3fe6cbab788a381fd417714e834e3',1,'FlowImplement::setTarget()']]],
-  ['settime_5',['setTime',['../class_model.html#aee3b8b83761d6f0c1c979b7dce823337',1,'Model::setTime()'],['../class_model_implement.html#aa2519c0d5fc353e3da8cbb128f775f81',1,'ModelImplement::setTime()']]],
-  ['setvalue_6',['setValue',['../class_system.html#a28536e1a680eb4b223cd26562a55bb1e',1,'System::setValue()'],['../class_system_implement.html#ade887d6d15d0c025e10233b2b1f500a9',1,'SystemImplement::setValue(double v)']]],
-  ['systemimplement_7',['SystemImplement',['../class_system_implement.html#a76b7de25660c4553ba19af84d77e32c5',1,'SystemImplement::SystemImplement()'],['../class_system_implement.html#a219e60ff8cda773d9c430795002e4ae9',1,'SystemImplement::SystemImplement(double v)']]]
+  ['lastflow_0',['lastFlow',['../class_model.html#ac0eb3b341ad74c330b389b3c8ab02ec9',1,'Model::lastFlow()'],['../class_model_body.html#a6c842a992b7b0688cf0c53a5ba0dcf6f',1,'ModelBody::lastFlow()'],['../class_model_handle.html#ad57988e32b1f19df8e32363eee58def3',1,'ModelHandle::lastFlow()']]],
+  ['lastsystem_1',['lastSystem',['../class_model.html#a9a6a16553f9772df568242716066454e',1,'Model::lastSystem()'],['../class_model_body.html#aafa48bb0722cc21b948e877a6e60dbd4',1,'ModelBody::lastSystem()'],['../class_model_handle.html#a974b2028a5214e72030fbbd5dd9ad382',1,'ModelHandle::lastSystem()']]],
+  ['logisticflow_2',['LogisticFlow',['../class_logistic_flow.html#ab0f7906cfe1a27e18a4f558124e53ee0',1,'LogisticFlow::LogisticFlow()'],['../class_logistic_flow.html#a8fc08e99dba40e2fb46947da33977dce',1,'LogisticFlow::LogisticFlow(System *from, System *to)'],['../class_logistic_flow.html#ae769c65ba0754de833d60eb2590197e0',1,'LogisticFlow::LogisticFlow(System *from, System *to, double f, double maxV)']]],
+  ['logisticfunctest_3',['logisticFuncTest',['../functional__tests_8cpp.html#ad526582e2690a4c6e0225ca0563ab4f2',1,'logisticFuncTest():&#160;functional_tests.cpp'],['../functional__tests_8h.html#ad526582e2690a4c6e0225ca0563ab4f2',1,'logisticFuncTest():&#160;functional_tests.cpp']]]
 ];

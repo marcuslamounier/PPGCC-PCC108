@@ -1,4 +1,5 @@
 <map id="LogisticFlow::execute" name="LogisticFlow::execute">
 <area shape="rect" id="node1" title="Returns the momentary flow value." alt="" coords="5,5,153,32"/>
-<area shape="rect" id="node2" href="$class_flow_implement.html#a8f943644b5e5b09e2b1b0cd89a01b8e0" title="Returns pointer for the target System." alt="" coords="201,5,372,32"/>
+<area shape="rect" id="node2" href="$class_flow_handle.html#a359ed653848ace6e29ae70fa6e65f4aa" title="Returns pointer for the target System." alt="" coords="201,5,352,32"/>
+<area shape="rect" id="node3" href="$class_flow_body.html#a437ebb62001b40c57cc0bf3effd8a431" title="Returns pointer for the target System." alt="" coords="400,5,541,32"/>
 </map>

@@ -1,6 +1,7 @@
 <map id="Flow::setTarget" name="Flow::setTarget">
-<area shape="rect" id="node1" title="Updates the target System." alt="" coords="388,31,499,57"/>
-<area shape="rect" id="node2" href="$unit___flow_8cpp.html#adcd6d85344284a146ff77dd6140e94b6" title="Tests the target System* cleaner." alt="" coords="192,5,340,32"/>
-<area shape="rect" id="node4" href="$unit___flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Tests the target System* setter." alt="" coords="197,56,335,83"/>
-<area shape="rect" id="node3" href="$unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="5,31,144,57"/>
+<area shape="rect" id="node1" title="Updates the target System." alt="" coords="388,56,499,83"/>
+<area shape="rect" id="node2" href="$class_model.html#ad26419692157b99701cc2811d57ab2ea" title="Creates Flow for the model." alt="" coords="202,5,330,32"/>
+<area shape="rect" id="node3" href="$unit___flow_8cpp.html#adcd6d85344284a146ff77dd6140e94b6" title="Tests the target System* cleaner." alt="" coords="192,56,340,83"/>
+<area shape="rect" id="node5" href="$unit___flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Tests the target System* setter." alt="" coords="197,107,335,133"/>
+<area shape="rect" id="node4" href="$unit___flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Global call for unitary tests for the methods of class Flow." alt="" coords="5,81,144,108"/>
 </map>

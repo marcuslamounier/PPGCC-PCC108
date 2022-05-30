@@ -22,8 +22,8 @@
 class System
 {
 public:
-  /// Virtual destructor for System
-  virtual ~System() {}
+  /// Virtual destructor for Flow
+  virtual ~System() = default;
 
   /// Returns the value stored in the System.
   /**

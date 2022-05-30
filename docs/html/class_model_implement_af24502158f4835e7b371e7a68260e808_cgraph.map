@@ -1,4 +1,0 @@
-<map id="ModelImplement::remove" name="ModelImplement::remove">
-<area shape="rect" id="node1" title="Removes Flow to the Model graph." alt="" coords="5,5,172,32"/>
-<area shape="rect" id="node2" href="$class_model_implement.html#a6871a545194b451b59fd059b750c2242" title="Returns pointer for the last Flow in the array." alt="" coords="220,5,393,32"/>
-</map>

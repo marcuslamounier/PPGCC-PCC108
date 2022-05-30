@@ -1,0 +1,7 @@
+<map id="SystemHandle" name="SystemHandle">
+<area shape="rect" id="node1" title="Implementation class for class System." alt="" coords="5,247,112,273"/>
+<area shape="rect" id="node2" href="$class_system.html" title="Interface for class System." alt="" coords="9,171,76,197"/>
+<area shape="rect" id="node3" href="$class_handle.html" title=" " alt="" coords="101,171,262,197"/>
+<area shape="rect" id="node4" href="$class_system_body.html" title="Body interface for class System." alt="" coords="133,81,230,108"/>
+<area shape="rect" id="node5" href="$class_body.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="155,5,207,32"/>
+</map>

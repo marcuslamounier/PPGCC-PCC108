@@ -1,4 +1,0 @@
-<map id="ModelImplement::add" name="ModelImplement::add">
-<area shape="rect" id="node1" title="Adds System to the Model graph." alt="" coords="5,5,152,32"/>
-<area shape="rect" id="node2" href="$class_model_implement.html#aa00e8dcaa2f7b35477fe278fc597f7bf" title="Returns pointer for the last System in the array." alt="" coords="200,5,391,32"/>
-</map>

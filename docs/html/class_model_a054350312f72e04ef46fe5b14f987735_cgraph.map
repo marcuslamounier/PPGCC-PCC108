@@ -1,4 +1,0 @@
-<map id="Model::add" name="Model::add">
-<area shape="rect" id="node1" title="Adds System to the Model graph." alt="" coords="5,5,92,32"/>
-<area shape="rect" id="node2" href="$class_model.html#a9978b13aab2115a913ff1589e83ed9d3" title="Returns pointer for the last System in the array." alt="" coords="140,5,271,32"/>
-</map>

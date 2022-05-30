@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['modelimplement_0',['ModelImplement',['../class_model_implement.html#af8f9c855aff38c43ef8ad1374ac2e687',1,'ModelImplement::ModelImplement()'],['../class_model_implement.html#accc91b20dcbad69feabc9a754d15f578',1,'ModelImplement::ModelImplement(int t)']]]
+  ['handle_0',['Handle',['../class_handle.html#a6a72028918adf79c0ff8d9996e5e4107',1,'Handle::Handle()'],['../class_handle.html#af304e7014a2e600e235140d246783f85',1,'Handle::Handle(const Handle &amp;hd)']]]
 ];

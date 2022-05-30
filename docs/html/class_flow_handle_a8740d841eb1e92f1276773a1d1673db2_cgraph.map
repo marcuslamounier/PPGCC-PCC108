@@ -1,0 +1,4 @@
+<map id="FlowHandle::clearTarget" name="FlowHandle::clearTarget">
+<area shape="rect" id="node1" title="Sets NULL for the target System." alt="" coords="5,5,167,32"/>
+<area shape="rect" id="node2" href="$class_flow_body.html#a77b7386ec7d0b7d62845e8c8bab15172" title="Sets NULL for the target System." alt="" coords="215,5,365,32"/>
+</map>

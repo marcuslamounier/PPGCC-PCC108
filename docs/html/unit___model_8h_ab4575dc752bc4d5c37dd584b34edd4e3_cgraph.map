@@ -1,7 +1,13 @@
 <map id="unit_Model_remove" name="unit_Model_remove">
-<area shape="rect" id="node1" title="Tests the Flow* and System* disassociators." alt="" coords="5,81,139,108"/>
-<area shape="rect" id="node2" href="$class_model.html#a1c57f13b17e1fd598fa7ebe1fa55a7df" title="Adds System to the Model graph." alt="" coords="207,5,294,32"/>
-<area shape="rect" id="node3" href="$class_model.html#ac9c37d14cbf74b215be9ccbe6c46e990" title="Returns Flow pointer for Flow in index&#45;th position." alt="" coords="195,56,306,83"/>
-<area shape="rect" id="node4" href="$class_model.html#a2c6fb075b089c90f883eb74baa0bfcd1" title="Returns System pointer for System in index&#45;th position." alt="" coords="187,107,315,133"/>
-<area shape="rect" id="node5" href="$class_model.html#ade7525abe2c2081098fd5377f50e77f4" title="Removes System to the Model graph." alt="" coords="197,157,304,184"/>
+<area shape="rect" id="node1" title="Tests the Flow* and System* disassociators." alt="" coords="5,183,139,209"/>
+<area shape="rect" id="node2" href="$class_model.html#a5db68691ba69610ffda576ad3985a774" title="Creates Flow for the model." alt="" coords="211,5,339,32"/>
+<area shape="rect" id="node4" href="$class_model_handle.html#a956f6abcd4b6616c674a8d071d73da76" title="Creates the model." alt="" coords="187,56,363,83"/>
+<area shape="rect" id="node6" href="$class_model.html#a570a50196f9fcbe5904f90e55695af81" title="Creates System for the model." alt="" coords="201,107,348,133"/>
+<area shape="rect" id="node7" href="$class_model.html#a2dc3c0e072f7c5825d58e809e888d44f" title="Returns pointer for the first Flow in the array." alt="" coords="218,157,331,184"/>
+<area shape="rect" id="node8" href="$class_model.html#a27f73e58f7e75570d5451d182516f32d" title="Returns pointer for the first System in the array." alt="" coords="209,208,340,235"/>
+<area shape="rect" id="node9" href="$class_model.html#ac0eb3b341ad74c330b389b3c8ab02ec9" title="Returns pointer for the last Flow in the array." alt="" coords="218,259,331,285"/>
+<area shape="rect" id="node10" href="$class_model.html#a9a6a16553f9772df568242716066454e" title="Returns pointer for the last System in the array." alt="" coords="209,309,340,336"/>
+<area shape="rect" id="node11" href="$class_model.html#adbd9179086a62368503bc04baae0b5ae" title="Removes System to the Model graph." alt="" coords="221,360,328,387"/>
+<area shape="rect" id="node3" href="$class_model.html#a94c8319fa87ab9f33a4ac2b362837e5d" title="Adds System to the Model graph." alt="" coords="451,5,537,32"/>
+<area shape="rect" id="node5" href="$class_model_body.html#a1d164def69ad2b9180aaf5081a3d445b" title="Creates the model." alt="" coords="411,56,577,83"/>
 </map>

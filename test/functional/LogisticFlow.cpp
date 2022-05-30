@@ -13,9 +13,29 @@
 
 using namespace std;
 
+LogisticFlow::LogisticFlow() {
+  pImpl_ = new FlowBody();
+  pImpl_->setSource(NULL);
+  pImpl_->setSource(NULL);
+  pImpl_->setLastValue(0.0);
+  factor = 0.01;
+  maxValue = 70.0;
+}
+
+LogisticFlow::LogisticFlow(System *from = NULL, System *to = NULL) {
+  pImpl_ = new FlowBody();
+  pImpl_->setSource(from);
+  pImpl_->setSource(to);
+  pImpl_->setLastValue(0.0);
+  factor = 0.01;
+  maxValue = 70.0;
+}
+
 LogisticFlow::LogisticFlow(System *from = NULL, System *to = NULL, double f = 0.0, double maxV = 0.0) {
-  source = from;
-  target = to;
+  pImpl_ = new FlowBody();
+  pImpl_->setSource(from);
+  pImpl_->setSource(to);
+  pImpl_->setLastValue(0.0);
   factor = f;
   maxValue = maxV;
 }

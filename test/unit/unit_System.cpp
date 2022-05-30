@@ -18,15 +18,15 @@ using namespace std;
 
 void unit_System_constructor()
 {
-  System *s = new SystemImplement(0.0);
+  System *s = new SystemHandle(0.0);
   assert(s != NULL);
-  delete s;
+  delete (SystemHandle *) s;
 }
 
 void unit_System_destructor()
 {
   static int x = 0;
-  class MySystem: public SystemImplement {
+  class MySystem: public SystemHandle {
     public:
       MySystem() { x = 0; };
       virtual ~MySystem() { x = 1; };
@@ -40,18 +40,18 @@ void unit_System_destructor()
 void unit_System_getValue()
 {
   double v = 100.0;
-  System *s = new SystemImplement(v);
+  System *s = new SystemHandle(v);
   assert(abs(s->getValue() - v) < 0.01);
-  delete s;
+  delete (SystemHandle *) s;
 }
 
 void unit_System_setValue()
 {
   double v = 100.0;
-  System *s = new SystemImplement(0.0);
+  System *s = new SystemHandle(0.0);
   s->setValue(v);
   assert(abs(s->getValue() - v) < 0.01);
-  delete s;
+  delete (SystemHandle *) s;
 }
 
 void run_unit_tests_System()

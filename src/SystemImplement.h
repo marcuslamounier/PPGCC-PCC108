@@ -12,34 +12,23 @@
 #define SYSTEM_H
 
 #include "System.h"
+#include "BridgeTemplate.h"
 
 /**
- * @class SystemImplement
+ * @class SystemBody
  *
- * @brief Implementation class for class System.
+ * @brief Body interface for class System.
  *
  * The class System will hold the energy.
  */
 
-class SystemImplement : public System
+class SystemBody: public Body
 {
 protected:
   /// Value stored in the System.
   double value;
 
 public:
-  /// Default constructor for System.
-  SystemImplement();
-
-  /// Parameter's constructor for System.
-  /**
-   * @param v: value stored in the System.
-   */
-  SystemImplement(double v);
-
-  /// Virtual destructor for System
-  virtual ~SystemImplement();
-
   /// Returns the value stored in the System.
   /**
    * @return the value stored in the System.
@@ -51,19 +40,39 @@ public:
    * @param v current value stored in the System.
    */
   void setValue(double v);
+};
 
-private:
-  /// Copy constructor for System.
-  /**
-   * @param sys: reference for the System which will be copied.
-   */
-  SystemImplement(const System &sys);
+/**
+ * @class SystemHandle
+ *
+ * @brief Implementation class for class System.
+ *
+ * The class System will hold the energy.
+ */
 
-  /// Override for operator "=".
+class SystemHandle : public System, public Handle<SystemBody>
+{
+public:
+  /// Default constructor for System.
+  SystemHandle();
+
+  /// Parameter's constructor for System.
   /**
-   * @param sys: reference for the System which will be copied.
+   * @param v: value stored in the System.
    */
-  SystemImplement &operator=(const System &sys);
+  SystemHandle(double v);
+
+  /// Returns the value stored in the System.
+  /**
+   * @return the value stored in the System.
+   */
+  double getValue() const;
+  
+  /// Updates the value stored in the System.
+  /**
+   * @param v current value stored in the System.
+   */
+  void setValue(double v);
 };
 
 #endif

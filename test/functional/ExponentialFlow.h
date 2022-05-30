@@ -22,7 +22,7 @@
  * another by a rate provided by an exponential equation.
  */
 
-class ExponentialFlow : public FlowImplement
+class ExponentialFlow : public FlowHandle
 {
 private:
   /// Factor of exponential flow transfer rate.
@@ -31,6 +31,13 @@ private:
 public:
   /// Default constructor for ExponentialFlow.
   ExponentialFlow();
+
+  /// Parameter's constructor for ExponentialFlow.
+  /**
+   * @param from: pointer for the source System.
+   * @param to: pointer for the target System.
+   */
+  ExponentialFlow(System *from, System *to);
 
   /// Parameter's constructor for ExponentialFlow.
   /**

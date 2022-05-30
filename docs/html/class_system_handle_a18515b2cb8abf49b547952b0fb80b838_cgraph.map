@@ -1,0 +1,5 @@
+<map id="SystemHandle::SystemHandle" name="SystemHandle::SystemHandle">
+<area shape="rect" id="node1" title="Parameter&#39;s constructor for System." alt="" coords="5,31,205,57"/>
+<area shape="rect" id="node2" href="$class_body.html#a5d53322c76a6952d096cb7564ac86db1" title="Increases the number of references to this object." alt="" coords="283,5,379,32"/>
+<area shape="rect" id="node3" href="$class_system_body.html#a37cf1492f14faef985225d833c3095f4" title="Updates the value stored in the System." alt="" coords="253,56,409,83"/>
+</map>

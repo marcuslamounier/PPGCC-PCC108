@@ -1,0 +1,5 @@
+<map id="FlowBody::getTarget" name="FlowBody::getTarget">
+<area shape="rect" id="node1" title="Returns pointer for the target System." alt="" coords="400,5,541,32"/>
+<area shape="rect" id="node2" href="$class_flow_handle.html#a359ed653848ace6e29ae70fa6e65f4aa" title="Returns pointer for the target System." alt="" coords="201,5,352,32"/>
+<area shape="rect" id="node3" href="$class_logistic_flow.html#afdc1e2ec0eb61b71b367f8fc2677e371" title="Returns the momentary flow value." alt="" coords="5,5,153,32"/>
+</map>

@@ -1,5 +1,8 @@
 <map id="unit_Model_getFlow" name="unit_Model_getFlow">
-<area shape="rect" id="node1" title="Tests the Flow* getter." alt="" coords="5,31,143,57"/>
-<area shape="rect" id="node2" href="$class_model.html#a1c57f13b17e1fd598fa7ebe1fa55a7df" title="Adds System to the Model graph." alt="" coords="203,5,289,32"/>
-<area shape="rect" id="node3" href="$class_model.html#ac9c37d14cbf74b215be9ccbe6c46e990" title="Returns Flow pointer for Flow in index&#45;th position." alt="" coords="191,56,301,83"/>
+<area shape="rect" id="node1" title="Tests the Flow* getter." alt="" coords="5,56,143,83"/>
+<area shape="rect" id="node2" href="$class_model.html#a5db68691ba69610ffda576ad3985a774" title="Creates Flow for the model." alt="" coords="215,5,343,32"/>
+<area shape="rect" id="node4" href="$class_model_handle.html#a956f6abcd4b6616c674a8d071d73da76" title="Creates the model." alt="" coords="191,56,367,83"/>
+<area shape="rect" id="node6" href="$class_model.html#ac9c37d14cbf74b215be9ccbe6c46e990" title="Returns Flow pointer for Flow in index&#45;th position." alt="" coords="223,107,334,133"/>
+<area shape="rect" id="node3" href="$class_model.html#a94c8319fa87ab9f33a4ac2b362837e5d" title="Adds System to the Model graph." alt="" coords="455,5,541,32"/>
+<area shape="rect" id="node5" href="$class_model_body.html#a1d164def69ad2b9180aaf5081a3d445b" title="Creates the model." alt="" coords="415,56,581,83"/>
 </map>
