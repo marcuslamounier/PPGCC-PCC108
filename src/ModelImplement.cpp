@@ -168,14 +168,12 @@ void ModelBody::execute(int start, int final, int incr)
 
 ModelHandle::ModelHandle()
 {
-  pImpl_ = new ModelBody();
-  pImpl_->attach();
+  pImpl_->setTime(0);
 }
 
 ModelHandle::ModelHandle(int t)
 {
-  pImpl_ = new ModelBody(t);
-  pImpl_->attach();
+  pImpl_->setTime(t);
 }
 
 void ModelHandle::add(System *sys) {

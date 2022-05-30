@@ -77,21 +77,23 @@ double FlowBody::execute() {
 
 FlowHandle::FlowHandle()
 {
-  pImpl_ = new FlowBody();
-  pImpl_->attach();
+  pImpl_->setSource(NULL);
+  pImpl_->setTarget(NULL);
+  pImpl_->setLastValue(0.0);
 }
 
 FlowHandle::FlowHandle(System *from, System *to)
 {
-  pImpl_ = new FlowBody(from, to);
+  pImpl_->setSource(from);
+  pImpl_->setTarget(to);
   pImpl_->setLastValue(0.0);
-  pImpl_->attach();
 }
 
 FlowHandle::FlowHandle(System *from, System *to, double lv)
 {
-  pImpl_ = new FlowBody(from, to, lv);
-  pImpl_->attach();
+  pImpl_->setSource(from);
+  pImpl_->setTarget(to);
+  pImpl_->setLastValue(lv);
 }
 
 System *FlowHandle::getSource() const

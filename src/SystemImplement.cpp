@@ -25,13 +25,12 @@ void SystemBody::setValue(double v)
 
 SystemHandle::SystemHandle()
 {
-  pImpl_ = new SystemBody();
+  pImpl_->setValue(0.0);
   pImpl_->attach();
 };
 
 SystemHandle::SystemHandle(double v)
 {
-  pImpl_ = new SystemBody();
   pImpl_->setValue(v);
   pImpl_->attach();
 };
